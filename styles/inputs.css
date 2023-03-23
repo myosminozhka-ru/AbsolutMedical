@@ -1,0 +1,210 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.custom-number-input {
+  position: relative;
+  height: 2.5rem;
+  border: 1px solid #dddddd;
+  width: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-number-input__plus-button,
+.custom-number-input__minus-button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.custom-number-input__input {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0rem 1.875rem;
+  text-align: center;
+}
+
+/* switcher */
+.custom-switcher-input {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.custom-switcher-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.5rem;
+  height: 2.5rem;
+  background: #eef3f4;
+  /* display: block; */
+  position: relative;
+}
+
+.custom-switcher-label:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 2.125rem;
+  height: 2.125rem;
+  background-color: #1c48a0;
+  transition: 0.3s;
+  background-image: url(../icons/white-boxes.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-switcher-label-left-text {
+  visibility: hidden;
+}
+
+.custom-switcher-input:checked
+  + .custom-switcher-label
+  .custom-switcher-label-right-text {
+  visibility: hidden;
+}
+
+.custom-switcher-input:checked
+  + .custom-switcher-label
+  .custom-switcher-label-left-text {
+  visibility: visible;
+}
+
+.custom-switcher-input:checked + .custom-switcher-label:after {
+  left: calc(100% - 3px);
+  transform: translateX(-100%);
+  background-image: url(../icons/white-box.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* form input ------------------*/
+.custom-form-input {
+  height: 4.125rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  line-height: 160%;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
+  border-bottom: var(--base-border);
+  position: relative;
+}
+
+.custom-form-input.--white-mode .custom-form-input__label,
+.custom-form-input.--white-mode .custom-form-input__input {
+  color: var(--white);
+}
+
+.custom-form-input__label {
+  position: relative;
+}
+
+.custom-form-input__input {
+  height: 100%;
+}
+
+.custom-form-input__button {
+  position: absolute;
+  right: 0;
+  top: 0.125rem;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.custom-form-input.--required-form-input .custom-form-input__label::after {
+  content: url(../icons/white-asterisk.svg);
+  height: 15px;
+  width: 15px;
+  position: absolute;
+}
+
+.custom-form-input.--error-form-input {
+  border-bottom-color: var(--red);
+}
+.custom-form-input.--error-form-input .custom-form-input__button {
+  background-image: url(../icons/red-cross.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-form-input.--success-form-input {
+  border-bottom-color: var(--green);
+}
+.custom-form-input.--success-form-input .custom-form-input__button {
+  background-image: url(../icons/green-check.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-form-input.--non-status-black-eye .custom-form-input__button {
+  background-image: url(../icons/black-eye.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-form-input.--non-status-black-eyelashes .custom-form-input__button {
+  background-image: url(../icons/black-eyelashes.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* checkbox -------------------*/
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.custom-checkbox__label {
+  display: block;
+  position: relative;
+}
+
+.custom-checkbox__label .custom-checkbox__input:checked {
+  outline: 5px solid green;
+}
+
+.custom-checkbox__checkmark {
+  display: block;
+  border: 1.5px solid #dddddd;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.custom-checkbox:hover .custom-checkbox__checkmark {
+  border-color: #1c48a0;
+}
+
+.custom-checkbox__input {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.custom-checkbox__input:checked ~ .custom-checkbox__checkmark {
+  background-image: url(../icons/blue-check-checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}

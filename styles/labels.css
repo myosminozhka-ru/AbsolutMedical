@@ -1,0 +1,67 @@
+@import url(../styles/variables.css);
+
+.label {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  color: var(--text-gray);
+  width: min-content;
+  white-space: nowrap;
+}
+
+.label.--s {
+}
+
+.label.--m {
+}
+
+.label.--l {
+  padding: 0.25rem 0.75rem;
+  font-size: var(--text-xxs);
+}
+
+.label.--framed {
+  background-color: #c0c9e9;
+}
+
+.label.--awaiting-payment {
+  background-color: #dec0e9;
+}
+
+.label.--in-process {
+  background-color: #c0dae9;
+}
+
+.label.--delivery-is-scheduled {
+  background-color: #e2ebff;
+}
+
+.label.--shipped {
+  background-color: #1c48a0;
+  color: var(--text-white);
+}
+
+.label.--draft {
+  background-color: #e9c0c0;
+}
+
+.label.--done {
+  background-color: #c0e9c9;
+}
+
+.label.--new {
+  background-color: #c0dae9;
+}
+
+.label.--active {
+  background-color: #dec0e9;
+}
+
+.label.--response-received {
+  background-color: #c0e9c9;
+}
+
+.label.--closed {
+  background-color: #c0c9e9;
+}

@@ -1,0 +1,199 @@
+.header {
+  width: 100vw;
+  position: relative;
+}
+
+.header__scroll-down-button {
+  position: fixed;
+  top: 11rem;
+  right: 0.875rem;
+  height: 3.75rem;
+  width: 3.75rem;
+  background-color: rgba(28, 72, 160, 0.1);
+  background-image: url(../icons/black-chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid transparent;
+}
+
+.header__scroll-down-button:hover {
+  transition: background-color 0.2s ease;
+  background-color: #fff;
+  border: 1px solid #dddddd;
+}
+
+.header__info-container {
+  background-color: transparent;
+}
+
+.header-info {
+  max-width: 81.25rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0 0.75rem 0;
+}
+
+.header-info__geo-dropdown {
+}
+
+.header-info__dropdown-content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header-info__dropdown-content-wrapper::before {
+  content: "";
+  background-image: url(../icons/black-geo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  margin-right: 0.25rem;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.header-info__geo-text {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 170%;
+  letter-spacing: 0.03rem;
+  color: #333333;
+}
+
+.header-info__geo-button {
+  margin-left: 0.25rem;
+  background-image: url(../icons/black-chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.header-info__phone {
+  margin-left: auto;
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 130%;
+  color: #333333;
+}
+
+.header-info__phone-dropdown {
+  height: 1rem;
+  padding: 0.0625rem 0;
+  width: 1rem;
+  margin-left: 0.25rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-info__phone-dropdown-dot {
+  height: 0.125rem;
+  width: 0.125rem;
+  background-color: #333333;
+  border-radius: 50%;
+}
+
+.header-info__callback {
+  font-weight: 400;
+  font-size: 0.875rem;
+  margin-left: 0.75rem;
+  line-height: 170%;
+  letter-spacing: 0.03rem;
+  color: #333333;
+}
+
+.header__main-container {
+  width: 100vw;
+  background-color: #fff;
+  height: 6.25rem;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+.header-main {
+  max-width: 81.25rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header-main__burger {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-main__burger-line {
+  width: 100%;
+  height: 0.1875rem;
+  background-color: #333333;
+  border-radius: 3px;
+}
+
+.header-main__catalog-link,
+.header-main__request-link {
+  margin-left: 0.625rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #333333;
+}
+
+.header-main__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-main__searcher-container {
+  margin-left: auto;
+  display: flex;
+  width: 5.125rem;
+  position: relative;
+}
+
+.header-main__searcher {
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  padding-left: 1.875rem;
+  color: #333333;
+  position: relative;
+}
+
+.header-main__searcher-button {
+  z-index: 1;
+  position: absolute;
+  height: 1.25rem;
+  width: 1.25rem;
+  background-image: url(../icons/gray-search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-main__basket-link,
+.header-main__personal-area-link {
+  height: 1.25rem;
+  width: 1.25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-main__basket-link {
+  margin-left: 32px;
+  background-image: url(../icons/gray-cart.svg);
+}
+
+.header-main__personal-area-link {
+  margin-left: 1.5rem;
+  background-image: url(../icons/gray-user.svg);
+}

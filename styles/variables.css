@@ -1,0 +1,78 @@
+:root {
+  /* --black: ; */
+  --trasparent: transparent;
+  --white: #ffffff;
+
+  --dark-blue: #1c48a0;
+  --blue: #507bf5;
+  --light-blue: #3385c1;
+  --extra-light-blue: #c1dff9;
+
+  --hover-dark-blue-btn: #2655b4;
+  --active-dark-blue-btn: #174299;
+  --disabled-dark-blue-btn: #dddddd;
+
+  --hover-menu: #eef3f4;
+  --active-menu: #1c48a0;
+
+  --green: #129b30;
+  --red: #ec3f3f;
+  --gray: #dddddd;
+
+  /* --extra-dark-gray: ;
+  --dark-gray: ;
+  --gray: ; */
+  --light-gray: #eef3f4;
+  --light-blue-gray: #eef3f5;
+  --extra-light-gray: ;
+
+  --bg-light-gray: #f9f9f9;
+  --bg-gray: #f5f5f7;
+  --bg-dark-gray: #f2f2f2;
+
+  --product-gray-bg: #f2f2f2;
+
+  --text-black: #333333;
+  --text-gray: #2c2c2c;
+  --text-dark-gray: #b3b3b3;
+  --text-white: #ffffff;
+
+  --gray-btn: #dddddd;
+  --blue-btn: #1c48a0;
+  --light-blue-btn: #e2ebff;
+
+  --form-bg: #3761b5;
+
+  --base-border: 1px solid #dddddd;
+
+  --card-shadow: 0.9375rem 0rem 0.875rem 0rem rgba(48, 48, 48, 0.07);
+  --base-transition: 0.2s ease;
+
+  /* 14 */
+  --text-xxs: 0.875rem;
+  /* 16 */
+  --text-xs: 1rem;
+  /* 18 */
+  --text-m: 1.125rem;
+  /* 20 */
+  --text-l: 1.25rem;
+  /* 40 */
+  --text-xxl: 2.5rem;
+
+  /* 70 - 30 */
+  --h1: 4.375rem;
+  /* 64 - 40  */
+  --h2: 4rem;
+  /* 40 - 24 */
+  --h3: 2.5rem;
+  /* 24 - 20 */
+  --h4: 1.5rem;
+  /* 24 - 18 */
+  --h5: 1.5rem;
+  /* 18 - 14 */
+  --h6: 1.125rem;
+}
+
+/* 14-14 */
+/* 16-18 */
+/* 16-16 */

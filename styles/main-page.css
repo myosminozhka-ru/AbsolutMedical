@@ -1,0 +1,656 @@
+@import url(./variables.css);
+
+.main-page {
+  overflow-x: hidden;
+}
+.main-info {
+  display: flex;
+  max-width: 93.875rem;
+  margin: 0 auto;
+  background-color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.main-info::after {
+  position: absolute;
+  content: url(../images/doctor.png);
+  left: 75%;
+  transform: translateX(-50%);
+  bottom: -59px;
+}
+
+.main-info__main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6.3125rem;
+  margin-top: 12.375rem;
+  /* max-width: 50.0625rem; */
+  width: 75%;
+  /* width: 70.625rem; */
+}
+
+.main-info__title {
+  text-transform: uppercase;
+}
+
+.main-info__text {
+  margin-top: 1.75rem;
+  max-width: 36.125rem;
+  font-size: var(--text-m);
+  line-height: 1.7rem;
+}
+
+.main-info__controls {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.main-info .custom-button:nth-child(1) {
+  margin-right: 1.75rem;
+}
+
+.main-info__down-button {
+  margin-top: 12.5rem;
+  height: 3.75rem;
+  width: 3.75rem;
+  background-color: rgba(28, 72, 160, 0.1);
+  background-image: url(../icons/black-chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid transparent;
+}
+
+.main-info__down-button:hover {
+  transition: background-color 0.2s ease;
+  border-color: #dddddd;
+  background-color: #fff;
+}
+
+.main-info__links {
+  background-color: var(--form-bg);
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: end; */
+  align-items: end;
+}
+
+.main-info__link-item:first-child {
+  margin-top: 2.5625rem;
+}
+
+.main-info__link-item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.75rem;
+  width: 12.5rem;
+  height: 4.25rem;
+  padding: 1.5rem 1.5rem 1.5rem 5.75rem;
+  background-color: var(--white);
+  font-family: "DIN Pro cond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #333333;
+}
+
+.main-info__link-item::after {
+  content: "";
+  height: inherit;
+  width: 1px;
+  background-color: var(--gray);
+  display: block;
+  margin-left: -1.5625rem;
+  margin-top: -3rem;
+}
+
+.main-info__link-item.--icon-wash-hands {
+  background-image: url(../icons/washing-hand-big.svg);
+  background-position: 25px center;
+  background-repeat: no-repeat;
+}
+
+.main-info__link-item.--icon-tools {
+  background-image: url(../icons/clean-tools.svg);
+  background-position: 25px center;
+  background-repeat: no-repeat;
+}
+
+.main-info__link-item.--icon-rub-the-surface {
+  background-image: url(../icons/cleaning.svg);
+  background-position: 25px center;
+  background-repeat: no-repeat;
+}
+
+.main-info__link-item.--icon-tooth {
+  background-image: url(../icons/tooth-washing.svg);
+  background-position: 25px center;
+  background-repeat: no-repeat;
+}
+
+.main-info__link-item.--icon-computer-desk {
+  background-image: url(../icons/work-place.svg);
+  background-position: 25px center;
+  background-repeat: no-repeat;
+}
+
+/* advantages */
+.advantages {
+  max-width: 81.25rem;
+  margin: 8rem auto 0 auto;
+  position: relative;
+}
+
+.advantages__title {
+  text-transform: uppercase;
+}
+.advantages__main-container {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.advantages__img-container {
+}
+
+.advantages__card {
+  position: absolute;
+  right: 4.875rem;
+  bottom: 0;
+  padding: 2rem;
+  max-width: 20.4375rem;
+  background-color: var(--white);
+}
+
+.advantages__card-img-container {
+}
+
+.advantages__card-title {
+  margin-top: 1.5rem;
+  line-height: 1.3rem;
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  color: var(--text-black);
+}
+
+.advantages__card-text {
+  margin-top: 0.75rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--text-black);
+}
+
+.advantages__tabs {
+  margin-top: 1.25rem;
+  display: flex;
+}
+
+.advantages__tabs > .custom-button:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/* popular product slider -------------------------------- */
+.popular-product-slider {
+  display: flex;
+}
+.popular-product-slider__swiper {
+  max-width: 81.25rem;
+}
+
+.popular-product-slider {
+  max-width: 81.25rem;
+  margin: 128px auto 0 auto;
+}
+
+/* slider header -------------------------------- */
+.popular-product-slider .slider__controls {
+  min-width: calc(100% / 3 + 8px);
+}
+
+.popular-product-slider .slider__controls-title {
+  margin-top: 5.5rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.popular-product-slider .slider__controls-title:after {
+  content: "";
+  height: 4.375rem;
+  width: 4.375rem;
+  display: block;
+  left: -44px;
+  top: -20px;
+  position: absolute;
+  background-image: url(../images/gray-logo-peace.png);
+}
+
+.popular-product-slider .custom-button-group {
+  margin-top: 3rem;
+}
+
+.popular-product-card {
+  width: calc(100% / 3);
+}
+
+/* popular product container ---------------------------------- */
+.popular-product-container {
+  display: flex;
+  max-width: 81.25rem;
+  margin: 1.25rem auto 0 auto;
+  gap: 22px;
+}
+
+/* ABOUT COMPANY ---------------------------------------------- */
+
+.about-company {
+  max-width: 81.25rem;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 8rem;
+}
+
+.about-company__img-container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-left: -3.125rem;
+}
+
+.about-company__img-building-small {
+}
+
+.about-company__img-building {
+  margin-left: 3.125rem;
+}
+
+.about-company__description-container {
+  width: 630px;
+  margin-left: auto;
+}
+
+.about-company__title {
+  margin-top: 4.875rem;
+  color: var(--text-black);
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.375rem;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.about-company__text {
+  margin-top: 1rem;
+  color: var(--text-gray);
+  letter-spacing: 0.03em;
+  line-height: 170%;
+  font-size: 1.125rem;
+}
+
+.about-company__text:first-child {
+  margin-top: 1.5rem;
+}
+
+.about-company__button {
+  width: min-content;
+  margin-top: 2rem;
+}
+
+/* brands slider ----------------------------------*/
+
+.brand-slider {
+  display: flex;
+  max-width: 81.25rem;
+  margin: 8rem auto 0 auto;
+}
+
+.brand-slider__controls {
+  min-width: 20.375rem;
+  margin-top: 1.4375rem;
+}
+
+.brand-slider__controls-title {
+  text-transform: uppercase;
+  position: relative;
+}
+
+.brand-slider__controls-title:after {
+  content: "";
+  height: 4.375rem;
+  width: 4.375rem;
+  display: block;
+  left: -44px;
+  top: -20px;
+  position: absolute;
+  background-image: url(../images/gray-logo-peace.png);
+}
+
+.brand-slider__link {
+  margin-top: 1rem;
+  display: inline-block;
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #1c48a0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #1c48a0;
+}
+
+.brand-slider .custom-button-group {
+  margin-top: 32px;
+}
+
+.brand-slider__cards-container {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.brand-slider__swiper {
+}
+
+.brand-slider__swiper-wrapper {
+}
+
+.brand-slider__card {
+  border: 1px solid #ebebeb;
+  min-height: 9.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-slider__brand-img {
+  margin-bottom: 25px;
+}
+
+.brand-slider__brand-text {
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #2c2c2c;
+}
+
+.feedback-form {
+  display: flex;
+  width: 1300px;
+  margin: 9.625rem auto 0 auto;
+}
+
+.feedback-form__text-container {
+  margin-right: 1.625rem;
+}
+
+.feedback-form__text-title {
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.375rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #333333;
+  margin-top: 3.125rem;
+}
+
+.feedback-form__text-text {
+  margin-top: 1.5rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 170%;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
+}
+
+.feedback-form__form-container {
+  position: relative;
+  min-width: 49rem;
+  background-color: #3761b5;
+  z-index: 1;
+}
+
+.feedback-form__form-container::after {
+  content: url(../images/white-logo-peace-form-left-top.png);
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.feedback-form__form-container::before {
+  content: url(../images/white-logo-peace-form-right-bottom.png);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.feedback-form__form {
+  padding: 5.1875rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 4.125rem);
+  gap: 1.375rem 1.25rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "name city"
+    "phone city2"
+    "organization-name file"
+    "comment comment"
+    "consent-to-data-processing consent-to-data-processing";
+}
+
+.feedback-form__form-name {
+  grid-area: name;
+}
+
+.feedback-form__form-city {
+  grid-area: city;
+}
+
+.feedback-form__form-phone {
+  grid-area: phone;
+}
+
+.feedback-form__form-city2 {
+  grid-area: city2;
+}
+
+.feedback-form__form-organization-name {
+  grid-area: organization-name;
+}
+
+.feedback-form__form-file {
+  grid-area: file;
+}
+
+.feedback-form__form-comment {
+  grid-area: comment;
+}
+
+.feedback-form__form-consent-to-data-processing {
+  grid-area: consent-to-data-processing;
+}
+
+/* best deals---------------- */
+.best-deals {
+  max-width: 81.25rem;
+  margin: 128px auto 0 auto;
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.best-deals__card {
+  padding: 1.5rem 2rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% / 2 - 1.25rem);
+}
+
+.best-deals__card-description-container {
+  max-width: 17.8125rem;
+}
+
+.best-deals__card-second-title {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #b3b3b3;
+}
+
+.best-deals__card-title {
+  font-family: "DIN Pro Cond";
+  margin-top: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #1c48a0;
+}
+
+.best-deals__card-text {
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 160%;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
+}
+
+.best-deals__card-img-container {
+}
+
+/* articles slider -------------------*/
+
+.articles-slider {
+  display: flex;
+  max-width: 81.25rem;
+  margin: 8rem auto 0 auto;
+}
+.articles-slider__controls {
+  max-width: calc(100% / 4);
+}
+
+.brand-slider__controls-title {
+  margin-top: 1.5625rem;
+}
+.articles-slider__news-link {
+  display: flex;
+  align-items: center;
+  margin-top: 0.375rem;
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #b3b3b3;
+}
+
+.articles-slider__news-link:after {
+  content: "";
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-left: 0.5rem;
+  display: block;
+  background-image: url(../icons/gray-chevron-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.custom-button-group {
+  margin-top: 8rem;
+}
+
+.articles-slider__content-container {
+  width: 100%;
+  margin-left: 8rem;
+}
+.articles-slider__swiper {
+  width: 100%;
+}
+.swiper {
+}
+
+.articles-slider__swiper-wraper {
+}
+
+.articles-slider__swiper-card {
+}
+
+.swiper-slide {
+}
+
+.articles-slider__swiper-card {
+  padding-right: 1rem;
+}
+
+.articles-slider__swiper-card:not(:last-child) {
+  border-right: 1px solid #dddddd;
+}
+
+.swiper-slide {
+}
+.articles-slider__card-img {
+}
+.articles-slider__header-labels,
+.articles-slider__footer-labels {
+  margin-top: 1.25rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.articles-slider__footer-labels {
+  margin-bottom: 62px;
+}
+
+.articles-slider__card-label {
+  display: flex;
+  align-items: center;
+  height: 1.625rem;
+  padding: 0.375rem 0.5625rem;
+  border-radius: 2px;
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 140%;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+
+.articles-slider__card-label.--blue {
+  background-color: #e2ebff;
+  color: #1c48a0;
+}
+
+.articles-slider__card-label.--gray {
+  border-color: #dddddd;
+  color: #b3b3b3;
+}
+
+.articles-slider__card-label.--white {
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.articles-slider__card-title {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dddddd;
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #333333;
+}

@@ -1,0 +1,16 @@
+@import url(./reset.css);
+@import url(./buttons.css);
+@import url(./cards/popular-category-cards.css);
+@import url(./cards/popular-product-cards.css);
+@import url(./heading.css);
+@import url(./fonts/index.css);
+@import url(./labels.css);
+@import url(./variables.css);
+@import url(./inputs.css);
+@import url(./header.css);
+@import url(./footer.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+body {
+  font-family: "Roboto";
+}

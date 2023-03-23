@@ -1,0 +1,104 @@
+.popular-category {
+  max-width: 81.0625rem;
+  margin: 6.4375rem auto 0 auto;
+}
+
+.popular-category__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-category__title {
+  text-transform: uppercase;
+}
+
+.popular-category__cards-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+}
+
+.popular-category__item:nth-child(1) {
+  grid-area: 1 / 1 / 2 / 5;
+}
+.popular-category__item:nth-child(2) {
+  grid-area: 1 / 5 / 2 / 9;
+}
+.popular-category__item:nth-child(3) {
+  grid-area: 1 / 9 / 2 / 13;
+}
+.popular-category__item:nth-child(4) {
+  grid-area: 2 / 9 / 3 / 13;
+}
+.popular-category__item:nth-child(5) {
+  grid-area: 2 / 5 / 3 / 9;
+}
+.popular-category__item:nth-child(6) {
+  grid-area: 2 / 1 / 3 / 5;
+}
+
+.popular-category__item:nth-child(odd) {
+  background-color: #eef3f5;
+}
+
+.popular-category__item:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.popular-category__item {
+  padding: 1.5rem 1.5rem 1.8125rem 1.5rem;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  height: 30.9375rem;
+  background-color: green;
+  position: relative;
+}
+
+.popular-category__item-title {
+  color: var(--text-black);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.popular-category__item-category-name {
+  font-size: var(--text-xxs);
+  color: var(--text-gray);
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.popular-category__item-category-name:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.popular-category__item-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-category__item-button {
+  margin-top: auto;
+  background: url(../../icons/black-arrow.svg) no-repeat center center;
+}
+
+.popular-category__item-button:hover {
+  background-image: url(../../icons/white-arrow.svg);
+}
+
+.popular-category__item-img-container {
+  width: 60%;
+  display: flex;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  justify-content: center;
+}
+
+.popular-category__item-img {
+}

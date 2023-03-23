@@ -1,0 +1,110 @@
+/* footer --------------------- */
+
+.footer {
+  background-color: #f9f9f9;
+  border-top: 1px solid #dddddd;
+}
+
+.footer__content {
+  max-width: 81.25rem;
+  margin: 3.375rem auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.375rem;
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links-title {
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 130%;
+  color: #333333;
+  margin-bottom: 0.25rem;
+}
+
+.footer__links-item {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 170%;
+  letter-spacing: 0.03rem;
+  color: #333333;
+  margin-top: 0.75rem;
+}
+
+.footer__col-tender-button {
+  text-transform: uppercase;
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.footer__phone-number {
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 130%;
+  color: #333333;
+  margin-top: 1.5rem;
+}
+
+.footer__schedule-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.03em;
+  color: #333333;
+  margin-top: 1.5rem;
+}
+
+.footer__schedule-text {
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 130%;
+  color: #333333;
+  margin-top: 0.25rem;
+}
+
+.footer__social-title {
+  font-size: 0.875rem;
+  line-height: 170%;
+  letter-spacing: 0.03rem;
+  color: #333333;
+  margin-top: 1.5rem;
+}
+
+.footer__social-links-container {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 8px;
+}
+
+.footer__social-link {
+  height: 2rem;
+  width: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #1c48a0;
+}
+
+.--instagram {
+  background-image: url(../icons/blue-instagram.svg);
+}
+
+.--facebook {
+  background-image: url(../icons/blue-facebook.svg);
+}
+
+.--vk {
+  background-image: url(../icons/blue-vk.svg);
+}
+
+.--youtube {
+  background-image: url(../icons/youtube.svg);
+}

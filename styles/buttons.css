@@ -1,0 +1,212 @@
+@import url(./variables.css);
+
+.custom-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--text-l);
+  border: 1px solid transparent;
+  transition: color var(--base-transition),
+    background-color var(--base-transition);
+}
+
+.custom-button.--full-w {
+  width: 100%;
+}
+
+/* blue */
+.custom-button.--blue {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.custom-button.--blue:hover {
+  background-color: var(--hover-dark-blue-btn);
+}
+
+.custom-button.--blue:active {
+  background-color: var(--active-dark-blue-btn);
+}
+
+.custom-button.--blue:disabled {
+  background-color: var(--disabled-dark-blue-btn);
+  color: var(--text-black);
+}
+/* blue */
+
+/* transparent */
+.custom-button.--transparent {
+  background-color: var(--transparent);
+  color: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
+}
+
+.custom-button.--transparent:hover {
+  color: var(--white);
+  background-color: var(--dark-blue);
+}
+
+.custom-button.--transparent:active {
+  background-color: var(--active-dark-blue-btn);
+}
+
+.custom-button.--transparent:disabled {
+  border-color: var(--disabled-dark-blue-btn);
+  background-color: var(--transparent);
+  color: var(--text-black);
+}
+/* transparent */
+
+/* white */
+.custom-button.--white {
+  background-color: var(--white);
+  color: var(--dark-blue);
+  border: 1px solid transparent;
+}
+
+.custom-button.--white:hover {
+  color: var(--white);
+  background-color: var(--dark-blue);
+}
+
+.custom-button.--white:active {
+  background-color: var(--active-dark-blue-btn);
+}
+
+.custom-button.--white:disabled {
+  border-color: var(--disabled-dark-blue-btn);
+  background-color: var(--transparent);
+  color: var(--text-black);
+}
+/* white */
+
+/* gray */
+.custom-button.--gray {
+  background-color: #f5f5f7;
+  color: var(--text-black);
+  border: var(--base-border);
+}
+
+.custom-button.--gray:hover {
+  background-color: var(--hover-dark-blue-btn);
+  color: var(--white);
+  border-color: var(--hover-dark-blue-btn);
+}
+
+.custom-button.--gray:active {
+  background-color: var(--active-dark-blue-btn);
+  border-color: var(--active-dark-blue-btn);
+}
+
+.custom-button.--gray:disabled {
+  background-color: var(--disabled-dark-blue-btn);
+  color: var(--text-black);
+}
+/* gray */
+
+.custom-button.--transparent.--square {
+  border: var(--base-border);
+}
+
+.custom-button.--l {
+  font-size: 1.125rem;
+  padding: 1.25rem 2.5rem;
+  font-weight: 700;
+}
+
+.custom-button.--xm {
+  font-size: 1rem;
+  padding: 1rem;
+  font-weight: 400;
+}
+
+.custom-button.--m {
+  font-size: 1.125rem;
+  padding: 1.0313rem 1.0313rem;
+  font-weight: 700;
+}
+
+.custom-button.--sm {
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+}
+
+.custom-button.--s {
+  font-size: 1.125rem;
+  padding: 0.5625rem 0.5625rem;
+  font-weight: 400;
+}
+
+.custom-button.--l.--square {
+  width: 3.125rem;
+  height: 3.125rem;
+  padding: 0;
+}
+
+.custom-button.--m.--square {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+}
+
+.custom-button.--s.--square {
+  width: 1.875rem;
+  height: 1.875rem;
+  padding: 0;
+}
+
+.custom-button-group {
+  display: flex;
+  align-items: center;
+}
+
+.custom-button-group__numbers {
+  height: 1.375rem;
+  width: 2.1875rem;
+  display: flex;
+  margin: 0 1.5rem;
+  color: var(--text-black);
+}
+
+.custom-button-group__first-number {
+  display: flex;
+  align-items: center;
+  font-size: var(--text-l);
+}
+
+.custom-button-group__second-number {
+  display: flex;
+  align-items: end;
+  font-size: var(--text-xxs);
+  color: var(--text-dark-gray);
+}
+
+.custom-button-group .custom-button {
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.custom-button-group .custom-button.--blue:first-child {
+  background-image: url(../icons/white-chevron-right.svg);
+  transform: rotate(180deg);
+}
+
+.custom-button-group .custom-button.--blue:last-child {
+  background-image: url(../icons/white-chevron-right.svg);
+}
+
+.custom-button-group .custom-button:disabled:first-child {
+  background-image: url(../icons/black-chevron-left.svg);
+  transform: rotate(0deg);
+}
+
+.custom-button-group .custom-button:disabled:last-child {
+  background-image: url(../icons/black-chevron-left.svg);
+  transform: rotate(180deg);
+}
+
+.custom-button-group .custom-button:disabled {
+  border: var(--base-border);
+  background-color: var(--white);
+}
