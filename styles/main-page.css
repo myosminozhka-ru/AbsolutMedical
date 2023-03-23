@@ -39,11 +39,17 @@
   max-width: 36.125rem;
   font-size: var(--text-m);
   line-height: 1.7rem;
+  letter-spacing: 0.03em;
 }
 
 .main-info__controls {
   margin-top: 2rem;
   display: flex;
+  font-family: "DIN Pro Cond";
+}
+
+.main-info__controls .custom-button {
+  text-transform: uppercase;
 }
 
 .main-info .custom-button:nth-child(1) {
@@ -183,6 +189,7 @@
   font-weight: 400;
   font-size: 1rem;
   color: var(--text-black);
+  letter-spacing: 0.03rem;
 }
 
 .advantages__tabs {
@@ -273,6 +280,11 @@
   margin-left: auto;
 }
 
+.about-company__description-container .custom-button {
+  text-transform: uppercase;
+  font-family: "Din Pro Cond";
+}
+
 .about-company__title {
   margin-top: 4.875rem;
   color: var(--text-black);
@@ -287,7 +299,7 @@
 .about-company__text {
   margin-top: 1rem;
   color: var(--text-gray);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03rem;
   line-height: 170%;
   font-size: 1.125rem;
 }
@@ -534,7 +546,7 @@
 .articles-slider {
   display: flex;
   max-width: 81.25rem;
-  margin: 8rem auto 0 auto;
+  margin: 8rem auto 8rem auto;
 }
 .articles-slider__controls {
   max-width: calc(100% / 4);
