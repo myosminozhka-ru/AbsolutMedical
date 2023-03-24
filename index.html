@@ -1227,17 +1227,27 @@
                 <button class="custom-form-input__button"></button>
               </div>
 
-              <div
-                class="feedback-form__form-file custom-form-input --white-mode --non-status-black-eyelashes"
-              >
-                <label class="custom-form-input__label" for="name">Имя</label>
-                <input
-                  class="custom-form-input__input"
-                  id="name"
-                  type="text"
-                  value="lsjd"
-                />
-                <button class="custom-form-input__button"></button>
+              <div class="feedback-form__form-file">
+                <div class="custom-file-input">
+                  <div class="custom-file-input__file-input-container">
+                    <label class="custom-file-input__file-input-label">
+                      Прикрепить файл
+                      <input
+                        class="custom-file-input__file-input"
+                        type="file"
+                        name="file"
+                      />
+                      <!-- <button class="custom-button --l --blue">
+                      Прикрепить файл
+                    </button> -->
+                      <!-- <span class="custom-file-input__span">Прикрепить файл</span> -->
+                    </label>
+                  </div>
+
+                  <div id="js-file-name" class="custom-file-input__text-field">
+                    filelksjdfkjsdklfkskl.jpg
+                  </div>
+                </div>
               </div>
 
               <div
@@ -1256,7 +1266,27 @@
               </div>
 
               <div class="feedback-form__form-consent-to-data-processing">
-                <button class="custom-button --l --blue">button</button>
+                <button class="custom-button --l --blue">Подробнее</button>
+
+                <div class="feedback-form__action">
+                  <div class="custom-checkbox --square">
+                    <label class="custom-checkbox__label">
+                      <input
+                        class="custom-checkbox__input"
+                        id="consent-to-data-processing"
+                        type="checkbox"
+                      />
+                      <span class="custom-checkbox__checkmark"></span>
+                    </label>
+                  </div>
+
+                  <label
+                    for="consent-to-data-processing"
+                    class="feedback-form__form-consent-label"
+                  >
+                    Я даю согласие на обработку моих персональных данных
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -1575,11 +1605,13 @@
             товаров. Все права защищены.
           </div>
 
-          <img
-            class="footer__myosminozhka-logo"
-            src="./icons/gray-octopus-logo.svg"
-            alt="Осьминожка"
-          />
+          <a href="">
+            <img
+              class="footer__myosminozhka-logo"
+              src="./icons/gray-octopus-logo.svg"
+              alt="Осьминожка"
+            />
+          </a>
         </div>
       </footer>
     </section>

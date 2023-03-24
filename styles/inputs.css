@@ -183,6 +183,7 @@ input[type="number"] {
 }
 
 .custom-checkbox__checkmark {
+  background-color: #fff;
   display: block;
   border: 1.5px solid #dddddd;
   border-radius: 3px;
@@ -207,4 +208,61 @@ input[type="number"] {
   background-image: url(../icons/blue-check-checkbox.svg);
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+/* file input ---------------------------*/
+
+.custom-file-input {
+  height: 4.0625rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: start;
+  justify-content: space-between;
+}
+.custom-file-input__file-input-container {
+  width: 13.625rem;
+  height: 3.5625rem;
+  position: relative;
+  overflow: hidden;
+  background: #1c48a0;
+  color: #fff;
+}
+.custom-file-input__file-input-label:hover {
+  background: #2655b4;
+}
+.custom-file-input__file-input-label:active {
+  background: #1c48a0;
+}
+
+.custom-file-input__file-input-label {
+  padding: 17px 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  cursor: pointer;
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.custom-file-input__file-input {
+  display: none;
+}
+
+.custom-file-input__text-field {
+  font-size: 1rem;
+  line-height: 160%;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  background: transparent;
+  border: 1px solid transparent;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 5rem;
+  white-space: nowrap;
 }

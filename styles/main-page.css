@@ -428,14 +428,12 @@
   z-index: 1;
 }
 
-.feedback-form__form-container::after {
+.feedback-form__form-container::before {
   content: url(../images/white-logo-peace-form-left-top.png);
   position: absolute;
-  left: 0;
-  right: 0;
 }
 
-.feedback-form__form-container::before {
+.feedback-form__form-container::after {
   content: url(../images/white-logo-peace-form-right-bottom.png);
   position: absolute;
   right: 0;
@@ -487,6 +485,31 @@
 
 .feedback-form__form-consent-to-data-processing {
   grid-area: consent-to-data-processing;
+  display: flex;
+  align-items: center;
+  color: #c1dff9;
+}
+
+.feedback-form__form-consent-label {
+  display: inline-block;
+  font-size: 0.875rem;
+  line-height: 170%;
+  letter-spacing: 0.03rem;
+  margin-left: 0.75rem;
+  width: 78%;
+}
+
+.feedback-form__form-consent-to-data-processing .custom-button {
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.feedback-form__action {
+  display: flex;
+  margin-left: 1.5rem;
 }
 
 /* best deals---------------- */
