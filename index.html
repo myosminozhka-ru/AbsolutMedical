@@ -7,10 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/main-page.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
   </head>
   <body class="main-page" style="background-color: #f9f9f9">
     <section>
@@ -69,7 +65,11 @@
           </div>
         </div>
 
-        <a class="header__scroll-down-button" href=""></a>
+        <a
+          id="js-header__scroll-down-button"
+          class="header__scroll-down-button"
+          href=""
+        ></a>
       </header>
     </section>
 
@@ -95,7 +95,11 @@
               </button>
             </div>
 
-            <a class="main-info__down-button" href=""></a>
+            <a
+              id="js-main-info__down-button"
+              class="main-info__down-button main-info__button"
+              href=""
+            ></a>
           </div>
 
           <div class="main-info__links">
@@ -126,30 +130,54 @@
           <div class="popular-category__cards-container">
             <div class="popular-category__item">
               <h3 class="popular-category__item-title">Гигиена рук</h3>
-              <div class="popular-category__item-category-name">
+              <a href="" class="popular-category__item-category-name">
+                Антисептик рук
+              </a>
+              <a href="" class="popular-category__item-category-name">
+                Жидкое мыло
+              </a>
+              <a href="" class="popular-category__item-category-name">
+                Крем для рук
+              </a>
+              <a href="" class="popular-category__item-category-name">
+                Салфетки для рук
+              </a>
+              <div class="popular-category__item-footer">
+                <button
+                  class="popular-category__item-button custom-button --m --white --square"
+                ></button>
+                <div class="popular-category__item-img-container">
+                  <img
+                    src="./images/hand-hygiene.png"
+                    alt="air-washer"
+                    class="popular-category__item-img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="popular-category__item">
+              <h3 class="popular-category__item-title">
+                Дезинфекция поверхностей
+              </h3>
+              <a href="" class="popular-category__item-category-name">
+                Концентраты
+              </a>
+              <a href="" class="popular-category__item-category-name">
                 Готовые средства
-              </div>
-              <div class="popular-category__item-category-name">
+              </a>
+              <a href="" class="popular-category__item-category-name">
                 Аэрозольная дезинфекция
-              </div>
-              <div class="popular-category__item-category-name">
-                Салфетки для инъекций
-              </div>
-              <div class="popular-category__item-category-name">
+              </a>
+              <a href="" class="popular-category__item-category-name">
+                Влажные салфетки
+              </a>
+              <a href="" class="popular-category__item-category-name">
                 Сухие салфетки
-              </div>
-              <div class="popular-category__item-category-name">
-                Готовые средства
-              </div>
-              <div class="popular-category__item-category-name">
-                Аэрозольная дезинфекция
-              </div>
-              <div class="popular-category__item-category-name">
+              </a>
+              <a href="" class="popular-category__item-category-name">
                 Салфетки для инъекций
-              </div>
-              <div class="popular-category__item-category-name">
-                Сухие салфетки
-              </div>
+              </a>
+
               <div class="popular-category__item-footer">
                 <button
                   class="popular-category__item-button custom-button --m --white --square"
@@ -164,38 +192,26 @@
               </div>
             </div>
             <div class="popular-category__item">
-              <h3 class="popular-category__item-title">Гигиена рук</h3>
-              <div class="popular-category__item-category-name">
-                Готовые средства
-              </div>
-              <div class="popular-category__item-category-name">
-                Аэрозольная дезинфекция
-              </div>
-              <div class="popular-category__item-category-name">
-                Салфетки для инъекций
-              </div>
-              <div class="popular-category__item-category-name">
-                Сухие салфетки
-              </div>
-              <div class="popular-category__item-category-name">
-                Готовые средства
-              </div>
-              <div class="popular-category__item-category-name">
-                Аэрозольная дезинфекция
-              </div>
-              <div class="popular-category__item-category-name">
-                Салфетки для инъекций
-              </div>
-              <div class="popular-category__item-category-name">
-                Сухие салфетки
-              </div>
+              <h3 class="popular-category__item-title">
+                Обработка инструментов
+              </h3>
+              <a href="" class="popular-category__item-category-name">
+                Ручная обработка
+              </a>
+              <a href="" class="popular-category__item-category-name">
+                Автоматическая обработка
+              </a>
+              <a href="" class="popular-category__item-category-name">
+                Обработка эндоскопов
+              </a>
+
               <div class="popular-category__item-footer">
                 <button
                   class="popular-category__item-button custom-button --m --white --square"
                 ></button>
                 <div class="popular-category__item-img-container">
                   <img
-                    src="./images/surface-disinfection.png"
+                    src="./images/tool-processing.png"
                     alt="air-washer"
                     class="popular-category__item-img"
                   />
@@ -203,38 +219,22 @@
               </div>
             </div>
             <div class="popular-category__item">
-              <h3 class="popular-category__item-title">Гигиена рук</h3>
-              <div class="popular-category__item-category-name">
-                Готовые средства
-              </div>
-              <div class="popular-category__item-category-name">
-                Аэрозольная дезинфекция
-              </div>
-              <div class="popular-category__item-category-name">
-                Салфетки для инъекций
-              </div>
-              <div class="popular-category__item-category-name">
-                Сухие салфетки
-              </div>
-              <div class="popular-category__item-category-name">
-                Готовые средства
-              </div>
-              <div class="popular-category__item-category-name">
-                Аэрозольная дезинфекция
-              </div>
-              <div class="popular-category__item-category-name">
-                Салфетки для инъекций
-              </div>
-              <div class="popular-category__item-category-name">
-                Сухие салфетки
-              </div>
+              <h3 class="popular-category__item-title">
+                Дезинфекция для стоматологии и диализа
+              </h3>
+              <a href="" class="popular-category__item-category-name">
+                Обработка
+              </a>
+              <a href="" class="popular-category__item-category-name">
+                Средства специального
+              </a>
               <div class="popular-category__item-footer">
                 <button
                   class="popular-category__item-button custom-button --m --white --square"
                 ></button>
                 <div class="popular-category__item-img-container">
                   <img
-                    src="./images/surface-disinfection.png"
+                    src="./images/disinfection-for-dentistry-and-dialysis.png"
                     alt="air-washer"
                     class="popular-category__item-img"
                   />
@@ -242,38 +242,37 @@
               </div>
             </div>
             <div class="popular-category__item">
-              <h3 class="popular-category__item-title">Гигиена рук</h3>
-              <div class="popular-category__item-category-name">
-                Готовые средства
-              </div>
-              <div class="popular-category__item-category-name">
-                Аэрозольная дезинфекция
-              </div>
-              <div class="popular-category__item-category-name">
-                Салфетки для инъекций
-              </div>
-              <div class="popular-category__item-category-name">
-                Сухие салфетки
-              </div>
-              <div class="popular-category__item-category-name">
-                Готовые средства
-              </div>
-              <div class="popular-category__item-category-name">
-                Аэрозольная дезинфекция
-              </div>
-              <div class="popular-category__item-category-name">
-                Салфетки для инъекций
-              </div>
-              <div class="popular-category__item-category-name">
-                Сухие салфетки
-              </div>
+              <h3 class="popular-category__item-title">
+                Дезинфекция для чистых помещений
+              </h3>
+              <a href="" class="popular-category__item-category-name">
+                Автоматические
+              </a>
+              <a href="" class="popular-category__item-category-name">
+                Ручные дозирующие
+              </a>
+              <a href="" class="popular-category__item-category-name">
+                Диспенсеры
+              </a>
+              <a href="" class="popular-category__item-category-name">
+                Стойки для антисептиков
+              </a>
+              <a href="" class="popular-category__item-category-name">
+                Стойки для мыла
+              </a>
+              <a href="" class="popular-category__item-category-name">
+                Помпы
+              </a>
+              <a href="" class="popular-category__item-category-name">
+                Распылители
+              </a>
               <div class="popular-category__item-footer">
                 <button
                   class="popular-category__item-button custom-button --m --white --square"
                 ></button>
                 <div class="popular-category__item-img-container">
                   <img
-                    src="./images/surface-disinfection.png"
+                    src="./images/cleaning-for-clean-rooms.png"
                     alt="air-washer"
                     class="popular-category__item-img"
                   />
@@ -281,77 +280,22 @@
               </div>
             </div>
             <div class="popular-category__item">
-              <h3 class="popular-category__item-title">Гигиена рук</h3>
-              <div class="popular-category__item-category-name">
-                Готовые средства
-              </div>
-              <div class="popular-category__item-category-name">
-                Аэрозольная дезинфекция
-              </div>
-              <div class="popular-category__item-category-name">
-                Салфетки для инъекций
-              </div>
-              <div class="popular-category__item-category-name">
-                Сухие салфетки
-              </div>
-              <div class="popular-category__item-category-name">
-                Готовые средства
-              </div>
-              <div class="popular-category__item-category-name">
-                Аэрозольная дезинфекция
-              </div>
-              <div class="popular-category__item-category-name">
-                Салфетки для инъекций
-              </div>
-              <div class="popular-category__item-category-name">
-                Сухие салфетки
-              </div>
+              <h3 class="popular-category__item-title">
+                Автоматические мойки эндоскопов
+              </h3>
+              <a href="" class="popular-category__item-category-name">
+                Мойки для гибких
+              </a>
+              <a href="" class="popular-category__item-category-name">
+                Мойки для жестких
+              </a>
               <div class="popular-category__item-footer">
                 <button
                   class="popular-category__item-button custom-button --m --white --square"
                 ></button>
                 <div class="popular-category__item-img-container">
                   <img
-                    src="./images/surface-disinfection.png"
-                    alt="air-washer"
-                    class="popular-category__item-img"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="popular-category__item">
-              <h3 class="popular-category__item-title">Гигиена рук</h3>
-              <div class="popular-category__item-category-name">
-                Готовые средства
-              </div>
-              <div class="popular-category__item-category-name">
-                Аэрозольная дезинфекция
-              </div>
-              <div class="popular-category__item-category-name">
-                Салфетки для инъекций
-              </div>
-              <div class="popular-category__item-category-name">
-                Сухие салфетки
-              </div>
-              <div class="popular-category__item-category-name">
-                Готовые средства
-              </div>
-              <div class="popular-category__item-category-name">
-                Аэрозольная дезинфекция
-              </div>
-              <div class="popular-category__item-category-name">
-                Салфетки для инъекций
-              </div>
-              <div class="popular-category__item-category-name">
-                Сухие салфетки
-              </div>
-              <div class="popular-category__item-footer">
-                <button
-                  class="popular-category__item-button custom-button --m --white --square"
-                ></button>
-                <div class="popular-category__item-img-container">
-                  <img
-                    src="./images/surface-disinfection.png"
+                    src="./images/endoscope-cleaning.png"
                     alt="air-washer"
                     class="popular-category__item-img"
                   />
@@ -359,36 +303,306 @@
               </div>
             </div>
           </div>
+
+          <div class="popular-category__slider-container">
+            <div class="swiper" id="popular-category__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="popular-category__item">
+                    <h3 class="popular-category__item-title">Гигиена рук</h3>
+                    <a href="" class="popular-category__item-category-name">
+                      Антисептик рук
+                    </a>
+                    <a href="" class="popular-category__item-category-name">
+                      Жидкое мыло
+                    </a>
+                    <a href="" class="popular-category__item-category-name">
+                      Крем для рук
+                    </a>
+                    <a href="" class="popular-category__item-category-name">
+                      Салфетки для рук
+                    </a>
+                    <div class="popular-category__item-footer">
+                      <button
+                        class="popular-category__item-button custom-button --m --white --square"
+                      ></button>
+                      <div class="popular-category__item-img-container">
+                        <img
+                          src="./images/hand-hygiene.png"
+                          alt="air-washer"
+                          class="popular-category__item-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="popular-category__item">
+                    <h3 class="popular-category__item-title">
+                      Дезинфекция поверхностей
+                    </h3>
+                    <a href="" class="popular-category__item-category-name">
+                      Концентраты
+                    </a>
+                    <a href="" class="popular-category__item-category-name">
+                      Готовые средства
+                    </a>
+                    <a href="" class="popular-category__item-category-name">
+                      Аэрозольная дезинфекция
+                    </a>
+                    <a href="" class="popular-category__item-category-name">
+                      Влажные салфетки
+                    </a>
+                    <a href="" class="popular-category__item-category-name">
+                      Сухие салфетки
+                    </a>
+                    <a href="" class="popular-category__item-category-name">
+                      Салфетки для инъекций
+                    </a>
+
+                    <div class="popular-category__item-footer">
+                      <button
+                        class="popular-category__item-button custom-button --m --white --square"
+                      ></button>
+                      <div class="popular-category__item-img-container">
+                        <img
+                          src="./images/surface-disinfection.png"
+                          alt="air-washer"
+                          class="popular-category__item-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="popular-category__item">
+                    <h3 class="popular-category__item-title">
+                      Обработка инструментов
+                    </h3>
+                    <a href="" class="popular-category__item-category-name">
+                      Ручная обработка
+                    </a>
+                    <a href="" class="popular-category__item-category-name">
+                      Автоматическая обработка
+                    </a>
+                    <a href="" class="popular-category__item-category-name">
+                      Обработка эндоскопов
+                    </a>
+
+                    <div class="popular-category__item-footer">
+                      <button
+                        class="popular-category__item-button custom-button --m --white --square"
+                      ></button>
+                      <div class="popular-category__item-img-container">
+                        <img
+                          src="./images/tool-processing.png"
+                          alt="air-washer"
+                          class="popular-category__item-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="popular-category__item">
+                    <h3 class="popular-category__item-title">
+                      Дезинфекция для стоматологии и диализа
+                    </h3>
+                    <a href="" class="popular-category__item-category-name">
+                      Обработка
+                    </a>
+                    <a href="" class="popular-category__item-category-name">
+                      Средства специального
+                    </a>
+                    <div class="popular-category__item-footer">
+                      <button
+                        class="popular-category__item-button custom-button --m --white --square"
+                      ></button>
+                      <div class="popular-category__item-img-container">
+                        <img
+                          src="./images/disinfection-for-dentistry-and-dialysis.png"
+                          alt="air-washer"
+                          class="popular-category__item-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="popular-category__item">
+                    <h3 class="popular-category__item-title">
+                      Дезинфекция для чистых помещений
+                    </h3>
+                    <a href="" class="popular-category__item-category-name">
+                      Автоматические
+                    </a>
+                    <a href="" class="popular-category__item-category-name">
+                      Ручные дозирующие
+                    </a>
+                    <a href="" class="popular-category__item-category-name">
+                      Диспенсеры
+                    </a>
+                    <a href="" class="popular-category__item-category-name">
+                      Стойки для антисептиков
+                    </a>
+                    <a href="" class="popular-category__item-category-name">
+                      Стойки для мыла
+                    </a>
+                    <a href="" class="popular-category__item-category-name">
+                      Помпы
+                    </a>
+                    <a href="" class="popular-category__item-category-name">
+                      Распылители
+                    </a>
+                    <div class="popular-category__item-footer">
+                      <button
+                        class="popular-category__item-button custom-button --m --white --square"
+                      ></button>
+                      <div class="popular-category__item-img-container">
+                        <img
+                          src="./images/cleaning-for-clean-rooms.png"
+                          alt="air-washer"
+                          class="popular-category__item-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="popular-category__item">
+                    <h3 class="popular-category__item-title">
+                      Автоматические мойки эндоскопов
+                    </h3>
+                    <a href="" class="popular-category__item-category-name">
+                      Мойки для гибких
+                    </a>
+                    <a href="" class="popular-category__item-category-name">
+                      Мойки для жестких
+                    </a>
+                    <div class="popular-category__item-footer">
+                      <button
+                        class="popular-category__item-button custom-button --m --white --square"
+                      ></button>
+                      <div class="popular-category__item-img-container">
+                        <img
+                          src="./images/endoscope-cleaning.png"
+                          alt="air-washer"
+                          class="popular-category__item-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
         </div>
+
         <div class="advantages">
           <h2 class="advantages__title">Преимущества Абсолют медикал</h2>
 
           <div class="advantages__main-container">
-            <div class="advantages__img-container">
-              <img src="./images/detergents.png" alt="detergents" />
+            <div class="advantages__first-tab-content">
+              <div class="advantages__img-container">
+                <img src="./images/detergents.png" alt="detergents" />
+              </div>
+              <div class="advantages__card">
+                <div class="advantages__card-img-container">
+                  <img
+                    src="./images/detergents-small.png"
+                    alt="detergents-small"
+                  />
+                </div>
+
+                <div class="advantages__card__text-container">
+                  <div class="advantages__card-title">
+                    3000 средств для дезинфекции! 20000 медтоваров в каталоге
+                  </div>
+
+                  <div class="advantages__card-text">
+                    Работаем напрямую с ведущими производителями
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="advantages__card">
-              <div class="advantages__card-img-container">
-                <img
-                  src="./images/detergents-small.png"
-                  alt="detergents-small"
-                />
+            <div class="advantages__first-tab-content">
+              <div class="advantages__img-container">
+                <img src="./images/stock.png" alt="detergents" />
               </div>
+              <div class="advantages__card">
+                <div class="advantages__card-img-container">
+                  <img src="./images/stock-small.png" alt="detergents-small" />
+                </div>
 
-              <div class="advantages__card-title">
-                3000 средств для дезинфекции! 20000 медтоваров в каталоге
+                <div class="advantages__card__text-container">
+                  <div class="advantages__card-title">
+                    3000 средств для дезинфекции! 20000 медтоваров в каталоге
+                  </div>
+
+                  <div class="advantages__card-text">
+                    Работаем напрямую с ведущими производителями
+                  </div>
+                </div>
               </div>
+            </div>
+            <div class="advantages__first-tab-content">
+              <div class="advantages__img-container">
+                <img src="./images/delivery-car.png" alt="detergents" />
+              </div>
+              <div class="advantages__card">
+                <div class="advantages__card-img-container">
+                  <img
+                    src="./images/delivery-car-small.png"
+                    alt="detergents-small"
+                  />
+                </div>
 
-              <div class="advantages__card-text">
-                Работаем напрямую с ведущими производителями
+                <div class="advantages__card__text-container">
+                  <div class="advantages__card-title">
+                    3000 средств для дезинфекции! 20000 медтоваров в каталоге
+                  </div>
+
+                  <div class="advantages__card-text">
+                    Работаем напрямую с ведущими производителями
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="advantages__first-tab-content">
+              <div class="advantages__img-container">
+                <img src="./images/books.png" alt="detergents" />
+              </div>
+              <div class="advantages__card">
+                <div class="advantages__card-img-container">
+                  <img src="./images/books-small.png" alt="detergents-small" />
+                </div>
+
+                <div class="advantages__card__text-container">
+                  <div class="advantages__card-title">
+                    3000 средств для дезинфекции! 20000 медтоваров в каталоге
+                  </div>
+
+                  <div class="advantages__card-text">
+                    Работаем напрямую с ведущими производителями
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="advantages__tabs">
-              <button class="custom-button --xm --gray">Преимущество 1</button>
-              <button class="custom-button --xm --gray">Преимущество 2</button>
-              <button class="custom-button --xm --gray">Преимущество 3</button>
-              <button class="custom-button --xm --gray">Преимущество 4</button>
+              <button class="advantages__tab-item custom-button --xm --gray">
+                Преимущество 1
+              </button>
+              <button class="advantages__tab-item custom-button --xm --gray">
+                Преимущество 2
+              </button>
+              <button class="advantages__tab-item custom-button --xm --gray">
+                Преимущество 3
+              </button>
+              <button class="advantages__tab-item custom-button --xm --gray">
+                Преимущество 4
+              </button>
             </div>
           </div>
         </div>
@@ -401,13 +615,36 @@
               <button
                 class="custom-button --l --blue --square"
                 disabled
+                id="js-popular-product-swiper-prev-el"
               ></button>
               <div class="custom-button-group__numbers">
-                <div class="custom-button-group__frist-number">1</div>
-                <div class="custom-button-group__second-number">&nbsp/ 5</div>
+                <div
+                  id="js-popular-product-swiper-acitve-index"
+                  class="custom-button-group__frist-number"
+                >
+                  1
+                </div>
+                <div class="custom-button-group__second-number">
+                  &nbsp/&nbsp
+                </div>
+                <div
+                  id="js-popular-product-swiper-slides"
+                  class="custom-button-group__second-number"
+                >
+                  5
+                </div>
               </div>
-              <button class="custom-button --l --blue --square"></button>
+              <button
+                id="js-popular-product-swiper-next-el"
+                class="custom-button --l --blue --square"
+              ></button>
             </div>
+
+            <button
+              class="popular-product-slider__all-product-button custom-button --l --blue"
+            >
+              Все товары
+            </button>
           </div>
 
           <div class="popular-product-slider__cards-container">
@@ -811,6 +1048,7 @@
                   </div>
                 </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -992,14 +1230,14 @@
 
         <div class="about-company">
           <div class="about-company__img-container">
-            <div class="about-company__img-build-small">
+            <div class="about-company__img-building-small-container">
               <img
                 class="about-company__img-building-small"
                 src="./images/company-building-small.jpg"
                 alt="company building"
               />
             </div>
-            <div>
+            <div class="about-company__img-building-container">
               <img
                 class="about-company__img-building"
                 src="./images/company-building.jpg"
@@ -1009,9 +1247,9 @@
           </div>
 
           <div class="about-company__description-container">
-            <div class="about-company__title">
+            <h1 class="about-company__title">
               Наша компания — качество и гарантия
-            </div>
+            </h1>
             <div class="about-company__text">
               Профессиональные дезинфицирующие средства широко применяются в
               медицине, на предприятиях общественного питания, службы быта, в
@@ -1042,14 +1280,31 @@
 
             <div class="custom-button-group">
               <button
+                id="js-brand-slider-swiper-next-el"
                 class="custom-button --l --blue --square"
                 disabled
               ></button>
               <div class="custom-button-group__numbers">
-                <div class="custom-button-group__frist-number">1</div>
-                <div class="custom-button-group__second-number">&nbsp/ 5</div>
+                <div
+                  class="custom-button-group__frist-number"
+                  id="js-brand-swiper-active-slide-index"
+                >
+                  1
+                </div>
+                <div class="custom-button-group__second-number">
+                  &nbsp/&nbsp
+                </div>
+                <div
+                  class="custom-button-group__second-number"
+                  id="js-brand-swiper-active-slides-count"
+                >
+                  5
+                </div>
               </div>
-              <button class="custom-button --l --blue --square"></button>
+              <button
+                id="js-brand-slider-swiper-prev-el"
+                class="custom-button --l --blue --square"
+              ></button>
             </div>
           </div>
 
@@ -1137,6 +1392,7 @@
                   </div>
                 </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -1370,213 +1626,438 @@
             </div>
           </div>
         </div>
+
+        <div class="best-deals-slider-container">
+          <div class="best-deals-slider swiper" id="js-best-deals">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="best-deals__card">
+                  <div class="best-deals__card-description-container">
+                    <div class="best-deals__card-second-title">
+                      ЛУЧШИЙ ВЫБОР 2021 ГОДА!
+                    </div>
+                    <h2 class="best-deals__card-title">
+                      Дезитабс хлорные таблетки
+                    </h2>
+                    <div class="best-deals__card-text">
+                      Подбирайте правильное средство для дезинфекции любых
+                      подходящих поверхностей
+                    </div>
+                  </div>
+                  <div class="best-deals__card-img-container">
+                    <img
+                      class="best-deals__card-img-container"
+                      src="./images/chlorine-tablets.png"
+                      alt="tables"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="best-deals__card">
+                  <div class="best-deals__card-description-container">
+                    <div class="best-deals__card-second-title">
+                      ПРОВЕРЕННОЕ ВРЕМЕНЕМ КАЧЕСТВО
+                    </div>
+                    <h2 class="best-deals__card-title">Дезиптол гель</h2>
+                    <div class="best-deals__card-text">
+                      Используйте антисептик в виде геля и получите защиту от
+                      вирусов на весь день
+                    </div>
+                  </div>
+                  <div class="best-deals__card-img-container">
+                    <img
+                      class="best-deals__card-img-container"
+                      src="./images/babylife.png"
+                      alt="tables"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="best-deals__card">
+                  <div class="best-deals__card-description-container">
+                    <div class="best-deals__card-second-title">
+                      БЕСКОНТАКТНОЕ ИСПОЛЬЗОВАНИЕ
+                    </div>
+                    <h2 class="best-deals__card-title">
+                      Автоматический дозатор Дезнэт
+                    </h2>
+                    <div class="best-deals__card-text">
+                      Надежное устройство для мыла и антисептика работает от
+                      сети или батареек
+                    </div>
+                  </div>
+                  <div class="best-deals__card-img-container">
+                    <img
+                      class="best-deals__card-img-container"
+                      src="./images/automatic-dispenser.png"
+                      alt="tables"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="best-deals__card">
+                  <div class="best-deals__card-description-container">
+                    <div class="best-deals__card-second-title">
+                      ВКУС ДЕТСТВА
+                    </div>
+                    <h2 class="best-deals__card-title">
+                      Бэйбилайф жидкое мыло Дезнэт
+                    </h2>
+                    <div class="best-deals__card-text">
+                      Ваш ребенок будет идеально чистым, а его кожа безупречно
+                      здорова
+                    </div>
+                  </div>
+                  <div class="best-deals__card-img-container">
+                    <img
+                      class="best-deals__card-img-container"
+                      src="./images/babylife-soap.png"
+                      alt="tables"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="articles-slider">
+          <div class="articles-slider__controls">
+            <h2 class="brand-slider__controls-title">Статьи</h2>
+            <a href="" class="articles-slider__news-link"> Новости </a>
+
+            <a class="articles-slider__link" href="">Смотреть все статьи</a>
+
+            <div class="custom-button-group">
+              <button
+                id="js-articles-slider-prev-el"
+                class="custom-button --l --blue --square"
+                disabled
+              ></button>
+              <div class="custom-button-group__numbers">
+                <div
+                  id="js-articles-slider-active-index"
+                  class="custom-button-group__frist-number"
+                >
+                  1
+                </div>
+                <div class="custom-button-group__second-number">
+                  &nbsp/&nbsp
+                </div>
+                <div
+                  id="js-articles-slider-slides-count"
+                  class="custom-button-group__second-number"
+                >
+                  5
+                </div>
+              </div>
+              <button
+                id="js-articles-slider-next-el"
+                class="custom-button --l --blue --square"
+              ></button>
+            </div>
+            <div
+              id="js-articles-slider-pagination"
+              class="swiper-pagination"
+            ></div>
+          </div>
+
+          <div class="articles-slider__content-container">
+            <div
+              class="articles-slider__swiper swiper"
+              id="js-articles-slider-swiper"
+            >
+              <div class="articles-slider__swiper-wraper swiper-wrapper">
+                <div class="articles-slider__swiper-card swiper-slide">
+                  <img
+                    class="articles-slider__card-img"
+                    src="./images/laboratory-flasks.png"
+                    alt="card img"
+                  />
+                  <div class="articles-slider__header-labels">
+                    <span class="articles-slider__card-label --blue"
+                      >Петр Верзилов</span
+                    >
+                    <span class="articles-slider__card-label --gray"
+                      >Статья</span
+                    >
+                  </div>
+                  <h4 class="articles-slider__card-title">
+                    Длинное название новости в две строки
+                  </h4>
+                  <div class="articles-slider__footer-labels">
+                    <span class="articles-slider__card-label --gray"
+                      >23 февраля 2021</span
+                    >
+                    <span class="articles-slider__card-label --white"
+                      >#советы покупателям</span
+                    >
+                  </div>
+                </div>
+                <div class="articles-slider__swiper-card swiper-slide">
+                  <img
+                    class="articles-slider__card-img"
+                    src="./images/laboratory-flasks.png"
+                    alt="card img"
+                  />
+                  <div class="articles-slider__header-labels">
+                    <span class="articles-slider__card-label --blue"
+                      >Петр Верзилов</span
+                    >
+                    <span class="articles-slider__card-label --gray"
+                      >Статья</span
+                    >
+                  </div>
+                  <h4 class="articles-slider__card-title">
+                    Длинное название новости в две строки
+                  </h4>
+                  <div class="articles-slider__footer-labels">
+                    <span class="articles-slider__card-label --gray"
+                      >23 февраля 2021</span
+                    >
+                    <span class="articles-slider__card-label --white"
+                      >#советы покупателям</span
+                    >
+                  </div>
+                </div>
+                <div class="articles-slider__swiper-card swiper-slide">
+                  <img
+                    class="articles-slider__card-img"
+                    src="./images/laboratory-flasks.png"
+                    alt="card img"
+                  />
+                  <div class="articles-slider__header-labels">
+                    <span class="articles-slider__card-label --blue"
+                      >Петр Верзилов</span
+                    >
+                    <span class="articles-slider__card-label --gray"
+                      >Статья</span
+                    >
+                  </div>
+                  <h4 class="articles-slider__card-title">
+                    Длинное название новости в две строки
+                  </h4>
+                  <div class="articles-slider__footer-labels">
+                    <span class="articles-slider__card-label --gray"
+                      >23 февраля 2021</span
+                    >
+                    <span class="articles-slider__card-label --white"
+                      >#советы покупателям</span
+                    >
+                  </div>
+                </div>
+                <div class="articles-slider__swiper-card swiper-slide">
+                  <img
+                    class="articles-slider__card-img"
+                    src="./images/laboratory-flasks.png"
+                    alt="card img"
+                  />
+                  <div class="articles-slider__header-labels">
+                    <span class="articles-slider__card-label --blue"
+                      >Петр Верзилов</span
+                    >
+                    <span class="articles-slider__card-label --gray"
+                      >Статья</span
+                    >
+                  </div>
+                  <h4 class="articles-slider__card-title">
+                    Длинное название новости в две строки
+                  </h4>
+                  <div class="articles-slider__footer-labels">
+                    <span class="articles-slider__card-label --gray"
+                      >23 февраля 2021</span
+                    >
+                    <span class="articles-slider__card-label --white"
+                      >#советы покупателям</span
+                    >
+                  </div>
+                </div>
+                <div class="articles-slider__swiper-card swiper-slide">
+                  <img
+                    class="articles-slider__card-img"
+                    src="./images/laboratory-flasks.png"
+                    alt="card img"
+                  />
+                  <div class="articles-slider__header-labels">
+                    <span class="articles-slider__card-label --blue"
+                      >Петр Верзилов</span
+                    >
+                    <span class="articles-slider__card-label --gray"
+                      >Статья</span
+                    >
+                  </div>
+                  <h4 class="articles-slider__card-title">
+                    Длинное название новости в две строки
+                  </h4>
+                  <div class="articles-slider__footer-labels">
+                    <span class="articles-slider__card-label --gray"
+                      >23 февраля 2021</span
+                    >
+                    <span class="articles-slider__card-label --white"
+                      >#советы покупателям</span
+                    >
+                  </div>
+                </div>
+                <div class="articles-slider__swiper-card swiper-slide">
+                  <img
+                    class="articles-slider__card-img"
+                    src="./images/laboratory-flasks.png"
+                    alt="card img"
+                  />
+                  <div class="articles-slider__header-labels">
+                    <span class="articles-slider__card-label --blue"
+                      >Петр Верзилов</span
+                    >
+                    <span class="articles-slider__card-label --gray"
+                      >Статья</span
+                    >
+                  </div>
+                  <h4 class="articles-slider__card-title">
+                    Длинное название новости в две строки
+                  </h4>
+                  <div class="articles-slider__footer-labels">
+                    <span class="articles-slider__card-label --gray"
+                      >23 февраля 2021</span
+                    >
+                    <span class="articles-slider__card-label --white"
+                      >#советы покупателям</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
       </main>
-    </section>
-
-    <section>
-      <div class="articles-slider">
-        <div class="articles-slider__controls">
-          <h2 class="brand-slider__controls-title">Статьи</h2>
-          <a href="" class="articles-slider__news-link"> Новости </a>
-
-          <a class="brand-slider__link" href="">Смотреть все статьи</a>
-
-          <div class="custom-button-group">
-            <button class="custom-button --l --blue --square" disabled></button>
-            <div class="custom-button-group__numbers">
-              <div class="custom-button-group__frist-number">1</div>
-              <div class="custom-button-group__second-number">&nbsp/ 5</div>
-            </div>
-            <button class="custom-button --l --blue --square"></button>
-          </div>
-        </div>
-
-        <div class="articles-slider__content-container">
-          <div
-            class="articles-slider__swiper swiper"
-            id="js-articles-slider-swiper"
-          >
-            <div class="articles-slider__swiper-wraper swiper-wrapper">
-              <div class="articles-slider__swiper-card swiper-slide">
-                <img
-                  class="articles-slider__card-img"
-                  src="./images/laboratory-flasks.png"
-                  alt="card img"
-                />
-                <div class="articles-slider__header-labels">
-                  <span class="articles-slider__card-label --blue"
-                    >Петр Верзилов</span
-                  >
-                  <span class="articles-slider__card-label --gray">Статья</span>
-                </div>
-                <h4 class="articles-slider__card-title">
-                  Длинное название новости в две строки
-                </h4>
-                <div class="articles-slider__footer-labels">
-                  <span class="articles-slider__card-label --gray"
-                    >23 февраля 2021</span
-                  >
-                  <span class="articles-slider__card-label --white"
-                    >#советы покупателям</span
-                  >
-                </div>
-              </div>
-              <div class="articles-slider__swiper-card swiper-slide">
-                <img
-                  class="articles-slider__card-img"
-                  src="./images/laboratory-flasks.png"
-                  alt="card img"
-                />
-                <div class="articles-slider__header-labels">
-                  <span class="articles-slider__card-label --blue"
-                    >Петр Верзилов</span
-                  >
-                  <span class="articles-slider__card-label --gray">Статья</span>
-                </div>
-                <h4 class="articles-slider__card-title">
-                  Длинное название новости в две строки
-                </h4>
-                <div class="articles-slider__footer-labels">
-                  <span class="articles-slider__card-label --gray"
-                    >23 февраля 2021</span
-                  >
-                  <span class="articles-slider__card-label --white"
-                    >#советы покупателям</span
-                  >
-                </div>
-              </div>
-              <div class="articles-slider__swiper-card swiper-slide">
-                <img
-                  class="articles-slider__card-img"
-                  src="./images/laboratory-flasks.png"
-                  alt="card img"
-                />
-                <div class="articles-slider__header-labels">
-                  <span class="articles-slider__card-label --blue"
-                    >Петр Верзилов</span
-                  >
-                  <span class="articles-slider__card-label --gray">Статья</span>
-                </div>
-                <h4 class="articles-slider__card-title">
-                  Длинное название новости в две строки
-                </h4>
-                <div class="articles-slider__footer-labels">
-                  <span class="articles-slider__card-label --gray"
-                    >23 февраля 2021</span
-                  >
-                  <span class="articles-slider__card-label --white"
-                    >#советы покупателям</span
-                  >
-                </div>
-              </div>
-              <div class="articles-slider__swiper-card swiper-slide">
-                <img
-                  class="articles-slider__card-img"
-                  src="./images/laboratory-flasks.png"
-                  alt="card img"
-                />
-                <div class="articles-slider__header-labels">
-                  <span class="articles-slider__card-label --blue"
-                    >Петр Верзилов</span
-                  >
-                  <span class="articles-slider__card-label --gray">Статья</span>
-                </div>
-                <h4 class="articles-slider__card-title">
-                  Длинное название новости в две строки
-                </h4>
-                <div class="articles-slider__footer-labels">
-                  <span class="articles-slider__card-label --gray"
-                    >23 февраля 2021</span
-                  >
-                  <span class="articles-slider__card-label --white"
-                    >#советы покупателям</span
-                  >
-                </div>
-              </div>
-              <div class="articles-slider__swiper-card swiper-slide">
-                <img
-                  class="articles-slider__card-img"
-                  src="./images/laboratory-flasks.png"
-                  alt="card img"
-                />
-                <div class="articles-slider__header-labels">
-                  <span class="articles-slider__card-label --blue"
-                    >Петр Верзилов</span
-                  >
-                  <span class="articles-slider__card-label --gray">Статья</span>
-                </div>
-                <h4 class="articles-slider__card-title">
-                  Длинное название новости в две строки
-                </h4>
-                <div class="articles-slider__footer-labels">
-                  <span class="articles-slider__card-label --gray"
-                    >23 февраля 2021</span
-                  >
-                  <span class="articles-slider__card-label --white"
-                    >#советы покупателям</span
-                  >
-                </div>
-              </div>
-              <div class="articles-slider__swiper-card swiper-slide">
-                <img
-                  class="articles-slider__card-img"
-                  src="./images/laboratory-flasks.png"
-                  alt="card img"
-                />
-                <div class="articles-slider__header-labels">
-                  <span class="articles-slider__card-label --blue"
-                    >Петр Верзилов</span
-                  >
-                  <span class="articles-slider__card-label --gray">Статья</span>
-                </div>
-                <h4 class="articles-slider__card-title">
-                  Длинное название новости в две строки
-                </h4>
-                <div class="articles-slider__footer-labels">
-                  <span class="articles-slider__card-label --gray"
-                    >23 февраля 2021</span
-                  >
-                  <span class="articles-slider__card-label --white"
-                    >#советы покупателям</span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section>
       <footer class="footer">
         <div class="footer__content">
           <div class="footer__col">
-            <div href="" class="footer__links-title">Каталог</div>
-            <a href="" class="footer__links-item">Бренды</a>
-            <a href="" class="footer__links-item">Статьи</a>
-            <a href="" class="footer__links-item">Новости</a>
+            <div class="footer__col-desctop-wraper">
+              <div href="" class="footer__links-title">Каталог</div>
+              <a href="" class="footer__links-item">Бренды</a>
+              <a href="" class="footer__links-item">Статьи</a>
+              <a href="" class="footer__links-item">Новости</a>
+            </div>
+
+            <div class="select-wrapper">
+              <div class="select">
+                <div class="select__trigger">
+                  <div>Каталог</div>
+                  <div class="arrow"></div>
+                </div>
+                <div class="custom-options">
+                  <a href="" class="custom-option selected" data-value="tesla"
+                    >Бренды</a
+                  >
+                  <a href="" class="custom-option" data-value="volvo">Статьи</a>
+                  <a href="" class="custom-option" data-value="mercedes"
+                    >Новости</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
           <div class="footer__col">
-            <div class="footer__links-title">Компания</div>
-            <a href="" class="footer__links-item">О компании</a>
-            <a href="" class="footer__links-item">Лицензии</a>
-            <a href="" class="footer__links-item">Вопросы и ответы</a>
-            <a href="" class="footer__links-item">Контакты</a>
+            <div class="footer__col-desctop-wraper">
+              <div class="footer__links-title">Компания</div>
+              <a href="" class="footer__links-item">О компании</a>
+              <a href="" class="footer__links-item">Лицензии</a>
+              <a href="" class="footer__links-item">Вопросы и ответы</a>
+              <a href="" class="footer__links-item">Контакты</a>
+            </div>
+
+            <div class="select-wrapper">
+              <div class="select">
+                <div class="select__trigger">
+                  <div>Компания</div>
+                  <div class="arrow"></div>
+                </div>
+                <div class="custom-options">
+                  <a href="" class="custom-option selected" data-value="tesla"
+                    >О компании</a
+                  >
+                  <a href="" class="custom-option" data-value="volvo"
+                    >Лицензии</a
+                  >
+                  <a href="" class="custom-option" data-value="mercedes"
+                    >Вопросы и ответы</a
+                  >
+                  <a href="" class="custom-option" data-value="mercedes"
+                    >Контакты</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
           <div class="footer__col">
-            <div class="footer__links-title">Информация</div>
-            <a href="" class="footer__links-item">Реквизиты</a>
-            <a href="" class="footer__links-item">Политика</a>
-            <a href="" class="footer__links-item">Статьи и новости</a>
+            <div class="footer__col-desctop-wraper">
+              <div class="footer__links-title">Информация</div>
+              <a href="" class="footer__links-item">Реквизиты</a>
+              <a href="" class="footer__links-item">Политика</a>
+              <a href="" class="footer__links-item">Статьи и новости</a>
+            </div>
+
+            <div class="select-wrapper">
+              <div class="select">
+                <div class="select__trigger">
+                  <div>Информация</div>
+                  <div class="arrow"></div>
+                </div>
+                <div class="custom-options">
+                  <a href="" class="custom-option selected" data-value="tesla"
+                    >Реквизиты</a
+                  >
+                  <a href="" class="custom-option" data-value="volvo"
+                    >Политика</a
+                  >
+                  <a href="" class="custom-option" data-value="mercedes"
+                    >Статьи и новости</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
           <div class="footer__col">
-            <div class="footer__links-title">Помощь</div>
-            <a href="" class="footer__links-item">Как купить?</a>
-            <a href="" class="footer__links-item">Вопрос-ответ</a>
-            <a href="" class="footer__links-item">Партнёрам</a>
-            <a href="" class="footer__links-item">Пригласить в тендер</a>
+            <div class="footer__col-desctop-wraper">
+              <div class="footer__links-title">Помощь</div>
+              <a href="" class="footer__links-item">Как купить?</a>
+              <a href="" class="footer__links-item">Вопрос-ответ</a>
+              <a href="" class="footer__links-item">Партнёрам</a>
+              <a href="" class="footer__links-item">Пригласить в тендер</a>
+            </div>
+
+            <div class="select-wrapper">
+              <div class="select">
+                <div class="select__trigger">
+                  <div>Помощь</div>
+                  <div class="arrow"></div>
+                </div>
+                <div class="custom-options">
+                  <a href="" class="custom-option selected" data-value="tesla"
+                    >Как купить?</a
+                  >
+                  <a href="" class="custom-option" data-value="volvo"
+                    >Вопрос-ответ</a
+                  >
+                  <a href="" class="custom-option" data-value="mercedes"
+                    >Партнёрам</a
+                  >
+                  <a href="" class="custom-option" data-value="mercedes"
+                    >Пригласить в тендер</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="footer__col">
+
+          <div class="footer__col footer__footer">
             <button class="footer__col-tender-button custom-button --sm --blue">
               запросить для тендера
             </button>
@@ -1612,91 +2093,8 @@
       </footer>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <script>
-      var popularProductSwiper = new Swiper("#js-popular-product-swiper", {
-        slidesPerView: 3,
-        spaceBetween: 22,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-
-      var brandsSwiper = new Swiper("#js-brand-swiper", {
-        slidesPerView: 5,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-
-      var articlesSwiper = new Swiper("#js-articles-slider-swiper", {
-        slidesPerView: 4,
-        spaceBetween: 16,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-
-    <section class="ui-link">
-      <div class="ui-kit-link">
-        <a
-          href="http://127.0.0.1:5500/ui-inputs.html"
-          class="ui-kit-link__item"
-        >
-          inputs
-        </a>
-        <a href="http://127.0.0.1:5500/ui-cards.html" class="ui-kit-link__item">
-          cards
-        </a>
-        <a
-          href="http://127.0.0.1:5500/ui-carusels.html"
-          class="ui-kit-link__item"
-        >
-          carusels
-        </a>
-        <a href="http://127.0.0.1:5500/ui-menus.html" class="ui-kit-link__item">
-          menus
-        </a>
-        <a
-          href="http://127.0.0.1:5500/ui-buttons.html"
-          class="ui-kit-link__item"
-        >
-          buttons
-        </a>
-        <a
-          href="http://127.0.0.1:5500/ui-labels.html"
-          class="ui-kit-link__item"
-        >
-          labels
-        </a>
-      </div>
-      <style>
-        .ui-link {
-          position: relative;
-        }
-
-        .ui-kit-link {
-          position: fixed;
-          bottom: 10px;
-          left: 10px;
-          display: flex;
-          outline: 2px solid green;
-          border-radius: 3px;
-          width: min-content;
-        }
-
-        .ui-kit-link__item {
-          padding: 5px;
-          margin-right: 10px;
-          font-size: 15px;
-          color: green;
-        }
-      </style>
-    </section>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="./js/main-page.js"></script>
   </body>
 </html>

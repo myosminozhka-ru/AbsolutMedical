@@ -9,11 +9,9 @@ body {
   background-color: #f9f9f9;
 }
 
-.product-sections {
-}
-
 .product-sections__container {
-  max-width: 81.25rem;
+  max-width: 83.75rem;
+  padding: 0 1.25rem;
   margin: 0 auto;
 }
 

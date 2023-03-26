@@ -6,7 +6,8 @@
 }
 
 .footer__content {
-  max-width: 81.25rem;
+  max-width: 1340px;
+  padding: 0 1.25rem;
   margin: 3.375rem auto 0 auto;
   display: flex;
   justify-content: space-between;
@@ -110,7 +111,8 @@
 }
 
 .footer__description {
-  max-width: 81.25rem;
+  max-width: 1340px;
+  padding: 0 1.25rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -125,5 +127,133 @@
   letter-spacing: 0.03rem;
 }
 
-.footer__myosminozhka-logo {
+.footer .select-wrapper {
+  position: relative;
+  user-select: none;
+  width: 100%;
+}
+.footer .select {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.footer .select__trigger {
+  height: 23px;
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: #333333;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  cursor: pointer;
+}
+.footer .custom-options {
+  height: 0;
+  display: block;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 2;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.03em;
+  color: #333333;
+}
+.footer .select.open .custom-options {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+.footer .custom-option {
+  position: relative;
+  display: block;
+  color: #333333;
+  cursor: pointer;
+}
+.footer .custom-option:hover {
+  cursor: pointer;
+}
+
+.footer .arrow {
+  position: relative;
+  height: 10px;
+  width: 10px;
+}
+.footer .arrow::before,
+.footer .arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 0.15rem;
+  height: 100%;
+  transition: all 0.5s;
+}
+.footer .arrow::before {
+  left: -5px;
+  transform: rotate(45deg);
+  background-color: #ddd;
+}
+.footer .arrow::after {
+  transform: rotate(-45deg);
+  background-color: #ddd;
+}
+.footer .open .arrow::before {
+  left: -4px;
+  transform: rotate(-45deg);
+}
+.footer .open .arrow::after {
+  left: 2px;
+  transform: rotate(45deg);
+}
+.footer .select-wrapper {
+  display: none;
+}
+.footer__col-desctop-wraper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 575.98px) {
+  .footer {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 24px 20px;
+  }
+  .footer__content {
+    flex-direction: column;
+    margin-top: 0;
+    padding: 0;
+  }
+  .footer__col-desctop-wraper {
+    display: none;
+  }
+  .footer .select-wrapper {
+    display: block;
+  }
+  .footer .select-wrapper:not(:first-child) {
+    margin-top: 1rem;
+  }
+  .footer__footer {
+    margin-top: 16px;
+  }
+
+  .footer__description {
+    margin: 16px 0 0 0;
+    padding: 0;
+    align-items: start;
+    flex-direction: column;
+  }
+  .footer__myosminozhka-logo {
+    margin-top: 12px;
+  }
 }

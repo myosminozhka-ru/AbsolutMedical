@@ -8,6 +8,7 @@
   border: 1px solid transparent;
   transition: color var(--base-transition),
     background-color var(--base-transition);
+  white-space: nowrap;
 }
 
 .custom-button.--full-w {
@@ -112,6 +113,12 @@
   font-size: 1.125rem;
   padding: 1.25rem 2.5rem;
   font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .custom-button.--l {
+    font-size: 1rem;
+  }
 }
 
 .custom-button.--xm {

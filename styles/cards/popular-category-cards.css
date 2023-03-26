@@ -1,5 +1,6 @@
 .popular-category {
-  max-width: 81.0625rem;
+  max-width: 1340px;
+  padding: 0 1.25rem;
   margin: 6.4375rem auto 0 auto;
 }
 
@@ -22,29 +23,29 @@
 .popular-category__cards-container {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 8px;
   grid-row-gap: 8px;
 }
 
 .popular-category__item:nth-child(1) {
-  grid-area: 1 / 1 / 2 / 5;
+  grid-area: 1 / 1 / 2 / 2;
 }
 .popular-category__item:nth-child(2) {
-  grid-area: 1 / 5 / 2 / 9;
+  grid-area: 1 / 2 / 2 / 3;
 }
 .popular-category__item:nth-child(3) {
-  grid-area: 1 / 9 / 2 / 13;
+  grid-area: 1 / 3 / 2 / 4;
 }
 .popular-category__item:nth-child(4) {
-  grid-area: 2 / 9 / 3 / 13;
+  grid-area: 2 / 1 / 3 / 2;
 }
 .popular-category__item:nth-child(5) {
-  grid-area: 2 / 5 / 3 / 9;
+  grid-area: 2 / 2 / 3 / 3;
 }
 .popular-category__item:nth-child(6) {
-  grid-area: 2 / 1 / 3 / 5;
+  grid-area: 2 / 3 / 3 / 4;
 }
 
 .popular-category__item:nth-child(odd) {
@@ -105,7 +106,72 @@
   position: absolute;
   right: 0;
   justify-content: center;
+  pointer-events: none;
 }
 
-.popular-category__item-img {
+@media (max-width: 991.98px) {
+  .popular-category__cards-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
+
+  .popular-category__item:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .popular-category__item:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .popular-category__item:nth-child(3) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .popular-category__item:nth-child(4) {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .popular-category__item:nth-child(5) {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .popular-category__item:nth-child(6) {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+}
+
+.popular-category__slider-container {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .popular-category__cards-container {
+    display: none;
+  }
+  .popular-category__header {
+    flex-direction: column;
+    align-items: start;
+  }
+  .popular-category__header .custom-button {
+    margin-top: 16px;
+  }
+
+  .popular-category__slider-container {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-top: 24px;
+  }
+
+  .popular-category__item {
+    height: 20rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .popular-category__item-img-container {
+    width: unset;
+    height: 50%;
+    right: 20px;
+    justify-content: end;
+  }
 }

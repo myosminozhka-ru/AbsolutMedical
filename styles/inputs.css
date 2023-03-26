@@ -222,6 +222,7 @@ input[type="number"] {
 .custom-file-input__file-input-container {
   width: 13.625rem;
   height: 3.5625rem;
+  display: flex;
   position: relative;
   overflow: hidden;
   background: #1c48a0;
@@ -235,7 +236,7 @@ input[type="number"] {
 }
 
 .custom-file-input__file-input-label {
-  padding: 17px 47px;
+  /* padding: 17px 47px; */
   display: flex;
   justify-content: center;
   align-items: center;
