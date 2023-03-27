@@ -31,7 +31,9 @@
               <span class="header-info__phone-dropdown-dot"></span>
             </button>
 
-            <button class="header-info__callback">Заказать звонок</button>
+            <button id="js-header-info__callback" class="header-info__callback">
+              Заказать звонок
+            </button>
           </div>
         </div>
 
@@ -629,6 +631,52 @@
               <a href="" class="footer__social-link --youtube"></a>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div id="js-header-callback-popup" class="header-callback-popup">
+        <div class="header-callback-popup__container">
+          <div class="header-callback-popup__title">заказать звонок</div>
+
+          <div class="custom-form-input --required-form-input">
+            <label class="custom-form-input__label" for="name">ФИО</label>
+            <input class="custom-form-input__input" id="name" type="text" />
+            <button class="custom-form-input__button"></button>
+          </div>
+          <div class="custom-form-input --required-form-input">
+            <label class="custom-form-input__label" for="name">Телефон</label>
+            <input class="custom-form-input__input" id="name" type="text" />
+            <button class="custom-form-input__button"></button>
+          </div>
+          <div class="custom-form-input --required-form-input">
+            <label class="custom-form-input__label" for="name">E-mail</label>
+            <input class="custom-form-input__input" id="name" type="text" />
+            <button class="custom-form-input__button"></button>
+          </div>
+          <div class="custom-form-input --required-form-input">
+            <label class="custom-form-input__label" for="name">Почта</label>
+            <input class="custom-form-input__input" id="name" type="text" />
+            <button class="custom-form-input__button"></button>
+          </div>
+
+          <div class="header-callback-popup__footer">
+            <button
+              class="header-callback-popup__button custom-button --l --blue"
+            >
+              отправить
+            </button>
+            <div class="header-callback-popup__text">
+              Нажимая на кнопку вы соглашаетесь на обработку
+              <a class="header-callback-popup__text-link">
+                персональных данных </a
+              >.
+            </div>
+          </div>
+
+          <button
+            id="js-header-callback-popup-close-button"
+            class="header-callback-popup__close-button custom-button --l --white --square"
+          ></button>
         </div>
       </div>
     </section>

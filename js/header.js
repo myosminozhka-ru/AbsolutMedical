@@ -56,3 +56,15 @@ const secondLevelCrossButton = document.querySelector(
 secondLevelCrossButton.addEventListener("click", () => {
   mainMenuContentContainer.classList.remove("--active");
 });
+
+const backBackButton = document.querySelector("#js-header-info__callback");
+const headerPopup = document.querySelector("#js-header-callback-popup");
+const headerPopupCloseButton = document.querySelector(
+  "#js-header-callback-popup-close-button"
+);
+backBackButton.addEventListener("click", () => {
+  headerPopup.classList.add("--active");
+});
+headerPopupCloseButton.addEventListener("click", () => {
+  headerPopup.classList.remove("--active");
+});
