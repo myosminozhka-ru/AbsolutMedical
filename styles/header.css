@@ -225,6 +225,7 @@
   display: flex;
   flex-direction: column;
   min-width: 510px;
+  overflow-y: auto;
 }
 
 .main-menu__controls-header {
@@ -588,5 +589,24 @@
   .header-callback-popup__text {
     margin-left: 0;
     margin-top: 16px;
+  }
+
+  .main-menu__controls-header {
+    padding: 40px 20px 0 20px;
+  }
+
+  .main-menu__item {
+    font-size: 16px;
+    padding: 16px 20px;
+  }
+  .main-menu .footer__footer {
+    padding: 0 20px 40px 20px;
+  }
+  .main-menu {
+    background-color: #f9f9f9;
+  }
+
+  .main-menu .footer__footer {
+    padding: 0;
   }
 }
