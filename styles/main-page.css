@@ -1,13 +1,20 @@
 @import url(./variables.css);
 
+body {
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.main {
+  margin-top: 152px;
+}
+
 .swiper-pagination-bullet {
   width: 5px;
   height: 5px;
 }
 
-.main-page {
-  overflow-x: hidden;
-}
 .main-info {
   position: relative;
   display: flex;
@@ -815,6 +822,9 @@
   }
 }
 @media (max-width: 767.98px) {
+  .main {
+    margin-top: 87px;
+  }
   .main-info__link-item {
     display: none;
   }
@@ -980,7 +990,7 @@
   }
 
   .main-info {
-    margin-top: 2rem;
+    padding-top: 2rem;
   }
   .main-info__main {
     margin-top: 0;

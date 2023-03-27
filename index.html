@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/main-page.css" />
   </head>
-  <body class="main-page" style="background-color: #f9f9f9">
+  <body>
     <section>
       <header class="header">
         <div class="header__info-container">
@@ -68,7 +68,6 @@
         <a
           id="js-header__scroll-down-button"
           class="header__scroll-down-button"
-          href=""
         ></a>
       </header>
     </section>
@@ -98,7 +97,7 @@
             <a
               id="js-main-info__down-button"
               class="main-info__down-button main-info__button"
-              href=""
+              href="#popular-category"
             ></a>
           </div>
 
@@ -121,7 +120,7 @@
           </div>
         </div>
 
-        <div class="popular-category">
+        <div id="popular-category" class="popular-category">
           <div class="popular-category__header">
             <h2 class="popular-category__title">Популярные категории</h2>
             <button class="custom-button --l --blue">Перейти в каталог</button>
@@ -1759,10 +1758,6 @@
                 class="custom-button --l --blue --square"
               ></button>
             </div>
-            <div
-              id="js-articles-slider-pagination"
-              class="swiper-pagination"
-            ></div>
           </div>
 
           <div class="articles-slider__content-container">

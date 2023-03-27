@@ -1,20 +1,14 @@
 .header {
-  width: 100vw;
-  position: relative;
-}
-
-@media (max-width: 1399.98px) {
-}
-@media (max-width: 1199.98px) {
-}
-@media (max-width: 991.98px) {
-}
-@media (max-width: 767.98px) {
-}
-@media (max-width: 575.98px) {
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #f9f9f9;
 }
 
 .header__scroll-down-button {
+  visibility: hidden;
   position: fixed;
   z-index: 1;
   top: 11rem;
@@ -46,9 +40,6 @@
   display: flex;
   align-items: center;
   padding: 1rem 1.25rem 0.75rem 1.25rem;
-}
-
-.header-info__geo-dropdown {
 }
 
 .header-info__dropdown-content-wrapper {
@@ -121,7 +112,7 @@
 }
 
 .header__main-container {
-  width: 100vw;
+  /* width: 100vw; */
   background-color: #fff;
   height: 6.25rem;
   border-top: 1px solid #dddddd;
@@ -138,6 +129,7 @@
 }
 
 .header-main__burger {
+  cursor: pointer;
   height: 2rem;
   width: 2rem;
   display: flex;
@@ -178,6 +170,7 @@
 }
 
 .header-main__searcher {
+  width: 100%;
   line-height: 130%;
   letter-spacing: 0.03em;
   padding-left: 1.875rem;

@@ -154,3 +154,30 @@ for (let i = 0; i < tabs.length; i++) {
 }
 
 setActiveTabItem();
+
+const headerScrollDownButton = document.querySelector(
+  "#js-header__scroll-down-button"
+);
+
+headerScrollDownButton.addEventListener("click", () => {
+  window.scrollBy({
+    top: document.body.scrollHeight,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+
+let timerId = null;
+const debounceHeaderScrollDownButton = () => {
+  headerScrollDownButton.style.visibility = "visible";
+  clearTimeout(timerId);
+  timerId = setTimeout(() => {
+    headerScrollDownButton.style.visibility = "hidden";
+  }, 2000);
+};
+
+window.addEventListener("scroll", (e) => {
+  if (document.body.scrollHeight / 2 > window.scrollY) {
+    debounceHeaderScrollDownButton();
+  }
+});
