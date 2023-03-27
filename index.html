@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/main-page.css" />
     <link rel="stylesheet" href="./styles/catalog-of-product-sections.css" />
   </head>
-  <body>
+  <body class="custom-scroll-bar">
     <section>
       <header class="header">
         <div class="header__info-container">
@@ -75,7 +75,10 @@
       </header>
 
       <div class="main-menu">
-        <div class="main-menu__controls" id="js-main-menu-controls">
+        <div
+          class="main-menu__controls custom-scroll-bar"
+          id="js-main-menu-controls"
+        >
           <div class="main-menu__controls-header">
             <div class="main-menu__controls-title">Меню</div>
             <button class="main-menu__controls-button"></button>
@@ -112,7 +115,10 @@
           </div>
         </div>
 
-        <div class="main-menu__content-container" id="js-main-menu-content">
+        <div
+          class="main-menu__content-container custom-scroll-bar"
+          id="js-main-menu-content"
+        >
           <div class="main-menu__content-header">
             <div class="main-menu__content-title">Меню</div>
             <button class="main-menu__content-button"></button>
@@ -677,6 +683,240 @@
             id="js-header-callback-popup-close-button"
             class="header-callback-popup__close-button custom-button --l --white --square"
           ></button>
+        </div>
+      </div>
+
+      <div class="header-product-searcher">
+        <div class="header-product-searcher__container">
+          <div class="header-product-searcher__input-container">
+            <input
+              class="header-product-searcher__input"
+              value="Дезинфицирующее "
+              type="text"
+              id="js-header-product-searcher-input"
+            />
+            <button
+              id="js-header-product-searcher-clear-button"
+              class="header-product-searcher__clear-button"
+            ></button>
+          </div>
+
+          <!-- результат поиска для зареганных -->
+          <div class="header-product-searcher__result-count">
+            <span class="header-product-searcher__result-text">Найдено:</span>
+            <span class="header-product-searcher__count-text">87 товаров</span>
+          </div>
+
+          <div class="header-product-searcher__list">
+            <div class="header-product-searcher__card">
+              <div class="header-product-searcher__img-container">
+                <img src="./images/sarch-result-img.png" alt="product" />
+              </div>
+
+              <div class="header-product-searcher__card-text-container">
+                <div class="header-product-searcher__card-title">
+                  Дезинфицирующее средство
+                </div>
+                <div class="header-product-searcher__item-name">
+                  Алмадез Хлор таблетки 300 штук
+                </div>
+                <div class="header-product-searcher__prices">
+                  <span class="header-product-searcher__new-price">
+                    449 000 <span>&#8381;</span>
+                  </span>
+                  <span class="header-product-searcher__old-price">
+                    599 000 <span>&#8381;</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="header-product-searcher__card">
+              <div class="header-product-searcher__img-container">
+                <img src="./images/sarch-result-img.png" alt="product" />
+              </div>
+
+              <div class="header-product-searcher__card-text-container">
+                <div class="header-product-searcher__card-title">
+                  Дезинфицирующее средство
+                </div>
+                <div class="header-product-searcher__item-name">
+                  Алмадез Хлор таблетки 300 штук
+                </div>
+                <div class="header-product-searcher__prices">
+                  <span class="header-product-searcher__new-price">
+                    449 000 <span>&#8381;</span>
+                  </span>
+                  <span class="header-product-searcher__old-price">
+                    599 000 <span>&#8381;</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="header-product-searcher__card">
+              <div class="header-product-searcher__img-container">
+                <img src="./images/sarch-result-img.png" alt="product" />
+              </div>
+
+              <div class="header-product-searcher__card-text-container">
+                <div class="header-product-searcher__card-title">
+                  Дезинфицирующее средство
+                </div>
+                <div class="header-product-searcher__item-name">
+                  Алмадез Хлор таблетки 300 штук
+                </div>
+                <div class="header-product-searcher__prices">
+                  <span class="header-product-searcher__new-price">
+                    449 000 <span>&#8381;</span>
+                  </span>
+                  <span class="header-product-searcher__old-price">
+                    599 000 <span>&#8381;</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="header-product-searcher__card">
+              <div class="header-product-searcher__img-container">
+                <img src="./images/sarch-result-img.png" alt="product" />
+              </div>
+
+              <div class="header-product-searcher__card-text-container">
+                <div class="header-product-searcher__card-title">
+                  Дезинфицирующее средство
+                </div>
+                <div class="header-product-searcher__item-name">
+                  Алмадез Хлор таблетки 300 штук
+                </div>
+                <div class="header-product-searcher__prices">
+                  <span class="header-product-searcher__new-price">
+                    449 000 <span>&#8381;</span>
+                  </span>
+                  <span class="header-product-searcher__old-price">
+                    599 000 <span>&#8381;</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="header-product-searcher__card">
+              <div class="header-product-searcher__img-container">
+                <img src="./images/sarch-result-img.png" alt="product" />
+              </div>
+
+              <div class="header-product-searcher__card-text-container">
+                <div class="header-product-searcher__card-title">
+                  Дезинфицирующее средство
+                </div>
+                <div class="header-product-searcher__item-name">
+                  Алмадез Хлор таблетки 300 штук
+                </div>
+                <div class="header-product-searcher__prices">
+                  <span class="header-product-searcher__new-price">
+                    449 000 <span>&#8381;</span>
+                  </span>
+                  <span class="header-product-searcher__old-price">
+                    599 000 <span>&#8381;</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="header-product-searcher__card">
+              <div class="header-product-searcher__img-container">
+                <img src="./images/sarch-result-img.png" alt="product" />
+              </div>
+
+              <div class="header-product-searcher__card-text-container">
+                <div class="header-product-searcher__card-title">
+                  Дезинфицирующее средство
+                </div>
+                <div class="header-product-searcher__item-name">
+                  Алмадез Хлор таблетки 300 штук
+                </div>
+                <div class="header-product-searcher__prices">
+                  <span class="header-product-searcher__new-price">
+                    449 000 <span>&#8381;</span>
+                  </span>
+                  <span class="header-product-searcher__old-price">
+                    599 000 <span>&#8381;</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- результат поиска для не зареганных -->
+          <div class="header-product-searcher__not-logined-user-info">
+            <div>
+              <span class="header-product-searcher__sory-text">
+                Сожалеем, но по запросу "Телесфор Люкс" ничего не найдено.
+                Предлагаем воспользоваться
+                <a href="" class="header-product-searcher__catalog-link">
+                  Каталогом
+                </a>
+              </span>
+            </div>
+            <span class="header-product-searcher__you-can-search-text">
+              Вы можете искать, например:
+            </span>
+          </div>
+
+          <div class="header-product-searcher__list">
+            <div class="header-product-searcher__card">
+              <div class="header-product-searcher__img-container">
+                <img src="./images/sarch-result-img.png" alt="product" />
+              </div>
+
+              <div class="header-product-searcher__card-text-container">
+                <div class="header-product-searcher__card-title">
+                  Дезинфицирующее средство
+                </div>
+                <div class="header-product-searcher__item-name">
+                  Алмадез Хлор таблетки 300 штук
+                </div>
+                <button
+                  class="header-product-searcher__button custom-button --sm --blue"
+                >
+                  Запросить цену
+                </button>
+              </div>
+            </div>
+            <div class="header-product-searcher__card">
+              <div class="header-product-searcher__img-container">
+                <img src="./images/sarch-result-img.png" alt="product" />
+              </div>
+
+              <div class="header-product-searcher__card-text-container">
+                <div class="header-product-searcher__card-title">
+                  Дезинфицирующее средство
+                </div>
+                <div class="header-product-searcher__item-name">
+                  Алмадез Хлор таблетки 300 штук
+                </div>
+                <button
+                  class="header-product-searcher__button custom-button --sm --blue"
+                >
+                  Запросить цену
+                </button>
+              </div>
+            </div>
+            <div class="header-product-searcher__card">
+              <div class="header-product-searcher__img-container">
+                <img src="./images/sarch-result-img.png" alt="product" />
+              </div>
+
+              <div class="header-product-searcher__card-text-container">
+                <div class="header-product-searcher__card-title">
+                  Дезинфицирующее средство
+                </div>
+                <div class="header-product-searcher__item-name">
+                  Алмадез Хлор таблетки 300 штук
+                </div>
+                <button
+                  class="header-product-searcher__button custom-button --sm --blue"
+                >
+                  Запросить цену
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

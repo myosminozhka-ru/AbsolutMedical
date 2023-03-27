@@ -68,3 +68,15 @@ backBackButton.addEventListener("click", () => {
 headerPopupCloseButton.addEventListener("click", () => {
   headerPopup.classList.remove("--active");
 });
+
+const productSearcherClearButton = document.querySelector(
+  "#js-header-product-searcher-clear-button"
+);
+
+const productSearcherInput = document.querySelector(
+  "#js-header-product-searcher-input"
+);
+
+productSearcherClearButton.addEventListener("click", () => {
+  productSearcherInput.value = "";
+});
