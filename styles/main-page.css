@@ -1,4 +1,31 @@
 @import url(./variables.css);
+@import url(./reset.css);
+@import url(./buttons.css);
+@import url(./cards/popular-category-cards.css);
+@import url(./cards/popular-product-cards.css);
+@import url(./heading.css);
+@import url(./fonts/index.css);
+@import url(./labels.css);
+@import url(./inputs.css);
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./swiper.css);
+
+body {
+  font-family: "Roboto";
+}
+
+.custom-scroll-bar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #1c48a0;
+}
 
 body {
   background-color: #f9f9f9;

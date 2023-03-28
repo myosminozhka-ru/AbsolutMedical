@@ -1,0 +1,134 @@
+@import url(./variables.css);
+@import url(./reset.css);
+@import url(./buttons.css);
+@import url(./catalog-of-product-sections.css);
+@import url(./heading.css);
+@import url(./fonts/index.css);
+@import url(./inputs.css);
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./404.css);
+
+body {
+  font-family: "Roboto";
+}
+
+.custom-scroll-bar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #1c48a0;
+}
+
+.header {
+  background-color: transparent;
+}
+
+.custom-scroll-bar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #1c48a0;
+}
+
+.four-hundred-four {
+  background-image: url(../images/404.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.four-hundred-four__container {
+  max-width: 1340px;
+  padding: 0px 20px;
+  margin: 0 auto;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+.four-hundred-four__first-title,
+.four-hundred-four__second-title {
+  text-transform: uppercase;
+}
+.four-hundred-four__second-title {
+  margin-top: 10px;
+}
+
+.four-hundred-four__text {
+  width: 50%;
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
+}
+.four-hundred-four__controls-container {
+  margin-top: 40px;
+  display: flex;
+  gap: 24px;
+}
+.custom-button {
+  text-transform: uppercase;
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+@media (max-width: 1399.98px) {
+  .four-hundred-four {
+    background-position: -592px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .four-hundred-four {
+    background-position: -759px;
+  }
+}
+@media (max-width: 991.98px) {
+  .four-hundred-four {
+    background-position: -865px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .four-hundred-four {
+    background-image: url(../images/404-small.png);
+    background-color: #d1dfff;
+    background-size: inherit;
+    background-position: center 23px;
+  }
+  .four-hundred-four__container {
+    padding-bottom: 56px;
+    padding-top: 307px;
+  }
+
+  .four-hundred-four__first-title,
+  .four-hundred-four__second-title {
+    text-transform: uppercase;
+  }
+  .four-hundred-four__second-title {
+    margin-top: 8px;
+  }
+
+  .four-hundred-four__text {
+    width: 100%;
+    margin-top: 8px;
+  }
+  .four-hundred-four__controls-container {
+    margin-top: 32px;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
