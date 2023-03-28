@@ -781,11 +781,6 @@ body {
   color: #333333;
 }
 
-.swiper,
-swiper-container {
-  overflow: visible;
-}
-
 @media (max-width: 1399.98px) {
   .slider__controls-title:after,
   .brand-slider__controls-title:after {

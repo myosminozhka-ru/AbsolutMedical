@@ -1,6 +1,3 @@
-console.log(window);
-console.log(Swiper);
-
 var popularProductSwiper = new Swiper("#js-popular-product-swiper", {
   slidesPerView: 3,
   spaceBetween: 22,
@@ -46,10 +43,10 @@ var brandsSwiper = new Swiper("#js-brand-swiper", {
   },
   breakpoints: {
     991.98: {
-      slidesPerView: 3,
+      slidesPerView: 5,
     },
     767.98: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     575.98: {
       slidesPerView: 2,
