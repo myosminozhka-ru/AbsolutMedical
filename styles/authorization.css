@@ -1,0 +1,149 @@
+@import url(./variables.css);
+@import url(./reset.css);
+@import url(./buttons.css);
+@import url(./catalog-of-product-sections.css);
+@import url(./heading.css);
+@import url(./fonts/index.css);
+@import url(./inputs.css);
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./authorization.css);
+@import url(./breadcrumbs.css);
+
+body {
+  font-family: "Roboto";
+}
+
+.custom-scroll-bar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #1c48a0;
+}
+
+.header {
+  background-color: transparent;
+}
+
+.custom-scroll-bar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #1c48a0;
+}
+
+.authorization {
+  margin-top: 178px;
+}
+.authorization__container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-image: url(../images/authorization.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 69% center;
+}
+.authorization__title {
+  margin-top: 32px;
+}
+.authorization__form {
+  width: 40%;
+  margin-top: 48px;
+}
+
+.custom-form-input,
+.authorization__form-link,
+.custom-button,
+.authorization__form-footer {
+  margin-top: 24px;
+}
+
+.authorization__form-link {
+  display: inline-block;
+}
+
+.authorization__form-link,
+.authorization__footer-registration-link {
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #1c48a0;
+  border-bottom: 1px solid var(--dark-blue);
+  padding-bottom: 8px;
+}
+
+.authorization__form-link:hover,
+.authorization__footer-registration-link:hover {
+  color: var(--text-black);
+}
+
+.authorization__submit-button {
+  font-family: "Roboto";
+  font-weight: 400 !important;
+  font-size: 14px;
+  line-height: 110%;
+}
+
+.authorization__form-footer {
+  margin-bottom: 56px;
+}
+
+.authorization__footer-link {
+  line-height: 160%;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
+  margin-right: 16px;
+}
+
+.authorization__footer-link:hover {
+  color: #1c48a0;
+}
+
+@media (max-width: 991.98px) {
+  .authorization__container {
+    background-position: 100% center;
+  }
+  .authorization__form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .authorization {
+    margin-top: 102px;
+  }
+  .authorization__container {
+    background-position: 128% center;
+  }
+  .authorization__form {
+    width: 62%;
+  }
+}
+@media (max-width: 575.98px) {
+  .authorization__container {
+    background-image: url(../images/authorization-small.png);
+    background-position: unset;
+    background-size: unset;
+  }
+  .authorization__title {
+    margin-top: 158px;
+  }
+  .authorization__form {
+    width: 100%;
+  }
+  .authorization__footer-link {
+    margin-right: 10px;
+  }
+}

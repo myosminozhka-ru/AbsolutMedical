@@ -1,0 +1,25 @@
+.breadcrumbs {
+  display: flex;
+}
+
+.breadcrumbs__item {
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__item:hover {
+  color: #1c48a0;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbs__item:not(:first-child)::before {
+  content: "";
+  margin: 0 12px;
+  width: 15px;
+  height: 1px;
+  background-color: #ddd;
+}

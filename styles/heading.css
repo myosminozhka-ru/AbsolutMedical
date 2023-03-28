@@ -7,6 +7,7 @@ h6 {
   font-family: "Din pro Cond";
   font-weight: 700;
   color: var(--text-black);
+  text-transform: uppercase;
 }
 
 h1 {
