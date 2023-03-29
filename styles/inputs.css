@@ -136,6 +136,14 @@ input[type="number"] {
   position: absolute;
 }
 
+.custom-form-input.--required-form-input.--required-form-input-black
+  .custom-form-input__label::after {
+  content: url(../icons/black-asterisk.svg);
+  height: 15px;
+  width: 15px;
+  position: absolute;
+}
+
 .custom-form-input.--error-form-input {
   border-bottom-color: var(--red);
 }
@@ -164,6 +172,15 @@ input[type="number"] {
   background-image: url(../icons/black-eyelashes.svg);
   background-repeat: no-repeat;
   background-position: center center;
+}
+.custom-form-input .custom-form-input__description {
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0.03rem;
+  color: #b3b3b3;
+  position: absolute;
+  bottom: -24px;
+  height: 20px;
 }
 
 /* checkbox -------------------*/

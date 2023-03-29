@@ -1,5 +1,6 @@
 .breadcrumbs {
   display: flex;
+  margin-top: 178px;
 }
 
 .breadcrumbs__item {
@@ -22,4 +23,10 @@
   width: 15px;
   height: 1px;
   background-color: #ddd;
+}
+
+@media (max-width: 767.98px) {
+  .breadcrumbs {
+    margin-top: 94px;
+  }
 }
