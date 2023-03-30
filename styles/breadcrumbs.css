@@ -1,6 +1,7 @@
 .breadcrumbs {
   display: flex;
-  margin-top: 178px;
+  margin-top: 152px;
+  padding-top: 26px;
 }
 
 .breadcrumbs__item {

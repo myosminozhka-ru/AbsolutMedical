@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   const selects = document.querySelectorAll(".select-wrapper");
-
   for (let i = 0; i < selects.length; i++) {
     selects[i].addEventListener("click", function (e) {
       const target = this.querySelector(".select");
