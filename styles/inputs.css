@@ -115,10 +115,12 @@ input[type="number"] {
 
 .custom-form-input__label {
   position: relative;
+  letter-spacing: 0.03rem;
 }
 
 .custom-form-input__input {
   height: 100%;
+  letter-spacing: 0.03rem;
 }
 
 .custom-form-input__button {

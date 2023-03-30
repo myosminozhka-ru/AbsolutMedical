@@ -49,7 +49,10 @@ body {
   background-image: url(../images/registration.png);
   background-repeat: no-repeat;
   background-position-x: 100%;
-  background-position-y: -90%;
+  background-position-y: 92%;
+}
+.registration__container.--hidden {
+  display: none;
 }
 
 .registration__title {
@@ -76,14 +79,115 @@ body {
   font-size: 14px;
   line-height: 110%;
 }
-
-@media (max-width: 1399.98px) {
+.registration__submit-button-mobile-text {
+  display: none;
 }
-@media (max-width: 1199.98px) {
+.registration .custom-form-input::placeholder {
+  line-height: 160%;
+  letter-spacing: 0.03rem;
+  color: #b3b3b3;
+}
+.registration__description-container {
+  display: flex;
+  align-items: center;
+  margin-top: -45px;
+}
+.registration__description-text {
+  margin-left: 16px;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
+}
+.registration__submit-button-mobile-text {
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.registration__approved-container {
+  display: block;
+  max-width: 1340px;
+  padding: 0px 20px;
+  margin: 0 auto;
+  background-image: url(../images/registration-approved.png);
+  background-repeat: no-repeat;
+  background-position: center 54%;
+}
+.registration__approved-container.--hidden {
+  display: none;
+}
+
+.registration__approved-message-container {
+  margin: 0 auto 56px auto;
+  padding-top: 168px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: none;
+}
+
+.registration__approved-message-title {
+  text-align: center;
+}
+
+.registration__approved-message-text {
+  width: 550px;
+  margin-top: 20px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
 }
 @media (max-width: 991.98px) {
+  .registration__container {
+    background-image: unset;
+  }
+  .registration__form {
+    width: 100%;
+    margin-top: 24px;
+  }
 }
 @media (max-width: 767.98px) {
+  .registration__title {
+    margin-top: 8px;
+  }
+  .registration__form .custom-form-input {
+    width: 100%;
+  }
+  .registration__submit-button {
+    width: 100%;
+    margin-top: -16px;
+  }
+  .registration__submit-button-mobile-text {
+    display: inline;
+  }
+  .registration__submit-button-desc-text {
+    display: none;
+  }
+  .registration__description-container {
+    margin-top: -34px;
+  }
+  .registration__approved-container {
+    background-position: center 47%;
+  }
+  .registration__approved-message-container {
+    padding-top: 156px;
+  }
 }
 @media (max-width: 575.98px) {
+  .registration__approved-message-container {
+    width: 100%;
+    background-image: url(../images/registration-approved.png);
+    background-repeat: no-repeat;
+    background-position: center 25px;
+  }
+  .registration__approved-message-text {
+    width: inherit;
+  }
+  .registration__approved-container {
+    background-image: none;
+  }
 }

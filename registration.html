@@ -921,7 +921,7 @@
 
     <section>
       <div class="registration">
-        <div class="registration__container">
+        <div id="js-registration-form" class="registration__container">
           <div class="breadcrumbs">
             <a href="" class="breadcrumbs__item">Главная</a>
             <a href="" class="breadcrumbs__item">Регистрация</a>
@@ -972,6 +972,7 @@
                 >ИНН КОМПАНИИ</label
               >
               <input
+                placeholder="958757494003039"
                 class="custom-form-input__input"
                 id="js-company-data"
                 type="text"
@@ -982,10 +983,54 @@
             <button
               type="button"
               class="registration__submit-button custom-button --m --blue"
+              id="js-registration-submit-button"
             >
-              Отправить за со всеми сопутствующими деталями
+              <span class="registration__submit-button-desc-text">
+                Отправить за со всеми сопутствующими деталями
+              </span>
+              <span class="registration__submit-button-mobile-text">
+                Оформить заказ
+              </span>
             </button>
+
+            <div class="registration__description-container">
+              <div class="custom-checkbox --square">
+                <label class="custom-checkbox__label">
+                  <input
+                    class="custom-checkbox__input"
+                    checked=""
+                    type="checkbox"
+                  />
+                  <span class="custom-checkbox__checkmark"></span>
+                </label>
+              </div>
+              <span class="registration__description-text"
+                >Сохранить моё имя и почту для следующего комментария</span
+              >
+            </div>
           </form>
+        </div>
+
+        <div
+          id="js-registration-approved"
+          class="registration__approved-container --hidden"
+        >
+          <div class="breadcrumbs">
+            <a href="" class="breadcrumbs__item">Главная</a>
+            <a href="" class="breadcrumbs__item">Регистрация</a>
+          </div>
+
+          <h1 class="registration__title">заявка на регистрацию</h1>
+          <div class="registration__approved-message-container">
+            <h3 class="registration__approved-message-title">
+              Ваша заявка на регистрацию принята
+            </h3>
+            <div class="registration__approved-message-text">
+              Мы обработаем заявку и с Вами свяжется наш менеджер, для
+              согласования необходимых деталей и предоставления доступа к заказу
+              товаров.
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1149,5 +1194,7 @@
     </section>
     <script src="./js/header.js"></script>
     <script src="./js/select.js"></script>
+    <script src="./js/mask.js"></script>
+    <script src="./js/registration.js"></script>
   </body>
 </html>
