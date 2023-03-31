@@ -1,0 +1,93 @@
+@import url(./reset.css);
+@import url(./buttons.css);
+@import url(./heading.css);
+@import url(./fonts/index.css);
+@import url(./variables.css);
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./breadcrumbs.css);
+@import url(./menus.css);
+@import url(./select.css);
+@import url(./layouts/company.css);
+@import url(./tabs.css);
+@import url(./accordion.css);
+
+body {
+  font-family: "Roboto";
+}
+
+.custom-scroll-bar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #1c48a0;
+}
+
+.questions-and-answers__card {
+  border: 1px solid #dddddd;
+  padding: 32px;
+  margin-top: 32px;
+  margin-bottom: 56px;
+}
+
+.questions-and-answers__card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.questions-and-answers__card-content {
+  flex: 10 auto 300px;
+  justify-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 350px;
+}
+
+.questions-and-answers__card-title {
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #141716;
+  align-self: flex-start;
+}
+
+.questions-and-answers__card-text {
+  line-height: 160%;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
+}
+
+.questions-and-answers__button-container {
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+}
+
+.questions-and-answers__button {
+  align-self: center;
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+@media (max-width: 575.98px) {
+  .questions-and-answers__card {
+    padding: 24px;
+  }
+  .questions-and-answers__card-text {
+    margin-top: 8px;
+  }
+  .questions-and-answers__button {
+    margin-top: 8px;
+  }
+}

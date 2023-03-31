@@ -11,7 +11,10 @@
   color: #333333;
   padding: 20px 24px;
   cursor: pointer;
-  border: 1px solid transparent;
+}
+
+.page-main-menu__item:not(:last-child) {
+  border-bottom: 1px solid #dddddd;
 }
 
 .page-main-menu__item:hover {
@@ -23,4 +26,5 @@
 .page-main-menu__item.--active {
   color: #ffffff;
   background-color: #1c48a0;
+  border-bottom-color: transparent;
 }
