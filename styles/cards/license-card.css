@@ -1,0 +1,194 @@
+.license {
+}
+
+.license__cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.license__card {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  padding: 16px 24px;
+}
+
+.license__card-content {
+  display: flex;
+}
+
+.license__card-img {
+  min-width: 80px;
+}
+
+.license__card-img-footer {
+  height: 24px;
+  width: 100%;
+  background-color: #1c48a0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.license__card-img-footer::before {
+  background-image: url(../../icons/NFT.svg);
+  width: 24px;
+}
+.license__card-img-footer::after {
+  background-image: url(../../icons/white-phones.svg);
+  width: 16px;
+  margin-left: 3px;
+}
+
+.license__card-img-footer::before,
+.license__card-img-footer::after {
+  content: "";
+  display: block;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.license__card-text-container {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 572px;
+}
+
+.license__card-title {
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.license__card-text {
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
+}
+
+.license__card-info {
+  display: flex;
+  align-items: center;
+}
+
+.license__card-doc-type {
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
+}
+
+.license__card-delimiter {
+  color: #e5e7e9;
+  margin: 0 9px;
+}
+
+.license__card-date {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0.03em;
+  color: #2c2c2c;
+}
+
+.license__card-controls {
+  margin-left: auto;
+  display: flex;
+  gap: 12px;
+}
+
+.license__card-view-button,
+.license__card-download-button {
+  display: flex;
+  align-items: center;
+}
+
+.license__card-view-button:hover .license__card-button-text,
+.license__card-download-button:hover .license__card-button-text {
+  color: #ffffff;
+}
+
+.license__card-view-button:after,
+.license__card-download-button::after {
+  content: "";
+  min-height: 16px;
+  min-width: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.license__card-view-button:after {
+  background-image: url(../../icons/blue-view.svg);
+}
+
+.license__card-download-button::after {
+  background-image: url(../../icons/blue-download.svg);
+}
+
+.license__card-view-button:hover::after {
+  background-image: url(../../icons/white-view.svg);
+}
+
+.license__card-download-button:hover::after {
+  background-image: url(../../icons/white-download.svg);
+}
+
+.license__card-button-text {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #333333;
+  display: none;
+  text-transform: capitalize;
+}
+
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+}
+@media (max-width: 575.98px) {
+  .license__card {
+    flex-direction: column;
+  }
+
+  .license__card-controls {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .license__card-view-button,
+  .license__card-download-button {
+    justify-content: space-between;
+    padding: 12px 16px !important;
+    flex: 1;
+  }
+
+  .license__card-button-text {
+    display: flex;
+  }
+  .license__card-title {
+    font-size: 14px;
+  }
+  .license__card {
+    padding: 16px;
+  }
+  .license__card-text-container {
+    margin-left: 16px;
+  }
+}

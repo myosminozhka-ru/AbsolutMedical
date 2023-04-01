@@ -26,22 +26,6 @@ body {
   background-color: #1c48a0;
 }
 
-.header {
-  background-color: transparent;
-}
-
-.custom-scroll-bar::-webkit-scrollbar {
-  width: 6px;
-}
-
-.custom-scroll-bar::-webkit-scrollbar-track {
-  background-color: #ddd;
-}
-
-.custom-scroll-bar::-webkit-scrollbar-thumb {
-  background-color: #1c48a0;
-}
-
 .registration__container {
   max-width: 1340px;
   padding: 0px 20px;

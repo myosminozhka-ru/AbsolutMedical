@@ -5,7 +5,8 @@
   font-size: var(--text-l);
   border: 1px solid transparent;
   transition: color var(--base-transition),
-    background-color var(--base-transition);
+    background-color var(--base-transition),
+    background-image var(--base-transition);
   white-space: nowrap;
   text-transform: uppercase;
 }
@@ -145,19 +146,19 @@
 }
 
 .custom-button.--l.--square {
-  width: 3.125rem;
+  min-width: 3.125rem;
   height: 3.125rem;
   padding: 0;
 }
 
 .custom-button.--m.--square {
-  width: 2.5rem;
+  min-width: 2.5rem;
   height: 2.5rem;
   padding: 0;
 }
 
 .custom-button.--s.--square {
-  width: 1.875rem;
+  min-width: 1.875rem;
   height: 1.875rem;
   padding: 0;
 }

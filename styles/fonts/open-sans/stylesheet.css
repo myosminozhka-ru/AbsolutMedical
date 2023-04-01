@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Open Sans";
+  /* src: url("Roboto-Black.eot"); */
+  src: local("OpenSans-Regular"), local("OpenSans-Regular"),
+    url("OpenSans-Regular.eot") format("embedded-opentype"),
+    url("Roboto-Black.woff2") format("woff2"),
+    url("OpenSans-Regular.woff") format("woff"),
+    url("OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
