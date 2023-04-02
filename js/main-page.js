@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var popularProductSwiper = new Swiper("#js-popular-product-swiper", {
+  const popularProductSwiper = new Swiper("#js-popular-product-swiper", {
     slidesPerView: 3,
     spaceBetween: 22,
     navigation: {
@@ -27,16 +27,26 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
   const updatePopelarProductSwiper = () => {
-    document.querySelector(
+    const activeIndex = document.querySelector(
       "#js-popular-product-swiper-acitve-index"
-    ).textContent = popularProductSwiper.activeIndex + 1;
-    document.querySelector("#js-popular-product-swiper-slides").textContent =
-      popularProductSwiper.slides.length;
+    );
+    if (activeIndex && activeIndex.textContent) {
+      activeIndex.textContent = popularProductSwiper.activeIndex + 1;
+    }
+
+    const popularSwiperSlides = document.querySelector(
+      "#js-popular-product-swiper-slides"
+    );
+
+    if (popularSwiperSlides && popularSwiperSlides.textContent) {
+      popularSwiperSlides.textContent = popularProductSwiper.slides.length;
+    }
   };
+
   popularProductSwiper.on("slideChange", updatePopelarProductSwiper);
   updatePopelarProductSwiper();
 
-  var brandsSwiper = new Swiper("#js-brand-swiper", {
+  const brandsSwiper = new Swiper("#js-brand-swiper", {
     slidesPerView: 5,
     navigation: {
       prevEl: "#js-brand-slider-swiper-next-el",
@@ -62,16 +72,27 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+
   const updateBrandsSwiper = () => {
-    document.querySelector("#js-brand-swiper-active-slide-index").textContent =
-      brandsSwiper.activeIndex + 1;
-    document.querySelector("#js-brand-swiper-active-slides-count").textContent =
-      brandsSwiper.slides.length;
+    const activeIndex = document.querySelector(
+      "#js-brand-swiper-active-slide-index"
+    );
+
+    if (activeIndex && activeIndex.textContent) {
+      activeIndex.textContent = brandsSwiper.activeIndex + 1;
+    }
+
+    const slides = document.querySelector(
+      "#js-brand-swiper-active-slides-count"
+    );
+    if (slides && slides.textContent) {
+      slides.textContent = brandsSwiper.slides.length;
+    }
   };
   brandsSwiper.on("slideChange", updateBrandsSwiper);
   updateBrandsSwiper();
 
-  var articlesSwiper = new Swiper("#js-articles-slider-swiper", {
+  const articlesSwiper = new Swiper("#js-articles-slider-swiper", {
     slidesPerView: 4,
     spaceBetween: 16,
     navigation: {
@@ -106,22 +127,29 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+
   const updateArticlesSwiper = () => {
-    document.querySelector("#js-articles-slider-active-index").textContent =
-      articlesSwiper.activeIndex + 1;
-    document.querySelector("#js-articles-slider-slides-count").textContent =
-      articlesSwiper.slides.length;
+    const activeIndex = document.querySelector(
+      "#js-articles-slider-active-index"
+    );
+    if (activeIndex && activeIndex.textContent) {
+      activeIndex.textContent = articlesSwiper.activeIndex + 1;
+    }
+    const slides = document.querySelector("#js-articles-slider-slides-count");
+    if (slides && slides.textContent) {
+      slides.textContent = articlesSwiper.slides.length;
+    }
   };
   articlesSwiper.on("slideChange", updateArticlesSwiper);
   updateArticlesSwiper();
 
-  var swiper = new Swiper("#popular-category__slider", {
+  const popularCategorySwiper = new Swiper("#popular-category__slider", {
     pagination: {
       el: ".swiper-pagination",
     },
   });
 
-  var swiper = new Swiper("#js-best-deals", {
+  const bestDealsSwiper = new Swiper("#js-best-deals", {
     pagination: {
       el: ".swiper-pagination",
     },
@@ -133,22 +161,27 @@ document.addEventListener("DOMContentLoaded", function () {
   const tabs = document.querySelectorAll(".advantages__tab-item");
 
   const setActiveTabItem = (id = 0) => {
-    for (let i = 0; i < advantagesTabItems.length; i++) {
-      if (i === id) {
-        advantagesTabItems[i].style.display = "block";
-        tabs[i].classList.add("--blue");
-        tabs[i].classList.remove("--gray");
-      } else {
-        advantagesTabItems[i].style.display = "none";
-        tabs[i].classList.add("--gray");
-        tabs[i].classList.remove("--blue");
+    if (advantagesTabItems && advantagesTabItems.length) {
+      for (let i = 0; i < advantagesTabItems.length; i++) {
+        if (i === id) {
+          advantagesTabItems[i].style.display = "block";
+          tabs[i].classList.add("--blue");
+          tabs[i].classList.remove("--gray");
+        } else {
+          advantagesTabItems[i].style.display = "none";
+          tabs[i].classList.add("--gray");
+          tabs[i].classList.remove("--blue");
+        }
       }
     }
   };
-  for (let i = 0; i < tabs.length; i++) {
-    tabs[i].addEventListener("click", () => {
-      setActiveTabItem(i);
-    });
+
+  if (tabs && tabs.length) {
+    for (let i = 0; i < tabs.length; i++) {
+      tabs[i].addEventListener("click", () => {
+        setActiveTabItem(i);
+      });
+    }
   }
 
   setActiveTabItem();
@@ -157,26 +190,29 @@ document.addEventListener("DOMContentLoaded", function () {
     "#js-header__scroll-down-button"
   );
 
-  headerScrollDownButton.addEventListener("click", () => {
-    window.scrollBy({
-      top: document.body.scrollHeight,
-      left: 0,
-      behavior: "smooth",
+  if (headerScrollDownButton) {
+    headerScrollDownButton.addEventListener("click", () => {
+      window.scrollBy({
+        top: document.body.scrollHeight,
+        left: 0,
+        behavior: "smooth",
+      });
     });
-  });
 
-  let timerId = null;
-  const debounceHeaderScrollDownButton = () => {
-    headerScrollDownButton.style.visibility = "visible";
-    clearTimeout(timerId);
-    timerId = setTimeout(() => {
-      headerScrollDownButton.style.visibility = "hidden";
-    }, 2000);
-  };
+    let timerId = null;
 
-  window.addEventListener("scroll", (e) => {
-    if (document.body.scrollHeight / 2 > window.scrollY) {
-      debounceHeaderScrollDownButton();
-    }
-  });
+    const debounceHeaderScrollDownButton = () => {
+      headerScrollDownButton.style.visibility = "visible";
+      clearTimeout(timerId);
+      timerId = setTimeout(() => {
+        headerScrollDownButton.style.visibility = "hidden";
+      }, 2000);
+    };
+
+    window.addEventListener("scroll", (e) => {
+      if (document.body.scrollHeight / 2 > window.scrollY) {
+        debounceHeaderScrollDownButton();
+      }
+    });
+  }
 });

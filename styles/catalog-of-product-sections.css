@@ -1,9 +1,33 @@
+@import url(./reset.css);
+@import url(./buttons.css);
+@import url(./catalog-of-product-sections.css);
+@import url(./heading.css);
 @import url(./fonts/index.css);
+@import url(./labels.css);
+@import url(./variables.css);
+@import url(./inputs.css);
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./swiper.css);
+@import url(./breadcrumbs.css);
+@import url(./menus.css);
+@import url(./select.css);
+@import url(./layouts/company.css);
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 body {
   font-family: "Roboto";
-  background-color: #f9f9f9;
+}
+
+.custom-scroll-bar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #1c48a0;
 }
 
 .product-sections__container {
@@ -50,14 +74,13 @@ body {
   margin-top: 2rem;
 }
 .product-section__cards {
-  margin-top: 3.5rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.25rem;
+  gap: 20px;
 }
 
 .product-section__card {
-  width: calc(100% / 2 - 0.625rem);
+  width: calc((100% - 20px) / 2);
   background-color: #fff;
   position: relative;
   padding: 24px;
@@ -143,4 +166,70 @@ body {
 
 .product-section__card-link:nth-child(n + 5) {
   display: none;
+}
+
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+  .product-section__card-title {
+    font-size: 22px;
+  }
+  .product-section__card {
+    padding: 16px;
+  }
+  .product-section__card-img-container {
+    width: 55px;
+    height: 55px;
+  }
+}
+@media (max-width: 767.98px) {
+  .product-section__card-title {
+    font-size: 20px;
+  }
+  .product-section__card {
+    padding: 10px;
+  }
+  .product-section__card-img-container {
+    width: 45px;
+    height: 45px;
+  }
+
+  .product-section__cards {
+    gap: 18px;
+  }
+
+  .product-section__card {
+    width: calc((100% - 18px) / 2);
+  }
+}
+@media (max-width: 575.98px) {
+  .product-section__card-title {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+
+  .product-section__card-label-count,
+  .product-section__card-label-text {
+    font-size: 10px;
+  }
+
+  .product-sections__card-links,
+  .product-section__card-label-container {
+    margin-top: 8px;
+  }
+
+  .product-section__card-img-container {
+    width: 40px;
+    height: 40px;
+  }
+
+  .product-section__cards {
+    gap: 16px;
+  }
+
+  .product-section__card {
+    width: calc((100% - 16px) / 2);
+  }
 }
