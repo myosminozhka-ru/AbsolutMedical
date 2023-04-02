@@ -777,3 +777,11 @@
     width: 130px;
   }
 }
+@media (max-width: 575.98px) {
+  .header-main__searcher-container {
+    width: 20px;
+  }
+  .header-main__searcher {
+    visibility: hidden;
+  }
+}

@@ -1,14 +1,18 @@
-@import url(./variables.css);
 @import url(./reset.css);
 @import url(./buttons.css);
 @import url(./catalog-of-product-sections.css);
 @import url(./heading.css);
 @import url(./fonts/index.css);
+@import url(./labels.css);
+@import url(./variables.css);
 @import url(./inputs.css);
 @import url(./header.css);
 @import url(./footer.css);
-@import url(./404.css);
+@import url(./swiper.css);
 @import url(./breadcrumbs.css);
+@import url(./menus.css);
+@import url(./select.css);
+@import url(./layouts/company.css);
 
 body {
   font-family: "Roboto";
@@ -26,13 +30,243 @@ body {
   background-color: #1c48a0;
 }
 
+.company-layout__content {
+}
+
+.how-to-buy {
+  position: relative;
+}
+
+.how-to-buy::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 200px;
+  right: -100px;
+  width: 50%;
+  display: block;
+  background-image: url(../images/how-to-buy-bag.jpg);
+  background-repeat: no-repeat;
+  background-position: 149px 51px;
+}
+
+.how-to-buy__about-client-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
+}
+
+.how-to-buy__step {
+  min-height: 189px;
+  display: flex;
+  position: relative;
+}
+
+.how-to-buy__step:not(:last-child)::before,
+.how-to-buy__step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: calc((100% - 88px) / 2);
+  background-color: #dddddd;
+  bottom: 0;
+  left: 43px;
+}
+
+.how-to-buy__step::before {
+  top: 88px;
+}
+
+.how-to-buy__step::after {
+  bottom: 0;
+}
+
+.how-to-buy .--first-step.how-to-buy__step::before {
+  background-color: #1c48a0;
+}
+
+.how-to-buy .--first-step .how-to-buy__step-number {
+  border: 2px solid #1c48a0;
+}
+
+.how-to-buy .--first-step .how-to-buy__step-number {
+  color: #333333;
+}
+
+.how-to-buy .--first-step .how-to-buy__step-card {
+  background-color: #ffffff;
+}
+
+.how-to-buy .--first-step .how-to-buy__step-card {
+  border-color: #1c48a0;
+}
+
+.how-to-buy__steps-list {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.how-to-buy__step-number {
+  min-height: 88px;
+  min-width: 88px;
+  max-height: 88px;
+  max-width: 88px;
+  border: 2px solid #dddddd;
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #dddddd;
+}
+
+.how-to-buy__step-card {
+  margin-left: 25px;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  padding: 24px;
+  max-width: 411px;
+  width: 411px;
+}
+
+.how-to-buy__step-title {
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+  color: #2c2c2c;
+}
+
+.how-to-buy__step-text {
+  margin-top: 12px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+  color: #2c2c2c;
+}
+
+.how-to-buy-delivery {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 259px 20px 336px 20px;
+  background-image: url(../images/how-to-buy-car.png);
+  background-repeat: no-repeat;
+  background-size: 61%;
+  background-position: center right;
+}
+
+.how-to-buy-delivery__container {
+  width: 35%;
+}
+
+.how-to-buy-delivery__title {
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.how-to-buy-delivery__text {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
+}
+.how-to-buy-delivery__car-img {
+  display: none;
+}
+
 @media (max-width: 1399.98px) {
 }
 @media (max-width: 1199.98px) {
 }
 @media (max-width: 991.98px) {
+  .how-to-buy::after {
+    background-image: unset;
+    display: none;
+  }
+  .how-to-buy__steps-list {
+    width: unset;
+  }
+  .how-to-buy__step-number {
+    min-height: 44px;
+    min-width: 44px;
+    max-height: 44px;
+    max-width: 44px;
+    font-size: 20px;
+  }
+
+  .how-to-buy__step:not(:last-child)::before,
+  .how-to-buy__step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: calc((100% - 44px) / 2);
+    background-color: #dddddd;
+    bottom: 0;
+    left: 23px;
+  }
+
+  .how-to-buy__step::before {
+    top: 44px;
+  }
+
+  .how-to-buy__step-title {
+    font-size: 24px;
+  }
+
+  .how-to-buy__step-card {
+    padding: 24px 16px 24px 24px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+  }
 }
 @media (max-width: 767.98px) {
+  .how-to-buy__step {
+    width: 100%;
+  }
+  .how-to-buy__step-card {
+    max-width: unset;
+    flex: 1;
+    background-color: #ffffff;
+  }
+  .how-to-buy__steps-list {
+    margin-top: 24px;
+  }
+  .how-to-buy__about-client-text {
+    margin-top: 24px;
+  }
+
+  .how-to-buy-delivery {
+    margin-top: 48px;
+    padding: 0 20px;
+    background-image: unset;
+  }
+
+  .how-to-buy-delivery__container {
+    width: unset;
+  }
+
+  .how-to-buy-delivery__car-img {
+    margin-bottom: 56px;
+    margin-top: 28px;
+    display: block;
+  }
 }
 @media (max-width: 575.98px) {
 }
