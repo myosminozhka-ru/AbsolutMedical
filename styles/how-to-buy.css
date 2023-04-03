@@ -191,10 +191,6 @@ body {
   display: none;
 }
 
-@media (max-width: 1399.98px) {
-}
-@media (max-width: 1199.98px) {
-}
 @media (max-width: 991.98px) {
   .how-to-buy::after {
     background-image: unset;
@@ -267,6 +263,4 @@ body {
     margin-top: 28px;
     display: block;
   }
-}
-@media (max-width: 575.98px) {
 }
