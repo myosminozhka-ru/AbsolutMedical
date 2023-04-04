@@ -38,7 +38,86 @@ input[type="number"] {
   text-align: center;
 }
 
-/* switcher */
+/* small ---------------------------------------*/
+.custom-number-input.--small {
+  position: relative;
+  height: 3.875rem;
+  border: 1px solid #dddddd;
+  width: 5.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* align-items: center;
+  justify-content: space-between; */
+}
+
+.custom-number-input.--small > .custom-number-input__plus-button,
+.custom-number-input.--small > .custom-number-input__minus-button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 0.03rem;
+  color: #333333;
+  border-left: 1px solid #dddddd;
+}
+
+.custom-number-input.--small > .custom-number-input__plus-button {
+  border-bottom: 1px solid #dddddd;
+}
+
+.custom-number-input.--small > .custom-number-input__input {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0rem 2.375rem 0 0.375rem;
+  text-align: center;
+}
+/* small ---------------------------------------*/
+
+/* large number input ------------------------------------------*/
+.custom-number-input.--large {
+  position: relative;
+  height: 3.875rem;
+  border: 1px solid #dddddd;
+  width: 14.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-number-input.--large .custom-number-input__plus-button,
+.custom-number-input.--large .custom-number-input__minus-button {
+  width: calc(100% / 3);
+  height: 100%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.custom-number-input.--large .custom-number-input__plus-button {
+  border-right: 1px solid #dddddd;
+}
+.custom-number-input.--large .custom-number-input__minus-button {
+  border-left: 1px solid #dddddd;
+}
+
+.custom-number-input.--large .custom-number-input__input {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0rem 5.4375rem;
+  text-align: center;
+}
+/* large number input ------------------------------------------------- */
+
+/* switcher default ------------------------------------------------ */
 .custom-switcher-input {
   height: 0;
   width: 0;
@@ -53,7 +132,6 @@ input[type="number"] {
   width: 5.5rem;
   height: 2.5rem;
   background: #eef3f4;
-  /* display: block; */
   position: relative;
 }
 
@@ -94,6 +172,99 @@ input[type="number"] {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+/* switcher default ---------------------------------------- */
+
+/* swithcer bottom text --------------------------------------- */
+
+.custom-switcher.--text-bottom.custom-switcher-input {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.custom-switcher.--text-bottom .custom-switcher-label {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 4.75rem;
+  height: 3.8125rem;
+  background: #eef3f4;
+  position: relative;
+}
+
+.custom-switcher.--text-bottom .custom-switcher-label:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 2.125rem;
+  height: 2.125rem;
+  background-color: #1c48a0;
+  transition: 0.3s;
+  background-image: url(../icons/white-boxes.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-switcher.--text-bottom .custom-switcher-label:before {
+  content: "";
+  position: absolute;
+  transform: translateX(100%);
+  top: 3px;
+  left: 3px;
+  width: 2.125rem;
+  height: 2.125rem;
+  background-color: #f5f5f7;
+  transition: 0.3s;
+  background-image: url(../icons/gray-box.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-switcher-input:checked + .custom-switcher-label::before {
+  left: calc(100% - 3px);
+  transform: translateX(-200%);
+  background-image: url(../icons/gray-boxes.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-switcher-input:checked + .custom-switcher-label:after {
+  left: calc(100% - 3px);
+  transform: translateX(-100%);
+  background-image: url(../icons/white-box.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-switcher.--text-bottom .custom-switcher-label-left-text,
+.custom-switcher.--text-bottom .custom-switcher-label-right-text {
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.custom-switcher.--text-bottom .custom-switcher-label-left-text {
+  display: none;
+}
+
+.custom-switcher.--text-bottom
+  .custom-switcher-input:checked
+  + .custom-switcher-label
+  .custom-switcher-label-right-text {
+  display: none;
+}
+
+.custom-switcher.--text-bottom
+  .custom-switcher-input:checked
+  + .custom-switcher-label
+  .custom-switcher-label-left-text {
+  display: flex;
+}
+
+/* swithcer bottom text --------------------------------------- */
 
 /* form input ------------------*/
 .custom-form-input {

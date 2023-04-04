@@ -1,0 +1,51 @@
+.ui-popup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+
+.ui-popup-container {
+  position: relative;
+  z-index: 101;
+  background-color: #ffffff;
+  min-width: 300px;
+  padding: 56px 24px 56px 24px;
+}
+
+.ui-popup-close-button {
+  position: absolute;
+  height: 62px;
+  width: 62px;
+  background-image: url(../../icons/gray-cross.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  left: -86px;
+}
+
+.ui-popup-close-button:hover {
+  background-color: #1c48a0;
+  border-color: #1c48a0;
+  background-image: url(../../icons/white-cross.svg);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.ui-popup-close-button:active {
+  background-color: #2655b4;
+  border-color: #2655b4;
+}
+
+@media (max-width: 767.98px) {
+  .ui-popup-close-button {
+    width: 43px;
+    height: 43px;
+    left: unset;
+    right: 0;
+    top: -67px;
+  }
+}

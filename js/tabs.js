@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const tabs = document
-    .querySelector(".ui-tabs-container")
-    .querySelectorAll(".ui-tabs-control");
+  const allTabsInPage = document.querySelectorAll(".ui-tabs-container");
 
   const setActiveTab = (tab, idx) => {
     const tabsContainer = tab.closest(".ui-tabs-container");
@@ -22,11 +20,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-  if (tabs && tabs.length) {
-    for (let i = 0; i < tabs.length; i++) {
-      tabs[i].addEventListener("click", function () {
-        setActiveTab(tabs[i], i);
-      });
+  if (allTabsInPage && allTabsInPage.length) {
+    for (let i = 0; i < allTabsInPage.length; i++) {
+      let tabs = allTabsInPage[i].querySelectorAll(".ui-tabs-control");
+
+      for (let j = 0; j < tabs.length; j++) {
+        tabs[j].addEventListener("click", function () {
+          setActiveTab(tabs[j], j);
+        });
+
+        if (j === 0) {
+          setActiveTab(tabs[j], j);
+        }
+      }
     }
   }
 });

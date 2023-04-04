@@ -1,0 +1,418 @@
+@import url(./reset.css);
+@import url(./buttons.css);
+@import url(./catalog-of-product-sections.css);
+@import url(./heading.css);
+@import url(./fonts/index.css);
+@import url(./labels.css);
+@import url(./variables.css);
+@import url(./inputs.css);
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./breadcrumbs.css);
+@import url(./select.css);
+@import url(./layouts/products.css);
+@import url(./layouts/popap.css);
+
+body {
+  font-family: "Roboto";
+}
+
+.custom-scroll-bar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #1c48a0;
+}
+
+.ui-tabs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ui-tabs-list {
+  display: flex;
+  overflow-x: auto;
+}
+
+.ui-tabs-list::-webkit-scrollbar {
+  display: none;
+}
+
+.ui-tabs-list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.ui-tabs-control {
+  line-height: 160%;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ui-tabs-control:hover {
+  /* background-color: #eef3f4; */
+}
+
+.ui-tabs-control.--active:hover {
+  /* background-color: #2655b4; */
+}
+
+.ui-tabs-control.--active {
+  /* color: #fff; */
+  /* border: 1px solid transparent; */
+  /* background-color: #1c48a0; */
+}
+
+.ui-tabs-items {
+  /* margin-top: 20px; */
+  /* width: 100%; */
+  position: relative;
+}
+
+.ui-tabs-item {
+  display: none;
+}
+
+.ui-tabs-item.--active {
+  display: block;
+}
+.breadcrumbs {
+  position: relative;
+  z-index: 1;
+}
+
+/* --------- product header -------------------------------- */
+.product-header {
+  display: flex;
+  position: relative;
+  margin-top: 28px;
+}
+
+.product-header__galery {
+  width: 40%;
+  /* outline: 1px solid green; */
+  background-color: #ffffff;
+  position: relative;
+  overflow: visible;
+  width: 553px;
+  /* height: 837px; */
+}
+
+.product-header__galery::before {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  /* top: 0; */
+  /* z-index: 0; */
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+}
+
+.prodcut-header__galery-container {
+  height: 640px;
+  width: 100%;
+  padding: 0 0 159% 0;
+  position: relative;
+}
+
+.product-header__galery-product-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.prodcut-header__galery-labels {
+  position: absolute;
+  top: 0;
+  right: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.product-header__galery-link {
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  right: 0;
+  top: 50%;
+  font-size: 12px;
+  line-height: 170%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #333333;
+  background-color: #f5f5f7;
+  position: absolute;
+  height: 88px;
+  width: 88px;
+  border-left: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  background-image: url(../icons/gray-pdf.svg);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position-x: center;
+  background-position-y: 13px;
+  cursor: pointer;
+}
+
+.product-header__galery-slider {
+  /* width: 100%; */
+  width: 60%;
+  margin: 0 auto 73px auto;
+}
+
+.swiper-button-next {
+}
+
+.swiper-button-prev {
+}
+
+.product-header__description {
+  margin-left: 34px;
+}
+
+.product-info {
+}
+
+.prodcut-info__title-container {
+}
+
+.prodcut-info__title {
+}
+
+.prodcut-info__discount {
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  padding: 3px 10px;
+}
+
+.product-info__vendor-conde {
+  margin-top: 8px;
+  font-family: "DIN Pro Cond";
+  font-size: 20px;
+  line-height: 170%;
+  text-transform: uppercase;
+  color: #2c2c2c;
+}
+
+.product-info__general-info-list {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.prodcut-info__price {
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  color: #333333;
+  display: flex;
+  align-items: center;
+}
+
+/* .prodcut-info__price::after {
+  content: "";
+} */
+
+.prodcut-info__price-icon {
+  display: block;
+  height: 30px;
+  width: 30px;
+  background-image: url(../icons/rub-black.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.product-info__solution-price {
+  padding-bottom: 4px;
+  margin-left: 12px;
+  line-height: 160%;
+  letter-spacing: 0.03rem;
+  color: #1c48a0;
+  border-bottom: 1px solid #1c48a0;
+}
+
+.product-info__solution-icon {
+  border: 1px solid #dddddd;
+  display: inline-block;
+  margin-left: 8px;
+  height: 30px;
+  width: 30px;
+  background-image: url(../icons/blue-icon-question.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 13px;
+  cursor: pointer;
+}
+
+.product-info__solution-icon:hover {
+  background-color: #1c48a0;
+  border-color: #1c48a0;
+  background-image: url(../icons/white-question.svg);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.product-info__solution-icon:hover .product-info__solution-popup {
+  display: block;
+}
+
+.product-info__solution-popup {
+}
+
+.solution-popup {
+}
+
+.solution-popup__row {
+}
+
+.solution-popup__title {
+}
+
+.solution-popup__text {
+}
+.solution-popup__col {
+}
+.product-info__manufacturer {
+}
+.product-info__manufacturer-link {
+}
+
+.product-info__product-description {
+  margin-top: 20px;
+  background-color: #f5f5f7;
+  border: 1px solid #dddddd;
+  padding: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
+}
+
+.prodcut-info__tabs-container {
+  margin-top: 32px;
+}
+
+.description-tabs {
+}
+
+.ui-tabs-container {
+}
+
+.description-tabs__list {
+  gap: 26px;
+  border-bottom: 1px solid #dddddd;
+}
+.ui-tabs-list {
+}
+
+.description-tabs__list-item {
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  padding-bottom: 5px;
+}
+
+.description-tabs__list-item.--active {
+  color: #333333;
+  border-bottom: 3px solid #333333;
+}
+
+.ui-tabs-control {
+}
+
+.description-tabs__content {
+  margin-top: 20px;
+}
+
+.description-tabs__content-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ui-tabs-item {
+}
+
+.description-tabs__content-item-text {
+  padding-left: 24px;
+  position: relative;
+}
+.description-tabs__content-item-text::before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  left: 0;
+  top: 6px;
+
+  background-color: #1c48a0;
+}
+
+.prodcut-info__controls {
+  margin-top: 40px;
+  display: flex;
+}
+
+.prodcut-info__controls-number-input {
+}
+
+.custom-number-input {
+}
+
+.--small {
+}
+
+.custom-number-input__plus-button {
+}
+
+.custom-number-input__minus-button {
+}
+
+.custom-number-input__input {
+}
+
+.product-info__controls-switcher {
+  margin-left: 12px;
+}
+
+.product-info__add-to-cart-button {
+  margin-left: 24px;
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.prodcut-info__controls-link {
+  height: 62px;
+  width: 62px;
+  border: 1px solid #dddddd;
+  margin-left: 24px;
+}

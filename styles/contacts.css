@@ -12,6 +12,7 @@
 @import url(./menus.css);
 @import url(./select.css);
 @import url(./layouts/company.css);
+@import url(./layouts/popap.css);
 
 body {
   font-family: "Roboto";
@@ -27,4 +28,460 @@ body {
 
 .custom-scroll-bar::-webkit-scrollbar-thumb {
   background-color: #1c48a0;
+}
+
+.contacts {
+}
+
+.contacts__location-info {
+  padding: 24px;
+  background-color: #ffffff;
+}
+
+.contacts__location-info-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dddddd;
+}
+.contacts__location-info-title {
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.contacts__location-info-controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.contacts__location-info-facebook,
+.contacts__location-info-vk {
+  height: 32px;
+  width: 32px;
+  border: 1px solid #dddddd;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.contacts__location-info-facebook {
+  background-image: url(../icons/blue-facebook.svg);
+}
+
+.contacts__location-info-vk {
+  background-image: url(../icons/blue-vk.svg);
+}
+
+.contacts__location-info-facebook:hover,
+.contacts__location-info-vk:hover {
+  border-color: #1c48a0;
+  background-color: #1c48a0;
+}
+
+.contacts__location-info-facebook:hover {
+  background-image: url(../icons/white-facebook.svg);
+}
+
+.contacts__location-info-vk:hover {
+  background-image: url(../icons/white-vk.svg);
+}
+
+.contacts__location-info-header-list {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.contacts__location-info-header-list-item {
+  width: calc((100% - 24px) / 2);
+}
+
+.contacts__location-info-header-list-item-title {
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.contacts__location-info-header-list-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
+}
+
+.contacts__location-info-button {
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 32px;
+}
+
+.contacts__map-container {
+  margin-top: 32px;
+}
+
+.contacts__additional-info {
+  padding: 24px 76px 24px 24px;
+  margin-top: 48px;
+  background-color: #f5f5f7;
+  line-height: 160%;
+  letter-spacing: 0.03rem;
+}
+
+.contacts__branches-title-container {
+  margin-top: 48px;
+  display: flex;
+}
+
+.contacts__branches-title {
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.contacts__branches-text {
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  margin-left: 8px;
+}
+
+.contacts__branches-list {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__branches-item {
+  padding: 24px;
+  background-color: #ffffff;
+}
+
+.contacts__branches-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.contacts__branches-header-title {
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.contacts__branches-header-link {
+  display: block;
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  height: 22px;
+  text-transform: uppercase;
+  color: #1c48a0;
+  border-bottom: 1px solid #1c48a0;
+}
+
+.contacts__branches-header-link:hover {
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  color: #2655b4;
+  border-bottom-color: #2655b4;
+}
+
+/* .contacts__branches-list {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contacts__branches-item {
+  padding: 24px;
+  background-color: #ffffff;
+} */
+
+.contacts__branches-body {
+  margin-top: 32px;
+  display: flex;
+}
+
+.contacts__branches-body-item {
+  flex: 1;
+}
+
+.contacts__branches-body-item:not(:first-child) {
+  padding-left: 20px;
+  border-left: 1px solid #dddddd;
+}
+
+.contacts__branches-body-item:not(:last-child) {
+  padding-right: 20px;
+}
+
+.contacts__branches-body-title {
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.contacts__branches-body-text {
+  margin-top: 12px;
+  line-height: 160%;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
+}
+
+.contacts__branches-button {
+  margin-top: 32px;
+  margin-bottom: 56px;
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.ui-popup-container {
+  padding: 0;
+  display: flex;
+}
+
+.contacts-popup {
+  position: absolute;
+  right: 0;
+  max-width: 1269px;
+  /* background-image: url(../images/contacts-popup.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20%; */
+}
+
+.contacts-popup__image-container {
+  width: 731px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 98, 169, 0.1);
+}
+
+.contacts-popup__form {
+  width: 538px;
+  padding: 30px 54px;
+}
+
+.contacts-popup__title {
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 40px;
+}
+
+.contacts-popup__inputs-container .custom-form-input:not(:last-child) {
+  margin-bottom: 38px;
+}
+
+.contacts-popup__submit-button {
+  margin-top: 30px;
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.contacts-popup__text-container {
+  margin-top: 24px;
+}
+
+.contacts-popup__text,
+.contacts-popup__text-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.03em;
+  color: #2c2c2c;
+}
+
+.contacts-popup__text-link {
+  color: #1c48a0;
+  border-bottom: 1px solid #1c48a0;
+}
+
+.contacts-popup__text:hover {
+  color: #2655b4;
+  border-color: #2655b4;
+}
+
+.contacts-popup__text:active {
+  color: #1c48a0;
+  border-color: #1c48a0;
+}
+
+.ui-popup {
+  display: none;
+}
+
+.ui-popup.--active {
+  display: block;
+}
+
+@media (max-width: 1399.98px) {
+  .contacts-popup__image-container {
+    width: 631px;
+  }
+
+  .contacts-popup__form {
+    width: 438px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .contacts-popup__image-container {
+    width: 531px;
+  }
+
+  .contacts-popup__form {
+    width: 388px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .contacts-popup__image-container {
+    display: none;
+  }
+
+  .contacts-popup__form {
+    width: 688px;
+  }
+
+  .contacts__location-info-controls {
+    margin-top: 0;
+  }
+
+  .contacts__branches-body-item:not(:first-child) {
+    padding-left: unset;
+    border-left: unset;
+    padding-top: 16px;
+    border-top: 1px solid #dddddd;
+  }
+
+  .contacts__branches-body-item:not(:last-child) {
+    padding-right: unset;
+    padding-bottom: 16px;
+  }
+
+  .contacts__branches-body {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .contacts-popup {
+    margin-top: 67px;
+    width: 100%;
+  }
+
+  .contacts-popup__form {
+    width: 100%;
+  }
+  .contacts-popup__form {
+    padding: 42px 24px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .company-layout__container {
+    padding: 0;
+  }
+  .breadcrumbs,
+  .company-layout__title,
+  .contacts__branches-title-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contacts .contacts__branches-button {
+    width: calc(100% - 40px);
+  }
+
+  .contacts__additional-info,
+  .contacts__branches-button,
+  .contacts__branches-list {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .contacts__location-info {
+    margin-top: 24px;
+  }
+  .contacts__location-info-title {
+    font-size: 24px;
+  }
+  .contacts__location-info-header {
+    padding-bottom: 16.5px;
+  }
+  .contacts__location-info-header-list {
+    margin-top: 24px;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .contacts__location-info-header-list-item {
+    width: 100%;
+  }
+  .contacts__branches-title {
+    font-size: 24px;
+  }
+  .contacts__branches-text {
+    font-size: 20px;
+  }
+  .contacts__branches-list {
+    margin-top: 24px;
+  }
+  .contacts__branches-header-title {
+    font-size: 20px;
+  }
+  .contacts__branches-item {
+    padding: 16.5px 13.5px;
+  }
+  .contacts__branches-body {
+    margin-top: 24px;
+  }
+  .contacts-popup__inputs-container .custom-form-input:not(:last-child) {
+    margin-top: 24px;
+  }
+  .contacts-popup__text-container {
+    margin-top: 24px;
+  }
 }
