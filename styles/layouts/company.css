@@ -1,6 +1,5 @@
 .company-layout {
   background-color: #f9f9f9;
-  /* position: relative; */
 }
 
 .company-layout__title {
@@ -22,8 +21,10 @@
 
 .company-layout__menu {
   min-width: 200px;
+  max-width: 310px;
   flex: 1;
 }
+
 .company-layout__content {
   flex: 3;
   overflow: hidden;
@@ -46,14 +47,18 @@
     display: block;
   }
 }
+
 @media (max-width: 1399.98px) {
 }
+
 @media (max-width: 1199.98px) {
 }
+
 @media (max-width: 991.98px) {
   .company-layout__title {
     margin-top: 26px;
   }
+
   .company-layout__content-container {
     margin-top: 36px;
   }

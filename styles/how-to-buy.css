@@ -137,6 +137,10 @@ body {
   width: 411px;
 }
 
+.how-to-buy__step:last-child .how-to-buy__step-card {
+  margin-bottom: 0;
+}
+
 .how-to-buy__step-title {
   font-family: "DIN Pro Cond";
   font-style: normal;
@@ -153,6 +157,14 @@ body {
   line-height: 160%;
   letter-spacing: 0.03em;
   color: #2c2c2c;
+}
+
+.how-to-buy__step-text-link {
+  color: #1c48a0;
+}
+
+.how-to-buy__step-text-link:hover {
+  color: #2655b4;
 }
 
 .how-to-buy-delivery {

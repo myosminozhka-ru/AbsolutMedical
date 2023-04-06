@@ -177,7 +177,12 @@ input[type="number"] {
 
 /* swithcer bottom text --------------------------------------- */
 
-.custom-switcher.--text-bottom.custom-switcher-input {
+.custom-switcher.--text-bottom {
+  position: relative;
+}
+
+.custom-switcher.--text-bottom .custom-switcher-input {
+  position: absolute;
   height: 0;
   width: 0;
   visibility: hidden;
@@ -213,7 +218,7 @@ input[type="number"] {
   position: absolute;
   transform: translateX(100%);
   top: 3px;
-  left: 3px;
+  left: 5px;
   width: 2.125rem;
   height: 2.125rem;
   background-color: #f5f5f7;
@@ -224,7 +229,7 @@ input[type="number"] {
 }
 
 .custom-switcher-input:checked + .custom-switcher-label::before {
-  left: calc(100% - 3px);
+  left: calc(100% - 5px);
   transform: translateX(-200%);
   background-image: url(../icons/gray-boxes.svg);
   background-repeat: no-repeat;
