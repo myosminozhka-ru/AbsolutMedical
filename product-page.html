@@ -930,13 +930,29 @@
         <div class="product-page__container">
           <div class="product-header">
             <a href="" class="product-header__share-button"></a>
+            <div
+              class="prodcut-info__title-container prodcut-info__title-mobile"
+            >
+              <h1 class="prodcut-info__title">
+                SEKUSEPT aktiv TEST LONG TEEEEEEEXT TEEEEEEEXT
+              </h1>
+
+              <span class="prodcut-info__discount">-64%</span>
+            </div>
+            <div
+              class="product-info__vendor-conde product-info__vendor-conde__mobile"
+            >
+              Артикул: 3050530, 3050610
+            </div>
             <div class="product-header__galery">
               <div class="prodcut-header__galery-container">
-                <img
-                  class="product-header__galery-product-img"
-                  src="./images/product-image.png"
-                  alt="product"
-                />
+                <div class="prodcut-header__galery-image-container">
+                  <img
+                    class="product-header__galery-product-img"
+                    src="./images/product-image.png"
+                    alt="product"
+                  />
+                </div>
 
                 <div class="prodcut-header__galery-labels">
                   <div class="label --new">Аналогов нет</div>
@@ -944,6 +960,10 @@
                 </div>
 
                 <a class="product-header__galery-link">Брошюра</a>
+                <a
+                  href=""
+                  class="product-header__share-button product-header__share-button-mobile"
+                ></a>
               </div>
 
               <div class="product-header__galery-slider">
@@ -1042,6 +1062,7 @@
                 <h1 class="prodcut-info__title">
                   SEKUSEPT aktiv TEST LONG TEEEEEEEXT TEEEEEEEXT
                 </h1>
+
                 <span class="prodcut-info__discount">-64%</span>
               </div>
 
@@ -1054,38 +1075,40 @@
                   641 <span class="prodcut-info__price-icon"></span>
                 </div>
 
-                <a class="product-info__solution-price" href="">
-                  Цена рабочего раствора
-                </a>
+                <div class="product-info__solution-container">
+                  <a class="product-info__solution-price" href="">
+                    Цена рабочего раствора
+                  </a>
 
-                <span class="product-info__solution-icon">
-                  <span class="product-info__solution-popup solution-popup">
-                    <span class="solution-popup__row">
-                      <span class="solution-popup__col">
-                        <span class="solution-popup__title">Вид режима:</span>
-                        <span class="solution-popup__text"
-                          >Раствор противогрибковый</span
-                        >
+                  <span class="product-info__solution-icon">
+                    <span class="product-info__solution-popup solution-popup">
+                      <span class="solution-popup__row">
+                        <span class="solution-popup__col">
+                          <span class="solution-popup__title">Вид режима:</span>
+                          <span class="solution-popup__text"
+                            >Раствор противогрибковый</span
+                          >
+                        </span>
                       </span>
-                    </span>
-                    <span class="solution-popup__row">
-                      <span class="solution-popup__col">
-                        <span class="solution-popup__title">Время:</span>
-                        <span class="solution-popup__text">60 минут</span>
-                      </span>
+                      <span class="solution-popup__row">
+                        <span class="solution-popup__col">
+                          <span class="solution-popup__title">Время:</span>
+                          <span class="solution-popup__text">60 минут</span>
+                        </span>
 
-                      <span class="solution-popup__col">
-                        <span class="solution-popup__title">Цена:</span>
-                        <span class="solution-popup__text">100 рублей</span>
-                      </span>
+                        <span class="solution-popup__col">
+                          <span class="solution-popup__title">Цена:</span>
+                          <span class="solution-popup__text">100 рублей</span>
+                        </span>
 
-                      <span class="solution-popup__col">
-                        <span class="solution-popup__title">Объём:</span>
-                        <span class="solution-popup__text">1 литр</span>
+                        <span class="solution-popup__col">
+                          <span class="solution-popup__title">Объём:</span>
+                          <span class="solution-popup__text">1 литр</span>
+                        </span>
                       </span>
                     </span>
                   </span>
-                </span>
+                </div>
 
                 <div class="product-info__manufacturer">
                   Производитель:
@@ -2391,27 +2414,209 @@
           </div>
         </div>
 
-        <div class="product-page__container categories-slider">
+        <div class="product-page__container-fluid categories-slider">
           <div
             class="categories-slider__swiper swiper"
             id="js-categories-slider"
           >
             <div class="categories-slider__swiper-wrapper swiper-wrapper">
               <div class="swiper-slide">
-                <div class="categories-slider__slider-item">skldjfl</div>
+                <div class="categories-slider__slider-item">
+                  <div class="categories-slider__img-container">
+                    <img
+                      src="./images/categories-slider-img.jpg"
+                      alt="categories"
+                    />
+                  </div>
+
+                  <div class="categories-slider__description-container">
+                    <div class="categories-slider__description-title">
+                      ХИРУРГИЯ И СТОМАТОЛОГИЯ
+                    </div>
+                    <div class="categories-slider__description-text">
+                      Для дезинфекции изделий медицинского назначения, включая
+                      хирургические и стоматологические инструменты, эндоскопы и
+                    </div>
+
+                    <div class="custom-button-group">
+                      <button
+                        id="js-categories-slider-prev-el"
+                        class="custom-button --l --blue --square swiper-button-disabled"
+                      ></button>
+                      <div class="custom-button-group__numbers">
+                        <div
+                          id="js-categories-slider-active-index"
+                          class="custom-button-group__frist-number"
+                        >
+                          1
+                        </div>
+                        <div class="custom-button-group__second-number">
+                          &nbsp;/&nbsp;
+                        </div>
+                        <div
+                          id="js-categories-slider-slides-count"
+                          class="custom-button-group__second-number"
+                        >
+                          6
+                        </div>
+                      </div>
+                      <button
+                        id="js-categories-slider-next-el"
+                        class="custom-button --l --blue --square"
+                      ></button>
+                    </div>
+                  </div>
+                </div>
               </div>
+
               <div class="swiper-slide">
-                <div class="categories-slider__slider-item">lsjfksdk</div>
+                <div class="categories-slider__slider-item">
+                  <div class="categories-slider__img-container">
+                    <img
+                      src="./images/categories-slider-img.jpg"
+                      alt="categories"
+                    />
+                  </div>
+
+                  <div class="categories-slider__description-container">
+                    <div class="categories-slider__description-title">
+                      СТОМАТОЛОГИЯ
+                    </div>
+                    <div class="categories-slider__description-text">
+                      Для дезинфекции изделий медицинского назначения, включая
+                      хирургические и стоматологические инструменты, эндоскопы и
+                      инструменты к ним, стоматологические материалы
+                    </div>
+
+                    <div class="custom-button-group">
+                      <button
+                        id="js-categories-slider-prev-el"
+                        class="custom-button --l --blue --square swiper-button-disabled"
+                      ></button>
+                      <div class="custom-button-group__numbers">
+                        <div
+                          id="js-categories-slider-active-index"
+                          class="custom-button-group__frist-number"
+                        >
+                          1
+                        </div>
+                        <div class="custom-button-group__second-number">
+                          &nbsp;/&nbsp;
+                        </div>
+                        <div
+                          id="js-categories-slider-slides-count"
+                          class="custom-button-group__second-number"
+                        >
+                          6
+                        </div>
+                      </div>
+                      <button
+                        id="js-categories-slider-next-el"
+                        class="custom-button --l --blue --square"
+                      ></button>
+                    </div>
+                  </div>
+                </div>
               </div>
+
               <div class="swiper-slide">
-                <div class="categories-slider__slider-item">lsjdfkjs</div>
+                <div class="categories-slider__slider-item">
+                  <div class="categories-slider__img-container">
+                    <img
+                      src="./images/categories-slider-img.jpg"
+                      alt="categories"
+                    />
+                  </div>
+
+                  <div class="categories-slider__description-container">
+                    <div class="categories-slider__description-title">
+                      ХИРУРГИЯ
+                    </div>
+                    <div class="categories-slider__description-text">
+                      Для дезинфекции изделий медицинского назначения, включая
+                      хирургические и стоматологические инструменты, эндоскопы и
+                    </div>
+
+                    <div class="custom-button-group">
+                      <button
+                        id="js-categories-slider-prev-el"
+                        class="custom-button --l --blue --square swiper-button-disabled"
+                      ></button>
+                      <div class="custom-button-group__numbers">
+                        <div
+                          id="js-categories-slider-active-index"
+                          class="custom-button-group__frist-number"
+                        >
+                          1
+                        </div>
+                        <div class="custom-button-group__second-number">
+                          &nbsp;/&nbsp;
+                        </div>
+                        <div
+                          id="js-categories-slider-slides-count"
+                          class="custom-button-group__second-number"
+                        >
+                          6
+                        </div>
+                      </div>
+                      <button
+                        id="js-categories-slider-next-el"
+                        class="custom-button --l --blue --square"
+                      ></button>
+                    </div>
+                  </div>
+                </div>
               </div>
+
               <div class="swiper-slide">
-                <div class="categories-slider__slider-item"></div>
+                <div class="categories-slider__slider-item">
+                  <div class="categories-slider__img-container">
+                    <img
+                      src="./images/categories-slider-img.jpg"
+                      alt="categories"
+                    />
+                  </div>
+
+                  <div class="categories-slider__description-container">
+                    <div class="categories-slider__description-title">
+                      ХИРУРГИЯ И СТОМАТОЛОГИЯ
+                    </div>
+                    <div class="categories-slider__description-text">
+                      Для дезинфекции изделий медицинского назначения, включая
+                      хирургические и стоматологические инструменты, эндоскопы и
+                      инструменты к ним, стоматологические материалы
+                    </div>
+                    <div class="custom-button-group">
+                      <button
+                        id="js-categories-slider-prev-el"
+                        class="custom-button --l --blue --square swiper-button-disabled"
+                      ></button>
+                      <div class="custom-button-group__numbers">
+                        <div
+                          id="js-categories-slider-active-index"
+                          class="custom-button-group__frist-number"
+                        >
+                          1
+                        </div>
+                        <div class="custom-button-group__second-number">
+                          &nbsp;/&nbsp;
+                        </div>
+                        <div
+                          id="js-categories-slider-slides-count"
+                          class="custom-button-group__second-number"
+                        >
+                          6
+                        </div>
+                      </div>
+                      <button
+                        id="js-categories-slider-next-el"
+                        class="custom-button --l --blue --square"
+                      ></button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
           </div>
         </div>

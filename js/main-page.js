@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
 
       0: {
-        slidesPerView: 1,
+        slidesPerView: 1.2,
         pagination: {
           el: ".swiper-pagination",
         },

@@ -161,6 +161,9 @@
 }
 
 @media (max-width: 767.98px) {
+  .popular-category {
+    margin-top: 56px;
+  }
   .popular-category__cards-container {
     display: none;
   }

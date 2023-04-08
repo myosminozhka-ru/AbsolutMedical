@@ -1,11 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper("#product-galery", {
+  const productPageCategories = new Swiper("#product-galery", {
     navigation: {
       nextEl: ".product-header__galery-slider-next",
       prevEl: ".product-header__galery-slider-prev",
     },
     slidesPerView: 4,
     spaceBetween: 16,
+    breakpoints: {
+      1191.98: {
+        slidesPerView: 4,
+      },
+      767.98: {
+        slidesPerView: 3,
+      },
+      575.98: {
+        slidesPerView: 4,
+      },
+
+      0: {
+        slidesPerView: 3,
+      },
+    },
   });
 
   const popularProductSwiper = new Swiper("#js-popular-product-swiper", {
@@ -28,13 +43,14 @@ document.addEventListener("DOMContentLoaded", function () {
       },
 
       0: {
-        slidesPerView: 1,
+        slidesPerView: 1.2,
         pagination: {
           el: ".swiper-pagination",
         },
       },
     },
   });
+
   const updatePopelarProductSwiper = () => {
     const activeIndex = document.querySelector(
       "#js-popular-product-swiper-acitve-index"
@@ -103,19 +119,55 @@ document.addEventListener("DOMContentLoaded", function () {
       slides.textContent = articlesSwiper.slides.length;
     }
   };
+
   articlesSwiper.on("slideChange", updateArticlesSwiper);
   updateArticlesSwiper();
 
   const categoriesSlider = new Swiper("#js-categories-slider", {
     spaceBetween: 30,
     effect: "fade",
+    fadeEffect: { crossFade: true },
+    virtualTranslate: true,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: "#js-categories-slider-next-el",
+      prevEl: "#js-categories-slider-prev-el",
     },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+    breakpoints: {
+      767.98: {
+        pagination: false,
+      },
+      0: {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      },
     },
   });
+
+  const updateCategoriesSLider = () => {
+    const activeIndexes = document.querySelectorAll(
+      "#js-categories-slider-active-index"
+    );
+
+    if (activeIndexes && activeIndexes.length) {
+      for (let i = 0; i < activeIndexes.length; i++) {
+        activeIndexes[i].textContent = categoriesSlider.activeIndex + 1;
+      }
+    }
+
+    const slidesCounts = document.querySelectorAll(
+      "#js-categories-slider-slides-count"
+    );
+
+    if (slidesCounts && slidesCounts.length) {
+      for (let i = 0; i < slidesCounts.length; i++) {
+        slidesCounts[i].textContent = categoriesSlider.slides.length;
+      }
+    }
+  };
+
+  categoriesSlider.on("slideChange", function () {
+    updateCategoriesSLider();
+  });
+  updateCategoriesSLider();
 });

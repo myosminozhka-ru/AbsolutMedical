@@ -41,6 +41,13 @@
   overflow: hidden;
 }
 
+.popular-product-card__title a {
+  color: #333333;
+}
+
+.popular-product-card__title:hover a {
+}
+
 .popular-product-card__price-container {
   display: flex;
   align-items: center;

@@ -14,6 +14,7 @@
 @import url(./select.css);
 @import url(./layouts/company.css);
 @import url(./cards/license-card.css);
+@import url(./pagination.css);
 
 body {
   font-family: "Roboto";
