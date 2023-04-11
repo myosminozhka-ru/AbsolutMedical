@@ -158,7 +158,7 @@
   display: none;
 }
 
-.prodcut-card__controls-button {
+.prodcut-card__controls-button.custom-button {
   margin-top: auto;
   font-family: "DIN Pro Cond";
   font-weight: 700;
@@ -226,6 +226,7 @@
   .product-card__label {
     left: 10px;
     top: 10px;
+    font-size: 12px;
   }
 
   .prodcut-card__controls .custom-number-input {
@@ -249,5 +250,14 @@
   .custom-switcher-label-left-text span:first-child,
   .custom-switcher-label-right-text span:first-child {
     display: none;
+  }
+
+  .prodcut-card__controls-button.custom-button {
+    margin-top: auto;
+    font-family: "DIN Pro Cond";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-transform: uppercase;
   }
 }
