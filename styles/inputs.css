@@ -118,7 +118,11 @@ input[type="number"] {
 /* large number input ------------------------------------------------- */
 
 /* switcher default ------------------------------------------------ */
+.custom-switcher {
+  position: relative;
+}
 .custom-switcher-input {
+  position: absolute;
   height: 0;
   width: 0;
   visibility: hidden;

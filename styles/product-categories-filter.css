@@ -1,0 +1,204 @@
+.product-categories-filters {
+  background-color: #ffffff;
+}
+
+.product-categories-filters__header {
+  background: #1c48a0;
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  display: flex;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.product-categories-filters__header::before,
+.product-categories-filters__header::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-categories-filters__header::before {
+  background-image: url(../icons/white-filter.svg);
+  margin-right: 12px;
+}
+
+.product-categories-filters__header::after {
+  background-image: url(../icons/white-chevron-right.svg);
+  transform: rotate(270deg);
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.product-categories-filters__body {
+  padding: 20px 12px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-categories-filters__range-input-container {
+  padding: 20px 12px;
+  border: 1px solid #dddddd;
+}
+
+.product-categories-filters__container-header {
+  padding: 16px 12px;
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #333333;
+  border: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+}
+
+.product-categories-filters__container-header::after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-image: url(../icons/gray-chevron-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(270deg);
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.product-categories-filters__container-body {
+  border-bottom: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  padding: 12px;
+}
+
+.product-categories-filters__container-body-input {
+  border: 1px solid #dddddd;
+  line-height: 160%;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.product-categories-filters__container-body-input input {
+  padding: 14px 16px 14px 44px;
+  width: 100%;
+}
+
+.prodcut-header__galery-container-body-input-button {
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  left: 16px;
+  background-image: url(../icons/gray-search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.product-categories-filters__container-body-input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+  color: #2c2c2c;
+}
+
+.product-categories-filters__container-body-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 358px;
+  overflow-y: auto;
+}
+
+.product-categories-filters__container-body-row {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.product-categories-filters__container-body-row:hover {
+  background-color: #f5f5f7;
+}
+
+.product-categories-filters__container-body-row-label {
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.03rem;
+  color: #333333;
+  display: flex;
+  align-items: baseline;
+}
+
+.product-categories-filters__container-body-row-input {
+  margin-right: 8px;
+}
+
+.product-categories-filters__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767.98px) {
+  .product-categories-filters {
+    position: relative;
+    top: 67px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 67px);
+    overflow-y: auto;
+  }
+
+  .product-categories-filters-shadow.--active {
+    display: block;
+  }
+
+  .product-categories-filters-shadow {
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+
+  .product-categories-filters-close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 43px;
+    height: 43px;
+    background-color: #ffffff;
+    background-image: url(../icons/gray-cross.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

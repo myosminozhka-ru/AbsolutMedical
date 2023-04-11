@@ -1,0 +1,253 @@
+.prodcut-card {
+  height: 558px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: calc((100% - 40px) / 3);
+}
+
+.prodcut-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  box-shadow: 0px 15px 14px -3px rgba(48, 48, 48, 0.07);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.prodcut-card:hover::before {
+  opacity: 1;
+}
+
+.product-card__img-container {
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+.prodcut-card__body {
+  padding: 12px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #ffffff;
+}
+
+.product-card__label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.prodcut-card__title {
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #333333;
+}
+
+.prodcut-card__vendor-code-info,
+.product-card__brand-info {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0.03em;
+  color: #b3b3b3;
+}
+
+.prodcut-card__price-info {
+  flex-wrap: wrap;
+}
+
+.prodcut-card__vendor-code,
+.prodcut-card__brand-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0.03em;
+  color: #2c2c2c;
+}
+
+.prodcut-card__vendor-code-info {
+  margin-top: 12px;
+}
+
+.product-card__brand-info {
+  margin-top: 4px;
+}
+
+.prodcut-card__price-info {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+
+.prodcut-card__new-price {
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: #333333;
+  display: flex;
+  align-items: center;
+}
+
+.prodcut-card__new-price::after {
+  content: "";
+  display: block;
+  height: 18px;
+  width: 18px;
+  background-image: url(../../icons/rub-black.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.prodcut-card__old-price {
+  margin-left: 4px;
+  font-family: "DIN Pro Cond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration-line: line-through;
+  color: #b3b3b3;
+  display: flex;
+  align-items: center;
+}
+
+.prodcut-card__old-price::after {
+  content: "";
+  display: block;
+  height: 14px;
+  width: 14px;
+  background-image: url(../../icons/rub-gray.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.prodcut-card__discount {
+  margin-left: 8px;
+  padding: 2px 8px;
+  background-color: #ec3f3f;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.03rem;
+  color: #ffffff;
+}
+
+.prodcut-card__controls {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.prodcut-card__old-price,
+.prodcut-card__new-price {
+  white-space: nowrap;
+}
+
+.custom-switcher-label-left-text span:last-child,
+.custom-switcher-label-right-text span:last-child {
+  display: none;
+}
+
+.prodcut-card__controls-button {
+  margin-top: auto;
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1199.98px) {
+  .prodcut-card {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .prodcut-card__body {
+    padding: 12px;
+  }
+
+  .product-card__label {
+    left: 14px;
+    top: 14px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .prodcut-card__old-price,
+  .prodcut-card__title,
+  .prodcut-card__new-price {
+    font-size: 18px;
+  }
+
+  .prodcut-card__body {
+    padding: 10px;
+  }
+
+  .product-card__label {
+    left: 12px;
+    top: 12px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .prodcut-card__old-price,
+  .prodcut-card__title,
+  .prodcut-card__new-price {
+    font-size: 16px;
+  }
+  .prodcut-card__old-price {
+    margin-left: 0;
+  }
+  .prodcut-card__discount {
+    margin-left: 0;
+  }
+
+  .prodcut-card__discount {
+    font-size: 12px;
+    padding: 0 5px;
+  }
+
+  .prodcut-card__body {
+    padding: 8px;
+  }
+
+  .product-card__label {
+    left: 10px;
+    top: 10px;
+  }
+
+  .prodcut-card__controls .custom-number-input {
+    width: 100%;
+  }
+
+  .prodcut-card__controls .custom-number-input {
+    margin-right: 0;
+  }
+
+  .prodcut-card__controls .custom-switcher,
+  .prodcut-card__controls .custom-switcher-label {
+    width: 100%;
+  }
+
+  .custom-switcher-label-left-text span:last-child,
+  .custom-switcher-label-right-text span:last-child {
+    display: block;
+  }
+
+  .custom-switcher-label-left-text span:first-child,
+  .custom-switcher-label-right-text span:first-child {
+    display: none;
+  }
+}
