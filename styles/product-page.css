@@ -1423,6 +1423,12 @@ body {
   line-height: 120%;
   text-transform: uppercase;
   color: #333333;
+  cursor: pointer;
+}
+
+.articles-slider__card-title:hover {
+  color: #1c48a0;
+  transition: color 0.2s ease;
 }
 
 @media (max-width: 1399.98px) {

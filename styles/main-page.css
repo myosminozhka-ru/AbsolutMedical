@@ -399,6 +399,35 @@ body {
   font-size: 1.125rem;
 }
 
+.about-company__dotted-text-container {
+  margin-top: 24px;
+}
+
+.about-company__dotted-text {
+  padding-left: 20px;
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  line-height: 160%;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
+}
+
+.about-company__dotted-text:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.about-company__dotted-text::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 8px;
+  height: 8px;
+  width: 8px;
+  background-color: #1c48a0;
+}
+
 .about-company__text:first-child {
   margin-top: 1.5rem;
 }
@@ -1190,6 +1219,9 @@ body {
   .about-company__img-building-container {
     width: 14.6875rem;
     height: 22.75rem;
+  }
+  .about-company__text {
+    font-size: 16px;
   }
 
   .brand-slider {

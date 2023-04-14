@@ -46,6 +46,8 @@
 }
 
 .popular-product-card__title:hover a {
+  transition: color 0.2s ease;
+  color: #1c48a0;
 }
 
 .popular-product-card__price-container {

@@ -48,6 +48,12 @@
   font-size: 20px;
   line-height: 130%;
   color: #333333;
+  cursor: pointer;
+}
+
+.prodcut-card__title:hover {
+  transition: color 0.2s ease;
+  color: #1c48a0;
 }
 
 .prodcut-card__vendor-code-info,
