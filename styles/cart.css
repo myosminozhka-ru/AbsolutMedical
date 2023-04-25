@@ -596,6 +596,10 @@ body {
   background-position: center;
 }
 
+.order-formed.--empty-cart .order-formed__content-title::before {
+  background-image: url(../icons/blue-cart-empty.svg);
+}
+
 .order-formed__text {
   text-align: center;
   margin-top: 20px;
@@ -623,12 +627,35 @@ body {
   font-size: 18px;
 }
 
+@media (max-width: 1199.98px) {
+  .order-formed__title {
+    margin-top: 26px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .order-formed__title {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .order-formed__title {
+    margin-top: 12px;
+  }
+}
+
 @media (max-width: 575.98px) {
   .order-formed__footer {
     gap: 16px;
+    width: 100%;
   }
 
   .order-formed__footer .custom-button {
     width: 100%;
+  }
+
+  .order-formed__title {
+    margin-top: 8px;
   }
 }
