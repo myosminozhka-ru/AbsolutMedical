@@ -558,3 +558,77 @@ body {
     width: 100%;
   }
 }
+
+.order-formed {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.order-formed__title {
+  margin-top: 32px;
+}
+
+.order-formed__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-formed__content-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.order-formed__content-title::before {
+  content: "";
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 48px;
+  margin-bottom: 32px;
+  border-radius: 50px;
+  background-color: #eef3f4;
+  background-image: url(../icons/blue-done.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.order-formed__text {
+  text-align: center;
+  margin-top: 20px;
+  line-height: 160%;
+  letter-spacing: 0.03rem;
+  color: #141716;
+  max-width: 518px;
+}
+
+.order-formed__text-link {
+  color: #1c48a0;
+  border-bottom: 1px solid #1c48a0;
+}
+
+.order-formed__footer {
+  margin-top: 32px;
+  display: flex;
+  gap: 32px;
+  margin-bottom: 56px;
+  flex-wrap: wrap;
+}
+
+.order-formed__footer .custom-button {
+  font-family: "DIN Pro Cond";
+  font-size: 18px;
+}
+
+@media (max-width: 575.98px) {
+  .order-formed__footer {
+    gap: 16px;
+  }
+
+  .order-formed__footer .custom-button {
+    width: 100%;
+  }
+}
