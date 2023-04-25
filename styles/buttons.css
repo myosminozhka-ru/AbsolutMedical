@@ -9,6 +9,7 @@
     background-image var(--base-transition);
   white-space: nowrap;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .custom-button.--full-w {

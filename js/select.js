@@ -23,9 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("click", function (e) {
     const selects = document.querySelectorAll(".select");
-    for (let i = 0; i < selects.length; i++) {
-      if (!selects[i].contains(e.target)) {
-        selects[i].classList.remove("open");
+    if (selects && selects.length) {
+      for (let i = 0; i < selects.length; i++) {
+        if (!selects[i].contains(e.target)) {
+          selects[i].classList.remove("open");
+        }
       }
     }
   });

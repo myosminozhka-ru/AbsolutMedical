@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   document
     .querySelector(".ui-select-wrapper")
-    .addEventListener("click", function () {
+    ?.addEventListener("click", function () {
       this.querySelector(".ui-select").classList.toggle("open");
     });
 
@@ -21,8 +21,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("click", function (e) {
     const select = document.querySelector(".ui-select");
-    if (!select.contains(e.target)) {
-      select.classList.remove("open");
+    if (select) {
+      if (!select.contains(e.target)) {
+        select.classList.remove("open");
+      }
     }
   });
 });

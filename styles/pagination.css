@@ -3,6 +3,8 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 56px;
 }
 .ui-pagination-numbers {
   display: flex;
@@ -17,6 +19,10 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #1c48a0;
+}
+
+.ui-pagination-number.--blue {
+  color: #ffffff;
 }
 
 .ui-pagination-left-button {

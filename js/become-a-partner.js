@@ -43,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setTimeout(() => {
     if (window.innerWidth < 991.98) {
-      console.log("skldf");
       return;
     }
 

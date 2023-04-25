@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const menuItems = document
     .querySelector("#js-page-main-menu")
-    .querySelectorAll(".page-main-menu__item");
+
+    ?.querySelectorAll(".page-main-menu__item");
 
   if (menuItems && menuItems.length) {
     const setActiveMenuItem = (idx) => {

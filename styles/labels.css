@@ -6,6 +6,7 @@
   color: var(--text-gray);
   width: min-content;
   white-space: nowrap;
+  /* line-height: 140%; */
   letter-spacing: 0.03rem;
 }
 
@@ -13,6 +14,9 @@
 }
 
 .label.--m {
+}
+
+.label.--ml {
 }
 
 .label.--l {
@@ -63,4 +67,38 @@
 
 .label.--closed {
   background-color: #c0c9e9;
+}
+
+.card-label {
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: uppercase;
+  padding: 4.75px 9px 3.25px 9px;
+  border: 1px solid;
+  width: min-content;
+  white-space: nowrap;
+}
+
+.card-label.--blue {
+  color: #1c48a0;
+  background-color: #e2ebff;
+  border-color: transparent;
+}
+
+.card-label.--black-text {
+  color: #333333;
+  border-color: #dddddd;
+}
+
+.card-label.--gray {
+  color: #b3b3b3;
+  border-color: #dddddd;
+}
+
+.card-label.--l {
+  font-size: 12px;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  padding: 5.25px 9px 3.75px 9px;
 }

@@ -367,14 +367,14 @@ input[type="number"] {
 
 /* checkbox -------------------*/
 .custom-checkbox {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
+  width: fit-content;
 }
 
 .custom-checkbox__label {
-  display: block;
+  display: flex;
   position: relative;
+  width: fit-content;
+  cursor: pointer;
 }
 
 .custom-checkbox__label .custom-checkbox__input:checked {
@@ -382,6 +382,8 @@ input[type="number"] {
 }
 
 .custom-checkbox__checkmark {
+  width: 20px;
+  height: 20px;
   background-color: #fff;
   display: block;
   border: 1.5px solid #dddddd;
@@ -391,6 +393,15 @@ input[type="number"] {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.custom-checkbox__text {
+  margin-left: 32px;
+  color: #2c2c2c;
+}
+
+.custom-checkbox__link {
+  color: #1c48a0;
 }
 
 .custom-checkbox:hover .custom-checkbox__checkmark {
@@ -418,6 +429,7 @@ input[type="number"] {
   align-items: start;
   justify-content: space-between;
 }
+
 .custom-file-input__file-input-container {
   width: 13.625rem;
   height: 3.5625rem;
@@ -427,15 +439,16 @@ input[type="number"] {
   background: #1c48a0;
   color: #fff;
 }
+
 .custom-file-input__file-input-label:hover {
   background: #2655b4;
 }
+
 .custom-file-input__file-input-label:active {
   background: #1c48a0;
 }
 
 .custom-file-input__file-input-label {
-  /* padding: 17px 47px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -465,4 +478,120 @@ input[type="number"] {
   overflow: hidden;
   width: 5rem;
   white-space: nowrap;
+}
+
+/* number texted input */
+
+.custom-number-texted-input {
+  height: fit-content;
+  border: 1px solid #dddddd;
+  /* width: fit-content; */
+  width: max-content;
+  line-height: 160%;
+  letter-spacing: 0.03rem;
+  color: #333333;
+}
+
+.custom-number-texted-input-header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 8px;
+}
+
+.custom-number-texted-input-control {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.custom-number-texted-input-control.--left,
+.custom-number-texted-input-control.--right {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 7px;
+}
+
+.custom-number-texted-input-control.--left {
+  background-image: url(../icons/black-minus.svg);
+  left: 5px;
+}
+
+.custom-number-texted-input-control.--right {
+  background-image: url(../icons/black-plus.svg);
+  right: 5px;
+}
+
+.custom-number-texted-input-field {
+  width: 50px;
+  text-align: center;
+}
+
+.custom-number-texted-input-footer {
+  margin-top: 4px;
+  display: flex;
+  margin-bottom: 6px;
+  margin-left: 4.5px;
+  margin-right: 4.5px;
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0.03rem;
+  color: #2c2c2c;
+  white-space: nowrap;
+}
+
+.custom-number-texted-input-price {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.custom-number-texted-input-price::after {
+  content: "";
+  display: block;
+  height: 12px;
+  width: 7px;
+  margin-left: 3px;
+  background-image: url(../icons/rub-black.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* big file input ------------------------------------- */
+
+.custom-large-file-input {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1c48a0;
+  border: 1px solid #1c48a0;
+  /* width: fit-content; */
+  width: 420px;
+  /* height: 55px; */
+  padding: 14.5px 0;
+}
+
+.custom-large-file-input::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 24px;
+  background-image: url(../icons/blue-clip.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.custom-large-file-input-field {
+  width: 0;
+  height: 0;
+  visibility: hidden;
 }
