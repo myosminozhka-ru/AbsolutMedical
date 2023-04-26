@@ -10,6 +10,7 @@
   white-space: nowrap;
   text-transform: uppercase;
   cursor: pointer;
+  height: fit-content;
 }
 
 .custom-button.--full-w {
