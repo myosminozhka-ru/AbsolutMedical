@@ -12,6 +12,7 @@
   color: #333333;
   padding: 20px 24px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .page-main-menu__item:not(:last-child) {

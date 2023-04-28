@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/personal-area.css" />
+  </head>
+  <body>
+    <div class="personal-area">
+      <h1 class="personal-area__title">личные данные</h1>
+      <!-- <h1 class="personal-area__title">информация контрагента</h1> -->
+      <!-- <h1 class="personal-area__title">заказы</h1> -->
+      <!-- <h1 class="personal-area__title">документы</h1> -->
+      <!-- <h1 class="personal-area__title">заявки и запросы</h1> -->
+
+      <div class="personal-area__content-container">
+        <div class="personal-area__menu">
+          <div
+            id="js-page-main-menu"
+            class="page-main-menu company-layout__menu"
+          >
+            <a class="page-main-menu__item"> Личные данные </a>
+            <a class="page-main-menu__item"> Информация о контрагенте</a>
+            <a class="page-main-menu__item"> Документы </a>
+            <a class="page-main-menu__item"> Заявки и запросы </a>
+            <a class="page-main-menu__item"> Заказы </a>
+          </div>
+
+          <div class="company-layout__select ui-select-wrapper">
+            <div class="ui-select">
+              <div class="ui-select__trigger">
+                <span>О компании</span>
+                <div class="arrow"></div>
+              </div>
+              <div class="ui-custom-options">
+                <span class="ui-custom-option ui-selected">Личные данные</span>
+                <span class="ui-custom-option">Информация о контрагенте</span>
+                <span class="ui-custom-option">Документы</span>
+                <span class="ui-custom-option">Заявки и запросы</span>
+                <span class="ui-custom-option">Заказы</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="personal-area__content">
+          <!-- личные данные -->
+          <!-- <div class="notification">
+            <div class="notification__card">
+              <div class="notification__card-text-container">
+                <div class="notification__card-title">Иванов Иван Иванович</div>
+
+                <div class="notification__card-contacts">
+                  <div class="notification__card-contacts-phone">
+                    +7 906 500-09-09
+                  </div>
+
+                  <div class="notification__card-contacts-email">
+                    mailme@mail.com
+                  </div>
+                </div>
+              </div>
+
+              <a href="" class="notification__card-link">Редактировать</a>
+            </div>
+
+            <div class="notification__content">
+              <div class="notification__header">
+                <div class="notification__actions">
+                  <div class="notification__actions-title">Уведомления</div>
+                  <a href="" class="notification__actions-link"
+                    >Отметить все как прочитанные</a
+                  >
+                </div>
+                <div class="notification__counts">
+                  <div class="notification__count">
+                    <div class="notification__count-text">
+                      Всего уведомлений
+                    </div>
+                    <a href="" class="notification__count-link">45</a>
+                  </div>
+                  <div class="notification__count">
+                    <div class="notification__count-text">
+                      Новых уведомлений
+                    </div>
+                    <a href="" class="notification__count-link">15</a>
+                  </div>
+                </div>
+
+                <div class="notification__list">
+                  <div class="notification__list-item">
+                    <div class="notification__list-item-text">
+                      Новое сообщение по вашей заявке
+                    </div>
+                    <div class="notification__list-item-status">
+                      <div class="notification__list-item-date">
+                        03 Сен 2022 / 23:00
+                      </div>
+                    </div>
+                  </div>
+                  <div class="notification__list-item">
+                    <div class="notification__list-item-text">
+                      Новое сообщение по вашей заявке
+                    </div>
+                    <div class="notification__list-item-status">
+                      <div class="notification__list-item-date">
+                        03 Сен 2022 / 23:00
+                      </div>
+                    </div>
+                  </div>
+                  <div class="notification__list-item">
+                    <div class="notification__list-item-text">
+                      Новое сообщение по вашей заявке
+                    </div>
+                    <div class="notification__list-item-status">
+                      <div class="notification__list-item-label">Новое</div>
+                      <div class="notification__list-item-date">
+                        03 Сен 2022 / 23:00
+                      </div>
+                    </div>
+                  </div>
+                  <div class="notification__list-item">
+                    <div class="notification__list-item-text">
+                      Новое сообщение по вашей заявке
+                    </div>
+                    <div class="notification__list-item-status">
+                      <div class="notification__list-item-label">Новое</div>
+                      <div class="notification__list-item-date">
+                        03 Сен 2022 / 23:00
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui-loader --active">
+              <div class="ui-loader-circle loader"><span></span></div>
+              <div class="ui-loader-content">Загрузка товаров</div>
+              <a class="ui-loader-button custom-button --m --blue"
+                >показать ещё</a
+              >
+            </div>
+            <div class="licence__pagination ui-pagination">
+              <button
+                class="ui-pagination-prev ui-pagination-left-button custom-button --l --transparent --square"
+              ></button>
+              <div class="ui-pagination-numbers">
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  1
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --blue --square"
+                >
+                  2
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  3
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  4
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  5
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  6
+                </a>
+              </div>
+              <button
+                class="ui-pagination-next ui-pagination-right-button custom-button --l --transparent --square"
+              ></button>
+            </div>
+          </div> -->
+          <!-- личные данные -->
+          <!-- информация контрагента -->
+          <!-- <div class="counterparty-information">
+            <div class="counterparty-information__header">
+              <span class="counterparty-information__header-text">
+                Показано контрагентов:</span
+              >
+              <span class="counterparty-information__header-count">8</span>
+            </div>
+
+            <div class="counterparty-information__cards-list">
+              <div class="counterparty-information__card">
+                <div class="counterparty-information__title">
+                  ООО «Современные медицинские технологии»
+                </div>
+                <div class="counterparty-information__info-list">
+                  <div class="counterparty-information__info-row">
+                    <span>ИНН:</span>
+                    &nbsp;
+                    <span>2328000083</span>
+                  </div>
+                  <div class="counterparty-information__info-row">
+                    <span>КПП:</span>
+                    &nbsp;
+                    <span>232801001</span>
+                  </div>
+                  <div class="counterparty-information__info-row">
+                    <span>ОГРН:</span>
+                    &nbsp;
+                    <span>1022303554635</span>
+                  </div>
+                  <div class="counterparty-information__info-row">
+                    <span>ОКПО:</span>
+                    &nbsp;
+                    <span>03553136</span>
+                  </div>
+                </div>
+                <p class="counterparty-information__address">
+                  Юр. адрес: Россия, 353100, Краснодарский край, ст. Выселки,
+                  ул. Степная, 1
+                </p>
+                <div class="counterparty-information__dropdown">
+                  <div class="ui-dropdown">
+                    <div class="ui-dropdown-header">Договора</div>
+                    <div class="ui-dropdown-body custom-scroll-bar">
+                      <div class="ui-dropdown-list">
+                        <div class="ui-dropdown-list-item">№45487337</div>
+                        <div class="ui-dropdown-list-item">№45487337</div>
+                        <div class="ui-dropdown-list-item">№45487337</div>
+                        <div class="ui-dropdown-list-item">№45487337</div>
+                        <div class="ui-dropdown-list-item">№45487337</div>
+                        <div class="ui-dropdown-list-item">№45487337</div>
+                        <div class="ui-dropdown-list-item">№45487337</div>
+                        <div class="ui-dropdown-list-item">№45487337</div>
+                        <div class="ui-dropdown-list-item">№45487337</div>
+                        <div class="ui-dropdown-list-item">№45487337</div>
+                        <div class="ui-dropdown-list-item">№45487337</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- информация контрагента -->
+
+          <!-- заказы -->
+          <div class="orders">
+            <div class="orders__actions">
+              <div class="ui-datepicker">
+                <input
+                  class="ui-datepicker-input"
+                  type="text"
+                  name="daterange"
+                  value="01/01/2018 - 01/15/2018"
+                />
+              </div>
+              <a href="" class="orders__refresh-button"></a>
+            </div>
+
+            <div class="orders__tabs">
+              <div class="ui-tabs-container">
+                <div class="ui-tabs-list">
+                  <div class="ui-tabs-control">Все заказы</div>
+                  <div class="ui-tabs-control">Ожидает оплаты</div>
+                  <div class="ui-tabs-control">Оформлен</div>
+
+                  <div class="ui-tabs-control">Принят в работу</div>
+                  <div class="ui-tabs-control">Назначена доставка</div>
+                  <div class="ui-tabs-control">В пути</div>
+
+                  <div class="ui-tabs-control">Черновик</div>
+                  <div class="ui-tabs-control">Выполнен</div>
+                </div>
+
+                <div class="ui-tabs-items">
+                  <div class="ui-tabs-item --active">
+                    <div class="orders__counts">
+                      <div class="orders__count-row">
+                        <span class="orders__count-text">Всего заказов</span>
+                        <span class="orders__count-value">45</span>
+                      </div>
+                      <div class="orders__count-row">
+                        <span class="orders__count-text">Показано заказов</span>
+                        <span class="orders__count-value">15</span>
+                      </div>
+                    </div>
+                    <div class="orders__list">
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --awaiting-payment --m">
+                              Ожидает оплаты
+                            </div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --framed --m">Оформлен</div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --in-process --m">
+                              Принят в работу
+                            </div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --m --delivery-is-scheduled">
+                              Назначена доставка
+                            </div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --m --shipped">В пути</div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --m --draft">Черновик</div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --m --done">Выполнен</div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --m --new">Новый</div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --m --active">Активный</div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --m --response-received">
+                              Получен ответ
+                            </div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --m --closed">Закрыт</div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="ui-tabs-item"></div>
+                  <div class="ui-tabs-item"></div>
+                  <div class="ui-tabs-item"></div>
+                  <div class="ui-tabs-item"></div>
+                  <div class="ui-tabs-item"></div>
+                  <div class="ui-tabs-item"></div>
+                  <div class="ui-tabs-item"></div>
+                </div>
+              </div>
+            </div>
+            <div class="ui-loader --active">
+              <div class="ui-loader-circle loader"><span></span></div>
+              <div class="ui-loader-content">Загрузка товаров</div>
+              <a class="ui-loader-button custom-button --m --blue"
+                >показать ещё</a
+              >
+            </div>
+            <div class="licence__pagination ui-pagination">
+              <button
+                class="ui-pagination-prev ui-pagination-left-button custom-button --l --transparent --square"
+              ></button>
+              <div class="ui-pagination-numbers">
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  1
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --blue --square"
+                >
+                  2
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  3
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  4
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  5
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  6
+                </a>
+              </div>
+              <button
+                class="ui-pagination-next ui-pagination-right-button custom-button --l --transparent --square"
+              ></button>
+            </div>
+          </div>
+          <!-- заказы -->
+          <!-- документы -->
+          <div class="orders documents">
+            <div class="orders__tabs">
+              <div class="ui-tabs-container">
+                <div class="ui-tabs-list">
+                  <div class="ui-tabs-control">Все документы</div>
+                  <div class="ui-tabs-control">Счета</div>
+                  <div class="ui-tabs-control">Товарные накладные</div>
+
+                  <div class="ui-tabs-control">УПД</div>
+                  <div class="ui-tabs-control">Акты</div>
+                  <div class="ui-tabs-control">Акты-сверки</div>
+                </div>
+
+                <div class="orders__actions">
+                  <div class="ui-datepicker">
+                    <input
+                      class="ui-datepicker-input"
+                      type="text"
+                      name="daterange"
+                      value="01/01/2018 - 01/15/2018"
+                    />
+                  </div>
+                  <a href="" class="orders__refresh-button"></a>
+                </div>
+
+                <div class="ui-tabs-items">
+                  <div class="ui-tabs-item --active">
+                    <div class="orders__counts">
+                      <div class="orders__count-row">
+                        <span class="orders__count-text">Всего заказов</span>
+                        <span class="orders__count-value">45</span>
+                      </div>
+                      <div class="orders__count-row">
+                        <span class="orders__count-text">Показано заказов</span>
+                        <span class="orders__count-value">15</span>
+                      </div>
+                    </div>
+                    <div class="orders__list">
+                      <div class="orders__company-list-item">
+                        <a class="" class="orders__company-list-title"></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="ui-tabs-item"></div>
+                  <div class="ui-tabs-item"></div>
+
+                  <div class="ui-tabs-item"></div>
+                  <div class="ui-tabs-item"></div>
+                  <div class="ui-tabs-item"></div>
+                </div>
+              </div>
+            </div>
+            <div class="ui-loader --active">
+              <div class="ui-loader-circle loader"><span></span></div>
+              <div class="ui-loader-content">Загрузка товаров</div>
+              <a class="ui-loader-button custom-button --m --blue"
+                >показать ещё</a
+              >
+            </div>
+            <div class="licence__pagination ui-pagination">
+              <button
+                class="ui-pagination-prev ui-pagination-left-button custom-button --l --transparent --square"
+              ></button>
+              <div class="ui-pagination-numbers">
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  1
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --blue --square"
+                >
+                  2
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  3
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  4
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  5
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  6
+                </a>
+              </div>
+              <button
+                class="ui-pagination-next ui-pagination-right-button custom-button --l --transparent --square"
+              ></button>
+            </div>
+          </div>
+          <!-- документы -->
+
+          <!-- заявки и запросы -->
+          <div class="orders applications-and-requests">
+            <div class="orders__tabs">
+              <div class="ui-tabs-container">
+                <div class="orders__tabs-header">
+                  <div class="ui-tabs-list">
+                    <div class="ui-tabs-control">Заявки</div>
+                    <div class="ui-tabs-control">Запросы</div>
+                  </div>
+                  <div class="orders__tabs-links">
+                    <a href="" class="custom-button --l --blue"
+                      >задать вопрос</a
+                    >
+                    <a href="" class="custom-button --l --transparent"
+                      >запросить прайс-лист</a
+                    >
+                  </div>
+                </div>
+
+                <div class="ui-tabs-items">
+                  <div class="ui-tabs-item --active">
+                    <div class="orders__counts">
+                      <div class="orders__count-row">
+                        <span class="orders__count-text">Всего заказов</span>
+                        <span class="orders__count-value">45</span>
+                      </div>
+                      <div class="orders__count-row">
+                        <span class="orders__count-text">Показано заказов</span>
+                        <span class="orders__count-value">15</span>
+                      </div>
+                    </div>
+                    <div class="orders__list">
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --awaiting-payment --m">
+                              Ожидает оплаты
+                            </div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --framed --m">Оформлен</div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --in-process --m">
+                              Принят в работу
+                            </div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --m --delivery-is-scheduled">
+                              Назначена доставка
+                            </div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --m --shipped">В пути</div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --m --draft">Черновик</div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --m --done">Выполнен</div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --m --new">Новый</div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --m --active">Активный</div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --m --response-received">
+                              Получен ответ
+                            </div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__list-item">
+                        <div class="orders__list-left-block">
+                          <div class="orders__list-main-info">
+                            <div class="orders__list-number">№242512216</div>
+                            <div class="orders__list-price">12 669.90</div>
+                          </div>
+                          <a href="" class="orders__list-link"
+                            >смотреть заказ</a
+                          >
+                        </div>
+
+                        <div class="orders__list-right-block">
+                          <div class="orders__list-label">
+                            <div class="label --m --closed">Закрыт</div>
+                          </div>
+                          <div class="orders__list-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="ui-tabs-item">
+                    <div class="orders__counts">
+                      <div class="orders__count-row">
+                        <span class="orders__count-text">Всего заказов</span>
+                        <span class="orders__count-value">45</span>
+                      </div>
+                      <div class="orders__count-row">
+                        <span class="orders__count-text">Показано заказов</span>
+                        <span class="orders__count-value">15</span>
+                      </div>
+                    </div>
+
+                    <div class="orders__requests">
+                      <table class="orders__requests-table">
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="orders__requests-row-item --date">
+                                Дата создания
+                              </div>
+                            </th>
+                            <th>
+                              <div class="orders__requests-row-item --id">
+                                Идентификатор (№)
+                              </div>
+                            </th>
+                            <th>
+                              <div class="orders__requests-row-item --status">
+                                Статус
+                              </div>
+                            </th>
+                            <th>
+                              <div
+                                class="orders__requests-row-item --closed-date"
+                              >
+                                Дата закрытия
+                              </div>
+                            </th>
+                            <th>
+                              <div
+                                class="orders__requests-row-item --action"
+                              ></div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="ui-table-collapse-parent">
+                            <td>
+                              <div class="orders__requests-row-item --date">
+                                12.01.2023
+                              </div>
+                            </td>
+                            <td>
+                              <div class="orders__requests-row-item --id">
+                                45487321846764
+                              </div>
+                            </td>
+                            <td>
+                              <div class="orders__requests-row-item --status">
+                                <div class="label --m --new">Новый</div>
+                              </div>
+                            </td>
+                            <td>
+                              <div
+                                class="orders__requests-row-item --closed-date"
+                              >
+                                22.01.2023
+                              </div>
+                            </td>
+                            <td>
+                              <div class="orders__requests-row-item --action">
+                                <a
+                                  class="orders__count-row-action js-ui-table-collapse-button"
+                                ></a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="ui-table-collapse-child">
+                            <td colspan="5">
+                              <div class="orders__requests-row-description">
+                                <div class="orders__requests-header">
+                                  <div
+                                    class="orders__requests-header-right-block"
+                                  >
+                                    <div class="orders__requests-header-title">
+                                      Юлия Сахаровская
+                                    </div>
+                                    <div class="orders__requests-header-text">
+                                      16 января 2023 / 16:23
+                                    </div>
+                                  </div>
+
+                                  <div class="orders__requests-header-links">
+                                    <a
+                                      href=""
+                                      class="orders__requests-header-link"
+                                      >Редактировать</a
+                                    >
+                                    <a
+                                      href=""
+                                      class="orders__requests-header-link"
+                                      >удалить
+                                    </a>
+                                  </div>
+                                </div>
+
+                                <div class="orders__requests-body">
+                                  <div class="orders__requests-body-text">
+                                    По мнению ведущего научного сотрудника
+                                    Арктического и антарктического
+                                    научно-исследовательского института (ААНИИ)
+                                    Алексея Екайкина, откол айсберга не связан с
+                                    глобальным потеплением.
+                                  </div>
+                                  <div class="orders__requests-body-text">
+                                    Относительно «Крупные отколы бывают
+                                    относительно редко по человеческим меркам
+                                    (раз в несколько лет или десятилетий).
+                                  </div>
+                                </div>
+
+                                <div class="orders__requests-footer">
+                                  <a
+                                    href=""
+                                    class="orders__requests-footer-link"
+                                    >nazvaniefaila</a
+                                  >
+                                  <span
+                                    class="orders__requests-footer-file-size"
+                                    >PDF, 0.1 Мб</span
+                                  >
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="ui-table-collapse-parent">
+                            <td>
+                              <div class="orders__requests-row-item --date">
+                                12.01.2023
+                              </div>
+                            </td>
+                            <td>
+                              <div class="orders__requests-row-item --id">
+                                45487321846764
+                              </div>
+                            </td>
+                            <td>
+                              <div class="orders__requests-row-item --status">
+                                <div class="label --m --new">Новый</div>
+                              </div>
+                            </td>
+                            <td>
+                              <div
+                                class="orders__requests-row-item --closed-date"
+                              >
+                                22.01.2023
+                              </div>
+                            </td>
+                            <td>
+                              <div class="orders__requests-row-item --action">
+                                <a
+                                  class="orders__count-row-action js-ui-table-collapse-button"
+                                ></a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="ui-table-collapse-child">
+                            <td colspan="5">
+                              <div class="orders__requests-row-description">
+                                <div class="orders__requests-header">
+                                  <div
+                                    class="orders__requests-header-right-block"
+                                  >
+                                    <div class="orders__requests-header-title">
+                                      Юлия Сахаровская
+                                    </div>
+                                    <div class="orders__requests-header-text">
+                                      16 января 2023 / 16:23
+                                    </div>
+                                  </div>
+
+                                  <div class="orders__requests-header-links">
+                                    <a
+                                      href=""
+                                      class="orders__requests-header-link"
+                                      >Редактировать</a
+                                    >
+                                    <a
+                                      href=""
+                                      class="orders__requests-header-link"
+                                      >удалить
+                                    </a>
+                                  </div>
+                                </div>
+
+                                <div class="orders__requests-body">
+                                  <div class="orders__requests-body-text">
+                                    По мнению ведущего научного сотрудника
+                                    Арктического и антарктического
+                                    научно-исследовательского института (ААНИИ)
+                                    Алексея Екайкина, откол айсберга не связан с
+                                    глобальным потеплением.
+                                  </div>
+                                  <div class="orders__requests-body-text">
+                                    Относительно «Крупные отколы бывают
+                                    относительно редко по человеческим меркам
+                                    (раз в несколько лет или десятилетий).
+                                  </div>
+                                </div>
+
+                                <div class="orders__requests-footer">
+                                  <a
+                                    href=""
+                                    class="orders__requests-footer-link"
+                                    >nazvaniefaila</a
+                                  >
+                                  <span
+                                    class="orders__requests-footer-file-size"
+                                    >PDF, 0.1 Мб</span
+                                  >
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui-loader --active">
+              <div class="ui-loader-circle loader"><span></span></div>
+              <div class="ui-loader-content">Загрузка товаров</div>
+              <a class="ui-loader-button custom-button --m --blue"
+                >показать ещё</a
+              >
+            </div>
+            <div class="licence__pagination ui-pagination">
+              <button
+                class="ui-pagination-prev ui-pagination-left-button custom-button --l --transparent --square"
+              ></button>
+              <div class="ui-pagination-numbers">
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  1
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --blue --square"
+                >
+                  2
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  3
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  4
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  5
+                </a>
+                <a
+                  class="ui-pagination-number custom-button --l --transparent --square"
+                >
+                  6
+                </a>
+              </div>
+              <button
+                class="ui-pagination-next ui-pagination-right-button custom-button --l --transparent --square"
+              ></button>
+            </div>
+          </div>
+          <!-- заявки и запросы -->
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/custom-dropdown.js"></script>
+    <script src="./js/pagination.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="./js/tabs.js"></script>
+    <script src="./js/custom-select.js"></script>
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/page-menu.js"></script>
+    <script src="./js/moment.min.js"></script>
+    <script src="./js/daterangepicker.js"></script>
+    <script src="./js/table-collapse.js"></script>
+    <script>
+      $(function () {
+        $('input[name="daterange"]').daterangepicker(
+          {
+            opens: "left",
+          },
+          function (start, end, label) {
+            console.log(
+              "A new date selection was made: " +
+                start.format("YYYY-MM-DD") +
+                " to " +
+                end.format("YYYY-MM-DD")
+            );
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

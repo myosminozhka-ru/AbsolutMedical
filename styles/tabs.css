@@ -28,6 +28,7 @@
   border: 1px solid #dddddd;
   cursor: pointer;
   white-space: nowrap;
+  height: fit-content;
 }
 
 .ui-tabs-control:hover {

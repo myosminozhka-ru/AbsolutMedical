@@ -106,3 +106,30 @@
 .ui-searchable-dropdown-list-item:last-child {
   padding-bottom: 18px;
 }
+
+/* default dropdown  ========================= */
+
+.ui-dropdown {
+}
+
+.ui-dropdown {
+}
+
+.ui-dropdown.--open .ui-dropdown-body {
+  display: block;
+}
+
+.ui-dropdown-header {
+  cursor: pointer;
+}
+
+.ui-dropdown-body {
+  display: none;
+}
+
+.ui-dropdown-list {
+}
+
+.ui-dropdown-list-item {
+  cursor: pointer;
+}

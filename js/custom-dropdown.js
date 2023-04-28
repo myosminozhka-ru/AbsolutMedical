@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const searchebleDropwDown = function Dropdown(element) {
+  const searchebleDropwDown = function SearchebleDropdown(element) {
     this.el = element;
     this.open = false;
     this.dropdownButton = this.el.querySelector(
@@ -66,5 +66,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
   for (let i = 0; i < searchebleDropwDowns.length; i++) {
     new searchebleDropwDown(searchebleDropwDowns[i]);
+  }
+
+  // default dropdown ===================================
+
+  const dropwDown = function Dropdown(element) {
+    this.el = element;
+    this.open = false;
+    this.dropdownButton = this.el.querySelector(".ui-dropdown-header");
+
+    this.toggleActiveClass = () => {
+      this.el.classList.toggle("--open");
+    };
+
+    this.checkElemContains = (target) => {
+      return this.el.contains(target);
+    };
+
+    this.clickOutside = (e) => {
+      if (!this.checkElemContains(e.target)) {
+        this.open = false;
+        this.toggleActiveClass();
+        document.removeEventListener("click", this.clickOutside);
+      }
+    };
+
+    this.el.addEventListener("click", (e) => {
+      if (!this.open) {
+        this.open = true;
+        this.toggleActiveClass();
+        document.addEventListener("click", this.clickOutside);
+      } else if (this.open && e.target === this.dropdownButton) {
+        this.open = false;
+        this.toggleActiveClass();
+      }
+    });
+  };
+
+  const dropwDowns = document.querySelectorAll(".ui-dropdown");
+
+  for (let i = 0; i < dropwDowns.length; i++) {
+    new dropwDown(dropwDowns[i]);
   }
 });
