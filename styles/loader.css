@@ -120,3 +120,12 @@
 .ui-loader.--active .ui-loader-button {
   margin-top: 24px;
 }
+
+@media (max-width: 575.98px) {
+  .ui-loader {
+    margin-bottom: 16px;
+  }
+  .ui-loader .ui-loader-button {
+    margin-top: 16px;
+  }
+}

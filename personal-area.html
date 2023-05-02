@@ -15,6 +15,105 @@
       <!-- <h1 class="personal-area__title">документы</h1> -->
       <!-- <h1 class="personal-area__title">заявки и запросы</h1> -->
 
+      <div class="ui-popup --default js-lk-popup">
+        <div class="ui-popup-container">
+          <form class="ui-popup-form">
+            <div class="ui-popup-title">редактирование данных</div>
+
+            <div class="ui-popup-inputs-list">
+              <div
+                class="custom-form-input --required-form-input --required-form-input-black"
+              >
+                <label class="custom-form-input__label" for="name">Имя</label>
+                <input class="custom-form-input__input" id="name" type="text" />
+                <button
+                  type="button"
+                  class="custom-form-input__button"
+                ></button>
+              </div>
+
+              <div
+                class="custom-form-input --required-form-input --required-form-input-black"
+              >
+                <label class="custom-form-input__label" for="phone"
+                  >Телефон</label
+                >
+                <input
+                  class="custom-form-input__input"
+                  id="phone"
+                  type="text"
+                />
+                <button
+                  type="button"
+                  class="custom-form-input__button"
+                ></button>
+              </div>
+
+              <div
+                class="custom-form-input --required-form-input --required-form-input-black"
+              >
+                <label class="custom-form-input__label" for="mail"
+                  >E-mail</label
+                >
+                <input class="custom-form-input__input" id="mail" type="text" />
+                <button
+                  type="button"
+                  class="custom-form-input__button"
+                ></button>
+              </div>
+
+              <div
+                class="custom-form-input --required-form-input --required-form-input-black --non-status-black-eye"
+              >
+                <label class="custom-form-input__label" for="js-password"
+                  >Пароль</label
+                >
+                <input
+                  type="password"
+                  class="custom-form-input__input"
+                  id="js-password-input"
+                  type="text"
+                  value=""
+                />
+                <button
+                  id="js-password-button"
+                  type="button"
+                  class="custom-form-input__button"
+                ></button>
+              </div>
+
+              <div
+                class="custom-form-input --required-form-input --required-form-input-black --non-status-black-eye"
+              >
+                <label class="custom-form-input__label" for="js-password"
+                  >Подтвердите пароль</label
+                >
+                <input
+                  type="password"
+                  class="custom-form-input__input"
+                  id="js-password-input"
+                  type="text"
+                  value=""
+                />
+                <button
+                  id="js-password-button"
+                  type="button"
+                  class="custom-form-input__button"
+                ></button>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="ui-popup-submit-button custom-button --l --blue"
+            >
+              сохранить
+            </button>
+          </form>
+          <button class="ui-popup-close-button"></button>
+        </div>
+      </div>
+
       <div class="personal-area__content-container">
         <div class="personal-area__menu">
           <div
@@ -47,7 +146,7 @@
 
         <div class="personal-area__content">
           <!-- личные данные -->
-          <!-- <div class="notification">
+          <div class="notification">
             <div class="notification__card">
               <div class="notification__card-text-container">
                 <div class="notification__card-title">Иванов Иван Иванович</div>
@@ -63,7 +162,9 @@
                 </div>
               </div>
 
-              <a href="" class="notification__card-link">Редактировать</a>
+              <a class="notification__card-link js-lk-popup-trigger"
+                >Редактировать</a
+              >
             </div>
 
             <div class="notification__content">
@@ -182,10 +283,10 @@
                 class="ui-pagination-next ui-pagination-right-button custom-button --l --transparent --square"
               ></button>
             </div>
-          </div> -->
+          </div>
           <!-- личные данные -->
           <!-- информация контрагента -->
-          <!-- <div class="counterparty-information">
+          <div class="counterparty-information">
             <div class="counterparty-information__header">
               <span class="counterparty-information__header-text">
                 Показано контрагентов:</span
@@ -227,26 +328,28 @@
                 <div class="counterparty-information__dropdown">
                   <div class="ui-dropdown">
                     <div class="ui-dropdown-header">Договора</div>
-                    <div class="ui-dropdown-body custom-scroll-bar">
+                    <div
+                      class="ui-dropdown-body --white-bg counterparty-information__dropdown-list custom-scroll-bar"
+                    >
                       <div class="ui-dropdown-list">
-                        <div class="ui-dropdown-list-item">№45487337</div>
-                        <div class="ui-dropdown-list-item">№45487337</div>
-                        <div class="ui-dropdown-list-item">№45487337</div>
-                        <div class="ui-dropdown-list-item">№45487337</div>
-                        <div class="ui-dropdown-list-item">№45487337</div>
-                        <div class="ui-dropdown-list-item">№45487337</div>
-                        <div class="ui-dropdown-list-item">№45487337</div>
-                        <div class="ui-dropdown-list-item">№45487337</div>
-                        <div class="ui-dropdown-list-item">№45487337</div>
-                        <div class="ui-dropdown-list-item">№45487337</div>
-                        <div class="ui-dropdown-list-item">№45487337</div>
+                        <a href="" class="ui-dropdown-list-item"> №45487337</a>
+                        <a href="" class="ui-dropdown-list-item"> №45487337</a>
+                        <a href="" class="ui-dropdown-list-item"> №45487337</a>
+                        <a href="" class="ui-dropdown-list-item"> №45487337</a>
+                        <a href="" class="ui-dropdown-list-item"> №45487337</a>
+                        <a href="" class="ui-dropdown-list-item"> №45487337</a>
+                        <a href="" class="ui-dropdown-list-item"> №45487337</a>
+                        <a href="" class="ui-dropdown-list-item"> №45487337</a>
+                        <a href="" class="ui-dropdown-list-item"> №45487337</a>
+                        <a href="" class="ui-dropdown-list-item"> №45487337</a>
+                        <a href="" class="ui-dropdown-list-item"> №45487337</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
           <!-- информация контрагента -->
 
           <!-- заказы -->
@@ -619,9 +722,241 @@
                         <span class="orders__count-value">15</span>
                       </div>
                     </div>
-                    <div class="orders__list">
-                      <div class="orders__company-list-item">
-                        <a class="" class="orders__company-list-title"></a>
+                    <div class="orders__documents-list">
+                      <div class="orders__documents-list-item">
+                        <div>
+                          <img
+                            src="./images/license.jpg"
+                            alt="document"
+                            class="orders__documents-img"
+                          />
+                        </div>
+                        <div class="orders__documents-content-container">
+                          <div class="orders__documents-text-container">
+                            <a href="" class="orders__documents-title">
+                              Лицензия на оптовую торговлю лекарственными
+                              средствами для медицинского применения
+                            </a>
+                            <div class="orders__documents-text">
+                              Лицензия на оптовую торговлю лекарственными
+                              средствами для медицинского применения
+                            </div>
+                          </div>
+
+                          <div class="orders__documents-info-container">
+                            <div class="orders__documents-type">.pdf</div>
+                            <div class="orders__documents-date-without-time">
+                              31 Окт 2020
+                            </div>
+                          </div>
+
+                          <a href="" class="orders__documents-link">
+                            смотреть документ
+                          </a>
+
+                          <div class="orders__documents-controls">
+                            <a
+                              href=""
+                              class="orders__documents-control --view"
+                            ></a>
+                            <a
+                              href=""
+                              class="orders__documents-control --download"
+                            ></a>
+                          </div>
+
+                          <div class="orders__documents-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__documents-list-item">
+                        <div>
+                          <img
+                            src="./images/license.jpg"
+                            alt="document"
+                            class="orders__documents-img"
+                          />
+                        </div>
+                        <div class="orders__documents-content-container">
+                          <div class="orders__documents-text-container">
+                            <a href="" class="orders__documents-title">
+                              Лицензия на оптовую торговлю лекарственными
+                              средствами для медицинского применения
+                            </a>
+                            <div class="orders__documents-text">
+                              Лицензия на оптовую торговлю лекарственными
+                              средствами для медицинского применения
+                            </div>
+                          </div>
+
+                          <div class="orders__documents-info-container">
+                            <div class="orders__documents-type">.pdf</div>
+                            <div class="orders__documents-date-without-time">
+                              31 Окт 2020
+                            </div>
+                          </div>
+
+                          <a href="" class="orders__documents-link">
+                            смотреть документ
+                          </a>
+
+                          <div class="orders__documents-controls">
+                            <a
+                              href=""
+                              class="orders__documents-control --view"
+                            ></a>
+                            <a
+                              href=""
+                              class="orders__documents-control --download"
+                            ></a>
+                          </div>
+
+                          <div class="orders__documents-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__documents-list-item">
+                        <div>
+                          <img
+                            src="./images/license.jpg"
+                            alt="document"
+                            class="orders__documents-img"
+                          />
+                        </div>
+                        <div class="orders__documents-content-container">
+                          <div class="orders__documents-text-container">
+                            <a href="" class="orders__documents-title">
+                              Лицензия на оптовую торговлю лекарственными
+                              средствами для медицинского применения
+                            </a>
+                            <div class="orders__documents-text">
+                              Лицензия на оптовую торговлю лекарственными
+                              средствами для медицинского применения
+                            </div>
+                          </div>
+
+                          <div class="orders__documents-info-container">
+                            <div class="orders__documents-type">.pdf</div>
+                            <div class="orders__documents-date-without-time">
+                              31 Окт 2020
+                            </div>
+                          </div>
+
+                          <a href="" class="orders__documents-link">
+                            смотреть документ
+                          </a>
+
+                          <div class="orders__documents-controls">
+                            <a
+                              href=""
+                              class="orders__documents-control --view"
+                            ></a>
+                            <a
+                              href=""
+                              class="orders__documents-control --download"
+                            ></a>
+                          </div>
+
+                          <div class="orders__documents-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__documents-list-item">
+                        <div>
+                          <img
+                            src="./images/license.jpg"
+                            alt="document"
+                            class="orders__documents-img"
+                          />
+                        </div>
+                        <div class="orders__documents-content-container">
+                          <div class="orders__documents-text-container">
+                            <a href="" class="orders__documents-title">
+                              Лицензия на оптовую торговлю лекарственными
+                              средствами для медицинского применения
+                            </a>
+                            <div class="orders__documents-text">
+                              Лицензия на оптовую торговлю лекарственными
+                              средствами для медицинского применения
+                            </div>
+                          </div>
+
+                          <div class="orders__documents-info-container">
+                            <div class="orders__documents-type">.pdf</div>
+                            <div class="orders__documents-date-without-time">
+                              31 Окт 2020
+                            </div>
+                          </div>
+
+                          <a href="" class="orders__documents-link">
+                            смотреть документ
+                          </a>
+
+                          <div class="orders__documents-controls">
+                            <a
+                              href=""
+                              class="orders__documents-control --view"
+                            ></a>
+                            <a
+                              href=""
+                              class="orders__documents-control --download"
+                            ></a>
+                          </div>
+
+                          <div class="orders__documents-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders__documents-list-item">
+                        <div>
+                          <img
+                            src="./images/license.jpg"
+                            alt="document"
+                            class="orders__documents-img"
+                          />
+                        </div>
+                        <div class="orders__documents-content-container">
+                          <div class="orders__documents-text-container">
+                            <a href="" class="orders__documents-title">
+                              Лицензия на оптовую торговлю лекарственными
+                              средствами для медицинского применения
+                            </a>
+                            <div class="orders__documents-text">
+                              Лицензия на оптовую торговлю лекарственными
+                              средствами для медицинского применения
+                            </div>
+                          </div>
+
+                          <div class="orders__documents-info-container">
+                            <div class="orders__documents-type">.pdf</div>
+                            <div class="orders__documents-date-without-time">
+                              31 Окт 2020
+                            </div>
+                          </div>
+
+                          <a href="" class="orders__documents-link">
+                            смотреть документ
+                          </a>
+
+                          <div class="orders__documents-controls">
+                            <a
+                              href=""
+                              class="orders__documents-control --view"
+                            ></a>
+                            <a
+                              href=""
+                              class="orders__documents-control --download"
+                            ></a>
+                          </div>
+
+                          <div class="orders__documents-date">
+                            03 Сен 2022 / 23:00
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -683,6 +1018,7 @@
               ></button>
             </div>
           </div>
+          -
           <!-- документы -->
 
           <!-- заявки и запросы -->
@@ -1242,6 +1578,8 @@
     <script src="./js/moment.min.js"></script>
     <script src="./js/daterangepicker.js"></script>
     <script src="./js/table-collapse.js"></script>
+    <script src="./js/popup.js"></script>
+
     <script>
       $(function () {
         $('input[name="daterange"]').daterangepicker(

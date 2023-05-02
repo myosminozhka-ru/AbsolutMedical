@@ -2,18 +2,53 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  top: 0;
-  left: 0;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 100;
+  display: none;
+}
+
+.ui-popup.--active {
+  display: block;
 }
 
 .ui-popup-container {
-  position: relative;
+  position: absolute;
+  right: 0;
   z-index: 101;
   background-color: #ffffff;
   min-width: 300px;
   padding: 56px 24px 56px 24px;
+}
+
+.ui-popup-title {
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.ui-popup-inputs-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ui-popup-submit-button {
+  margin-top: 32px;
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.ui-popup.--default .ui-popup-container {
+  width: 532px;
 }
 
 .ui-popup-close-button {
@@ -26,6 +61,7 @@
   background-color: #ffffff;
   border: 1px solid #dddddd;
   left: -86px;
+  top: 0;
 }
 
 .ui-popup-close-button:hover {

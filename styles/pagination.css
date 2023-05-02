@@ -27,6 +27,7 @@
 
 .ui-pagination-left-button {
   background-image: url(../icons/blue-chevron-left.svg);
+
   margin-right: 40px;
 }
 .ui-pagination-right-button {
@@ -51,8 +52,23 @@
 @media (max-width: 1199.98px) {
 }
 @media (max-width: 991.98px) {
+  .ui-pagination-number:nth-child(n + 5) {
+    display: none;
+  }
 }
 @media (max-width: 767.98px) {
 }
 @media (max-width: 575.98px) {
+  .ui-pagination-number:nth-child(n + 4) {
+    display: none;
+  }
+  .ui-pagination-left-button {
+    margin-right: 15px;
+  }
+  .ui-pagination-right-button {
+    margin-left: 15px;
+  }
+  .ui-pagination {
+    margin-top: 0;
+  }
 }
