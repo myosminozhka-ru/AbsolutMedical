@@ -47,6 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const companyDocuments = document.querySelector(".company-documents");
+    if (!companyDocuments) return;
+
     const tabsContainer = companyDocuments.querySelector(
       ".company-documents__tabs"
     );
