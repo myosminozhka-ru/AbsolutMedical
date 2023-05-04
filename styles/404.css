@@ -1,29 +1,3 @@
-@import url(./variables.css);
-@import url(./reset.css);
-@import url(./buttons.css);
-@import url(./heading.css);
-@import url(./fonts/index.css);
-@import url(./inputs.css);
-@import url(./header.css);
-@import url(./footer.css);
-@import url(./404.css);
-
-body {
-  font-family: "Roboto";
-}
-
-.custom-scroll-bar::-webkit-scrollbar {
-  width: 6px;
-}
-
-.custom-scroll-bar::-webkit-scrollbar-track {
-  background-color: #ddd;
-}
-
-.custom-scroll-bar::-webkit-scrollbar-thumb {
-  background-color: #1c48a0;
-}
-
 .header {
   background-color: transparent;
 }
@@ -47,6 +21,7 @@ body {
 .four-hundred-four__second-title {
   text-transform: uppercase;
 }
+
 .four-hundred-four__second-title {
   margin-top: 10px;
 }
@@ -60,11 +35,13 @@ body {
   letter-spacing: 0.03rem;
   color: #2c2c2c;
 }
+
 .four-hundred-four__controls-container {
   margin-top: 40px;
   display: flex;
   gap: 24px;
 }
+
 .custom-button {
   text-transform: uppercase;
   font-family: "DIN Pro Cond";

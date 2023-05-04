@@ -1,37 +1,3 @@
-@import url(./reset.css);
-@import url(./buttons.css);
-@import url(./catalog-of-product-sections.css);
-@import url(./heading.css);
-@import url(./fonts/index.css);
-@import url(./labels.css);
-@import url(./variables.css);
-@import url(./inputs.css);
-@import url(./header.css);
-@import url(./footer.css);
-@import url(./swiper.css);
-@import url(./breadcrumbs.css);
-@import url(./menus.css);
-@import url(./select.css);
-@import url(./layouts/company.css);
-@import url(./cards/license-card.css);
-@import url(./pagination.css);
-
-body {
-  font-family: "Roboto";
-}
-
-.custom-scroll-bar::-webkit-scrollbar {
-  width: 6px;
-}
-
-.custom-scroll-bar::-webkit-scrollbar-track {
-  background-color: #ddd;
-}
-
-.custom-scroll-bar::-webkit-scrollbar-thumb {
-  background-color: #1c48a0;
-}
-
 .license__pagintaion {
 }
 

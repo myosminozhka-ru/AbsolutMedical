@@ -1,5 +1,3 @@
-@import url(../../styles/variables.css);
-
 .popular-product-card {
   background-color: var(--white);
   min-height: 599px;
