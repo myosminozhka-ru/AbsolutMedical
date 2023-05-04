@@ -1,15 +1,48 @@
-@import url(./reset.css);
+@import url(./404.css);
+@import url(./about-company.css);
+@import url(./accordion.css);
+@import url(./articles.css);
+@import url(./authorization.css);
+@import url(./become-a-partner.css);
+@import url(./breadcrumbs.css);
 @import url(./buttons.css);
+@import url(./cards/license-card.css);
 @import url(./cards/popular-category-cards.css);
 @import url(./cards/popular-product-cards.css);
-@import url(./heading.css);
-@import url(./fonts/index.css);
-@import url(./labels.css);
-@import url(./variables.css);
-@import url(./inputs.css);
-@import url(./header.css);
+@import url(./cards/product-card.css);
+@import url(./cart.css);
+@import url(./catalog-of-product-sections.css);
+@import url(./contacts.css);
+@import url(./daterangepicker.css);
+@import url(./dropdown.css);
 @import url(./footer.css);
+@import url(./header.css);
+@import url(./heading.css);
+@import url(./how-to-buy.css);
+@import url(./inputs.css);
+@import url(./labels.css);
+@import url(./layouts/company.css);
+@import url(./layouts/popap.css);
+@import url(./license.css);
+@import url(./loader.css);
+@import url(./main-page.css);
+@import url(./menus.css);
+@import url(./order.css);
+@import url(./pagination.css);
+@import url(./password-recovery.css);
+@import url(./personal-area.css);
+@import url(./product-categories-catalog-info-header.css);
+@import url(./product-categories-filter.css);
+@import url(./product-categories-menu.css);
+@import url(./product-categories.css);
+@import url(./product-page.css);
+@import url(./questions-and-answers.css);
+@import url(./registration.css);
+@import url(./reset.css);
+@import url(./select.css);
 @import url(./swiper.css);
+@import url(./tabs.css);
+@import url(./variables.css);
 
 body {
   font-family: "Roboto";
@@ -25,15 +58,4 @@ body {
 
 .custom-scroll-bar::-webkit-scrollbar-thumb {
   background-color: #1c48a0;
-}
-
-@media (max-width: 1399.98px) {
-}
-@media (max-width: 1199.98px) {
-}
-@media (max-width: 991.98px) {
-}
-@media (max-width: 767.98px) {
-}
-@media (max-width: 575.98px) {
 }
