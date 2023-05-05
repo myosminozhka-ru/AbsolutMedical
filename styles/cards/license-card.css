@@ -1,10 +1,11 @@
 .license {
 }
 
-.license__cards-list {
+.license .license__cards-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 0;
 }
 
 .license__card {

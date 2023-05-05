@@ -22,7 +22,6 @@
 .company-layout__menu {
   min-width: 200px;
   max-width: 310px;
-  flex: 1;
 }
 
 .company-layout__content {
