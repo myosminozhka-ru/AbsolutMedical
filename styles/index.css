@@ -46,6 +46,7 @@
 @import url(./personal-area.css);
 @import url(./questions-and-answers.css);
 @import url(./registration.css);
+@import url(./brands.css);
 
 body {
   font-family: "Roboto";
